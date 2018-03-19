@@ -1,0 +1,279 @@
+.final-menu-button {
+    background-color: #82368c;
+}
+
+/* large desktops and up ----------- */
+@media screen and (min-width: 1200px) {
+    .selected {
+        border-bottom: 10px solid #c09ac5;
+    }
+
+    .content-area {
+        height: 90%;
+    }
+    .button-container {
+        height: 10%;
+    }
+
+    .button {
+        height: 100%;
+    }
+
+    .button > span {
+        font-size: 2em;
+    }
+
+    .doer-encouragement {
+        font-size: 5em;
+    }
+
+    .doer-emphasis {
+        font-size: 3em;
+    }
+
+    .fs-message-error {
+        font-size: 2em;
+    }
+}
+
+/* tablets/desktops and up ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .selected {
+        border-bottom: 8px solid #c09ac5;
+    }
+
+    .content-area {
+        height: 90%;
+    }
+    .button-container {
+        height: 10%;
+    }
+
+    .button {
+        height: 100%;
+    }
+
+    .button > span {
+        font-size: 1.25em;
+    }
+
+    .doer-encouragement {
+        font-size: 4em;
+    }
+
+    .doer-emphasis {
+        font-size: 3em;
+    }
+
+    .fs-message-error {
+        font-size: 2em;
+    }
+
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .content-area {
+        height: 90%;
+    }
+    .button-container {
+        height: 10%;
+    }
+
+    .button {
+        height: 100%;
+    }
+
+    .button > span {
+        font-size: 1.5em;
+    }
+
+    .doer-encouragement {
+        font-size: 5em;
+    }
+
+    .doer-emphasis {
+        font-size: 3em;
+    }
+
+    .fs-message-error {
+        font-size: 2em;
+    }
+
+    .selected {
+        border-bottom: 6px solid #c09ac5;
+    }
+}
+
+/* Extra small devices (phones, up to 480px) */
+@media screen and (max-width: 767px) {
+    .selected {
+        border-bottom: 4px solid #c09ac5;
+    }
+
+    .content-area {
+        height: 70%;
+    }
+    .button-container {
+        height: 30%;
+    }
+
+    .button {
+        height: 33.3%;
+        border-right: none !important;
+        border-bottom: 1px solid white;
+    }
+
+    .button > span {
+        font-size: 1em;
+    }
+
+    .doer-encouragement {
+        font-size: 3em;
+    }
+    .doer-emphasis {
+        font-size: 1em;
+    }
+
+    .fs-message-error {
+        font-size: 3em;
+    }
+
+}
+
+.fullscreen-form-background {
+    position: fixed;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #82368c;
+    opacity: 0.75;
+    z-index: -10;
+}
+
+.fullscreen-form-background:hover {
+    background-color: transparent !important;
+    position: fixed;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.75;
+    z-index: -10;
+}
+
+body {
+    overflow: hidden;
+}
+
+.fixed-background {
+	top: 0;
+	left: 0;
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	z-index: -10;
+}
+
+.fixed-background {
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+/*  buttons */
+.button-container {
+    z-index: 100 !important;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+}
+
+.button {
+    font-family: 'big-john';
+    display: table;
+    background-color: #82368c;
+    text-align: center;
+    border-right: 1px solid white;
+	border-radius: 1px;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.button:nth-last-child(1) {
+    border-right: none;
+}
+
+
+
+
+.button > span {
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+}
+
+.button:hover {
+    text-decoration: none;
+}
+
+.doener-form {
+    z-index: -10;
+    padding: 0;
+}
+
+.doener-info-video {
+    z-index: 10;
+}
+
+.content-area {
+    border-top: solid 1px white;
+}
+
+.doer-encouragement {
+    z-index: -9;
+    font-family: 'big-john';
+    color: purple;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.arrow-up {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.doer-emphasis {
+    width: 100%;
+    text-align: center;
+}
+
+.pass {
+    position: relative !important;
+}
+
+.bootstrap-filestyle > input {
+    color: white !important;
+    font-size: 1.5em !important;
+}
+
+.form-control[disabled], .form-control[readonly], fieldset[disabled] .form-control {
+     background-color: transparent;
+    opacity: 1;
+}
+
+.radio-box {
+    font-family: 'Fira Sans'; font-size: 2em;
+    display: flex;
+    align-items: center;
+}
+
+.radio-box > input {
+    width: 10% !important;
+    float: left;
+    position: relative !important;
+}

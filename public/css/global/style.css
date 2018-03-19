@@ -1,0 +1,46 @@
+/* sidebar menu styling*/
+.erlenmeyer {
+    z-index: 100;
+}
+
+.photo-input {
+    font-size: 1.5em !important;
+}
+
+.erlenmeyer > img {
+    z-index: 10;
+}
+
+.shadow {
+	background-color: black;
+	opacity: 0.5;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100vw;
+    z-index: -9;
+}
+
+.alert-danger {
+    background-color: transparent !important;
+    border-color: none !important;
+}
+.alert{
+    border-radius: none;
+    border: none;
+    margin-bottom: 0;
+    font-family: 'Fira Sans';
+    font-size: 2em;
+    color: purple;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.radio-box {
+    font-family: 'big-john'; font-size: 2em;
+}

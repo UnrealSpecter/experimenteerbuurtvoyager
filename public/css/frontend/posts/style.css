@@ -1,0 +1,316 @@
+body {
+    overflow-x: hidden;
+}
+.final-menu-button {
+    background-color: #316b4d;
+}
+
+/* large desktops and up ----------- */
+@media screen and (min-width: 1501px) {
+    .news-title {
+        font-size: 2em;
+    }
+
+    .post {
+        min-height: 200px;
+        justify-content: center;
+        flex-flow: row;
+    }
+
+    .hyperlink-indicator {
+        font-size: 1em;
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+
+    .content {
+        font-size: 1.3em;
+    }
+
+    .row {
+        flex-flow: row;
+    }
+
+    .column {
+        flex-flow: column;
+    }
+
+    .post:nth-child(odd) {
+        flex-flow: row;
+    }
+
+}
+
+/* large desktops and up ----------- */
+@media (min-width: 1200px) and (max-width: 1500px) {
+    .news-title {
+        font-size: 2em;
+    }
+
+    .post {
+        min-height: 200px;
+        justify-content: center;
+        flex-flow: row;
+    }
+
+    .hyperlink-indicator {
+        font-size: 1em;
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+
+    .content {
+        font-size: 1.15em;
+    }
+
+    .row {
+        flex-flow: row;
+    }
+
+    .column {
+        flex-flow: column;
+    }
+
+    .post:nth-child(odd) {
+        flex-flow: row;
+    }
+
+}
+
+/* tablets/desktops and up ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .news-title {
+        font-size: 2em;
+    }
+
+    .post {
+        min-height: 200px;
+        justify-content: center;
+        flex-flow: row;
+    }
+
+    .hyperlink-indicator {
+        font-size: 1em;
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+
+    .content {
+        font-size: 1.25em;
+    }
+
+    .row {
+        flex-flow: row;
+    }
+
+    .column {
+        flex-flow: column;
+    }
+
+    .post:nth-child(odd) {
+        flex-flow: row;
+    }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .news-title {
+        font-size: 1.5em;
+    }
+
+    .post {
+        min-height: 200px;
+        justify-content: flex-start;
+        flex-flow: row;
+    }
+
+    .hyperlink-indicator {
+        font-size: 1.5em;
+    }
+
+    .title {
+        font-size: 1.5em;
+    }
+
+    .content {
+        font-size: 1em;
+    }
+
+    .row {
+        flex-flow: row;
+    }
+
+    .column {
+        flex-flow: column !important;
+    }
+
+    .post > div {
+        display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-flexbox;      /* TWEENER - IE 10 */
+        display: -webkit-flex;     /* NEW - Chrome */
+        display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Extra small devices (phones, up to 480px) */
+@media screen and (max-width: 767px) {
+    .news-title {
+        font-size: 1.25em;
+        line-height: normal;
+    }
+
+    .post {
+        min-height: 100px;
+        flex-flow: column;
+        /*justify-content: flex-start;*/
+    }
+
+    .hyperlink-indicator {
+        font-size: 1.25em;
+    }
+
+    .title {
+        font-size: 1.3em;
+    }
+
+    .content {
+        font-size: 1.1em;
+    }
+
+    .img-holder {
+        display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+        display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+        display: -ms-flexbox;      /* TWEENER - IE 10 */
+        display: -webkit-flex;     /* NEW - Chrome */
+        display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+        padding: 0;
+    }
+
+}
+
+.nieuws-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.news-title-wrapper {
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    margin-bottom: 50px;
+    background-color: #316b4d;
+}
+
+.news-title {
+    font-family: big-john;
+    color: white;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.posts-wrapper {
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    align-items: center;
+    flex-flow: column;
+    padding: 0;
+    height: 100%;
+}
+
+.post {
+    margin-bottom: 50px;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    align-items: center;
+    padding: 0 !important;
+}
+
+.post > div > a {
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.post > div > a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.title {
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    padding-bottom: 0;
+    font-family: big-john;
+    min-height: 50px;
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    align-items: center;
+    justify-content: center;
+    color: #316b4d;
+}
+
+.hyperlink-indicator {
+    margin-left: 10px;
+    margin-top: 3px;
+}
+
+.content {
+    font-family: 'fira sans';
+    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: -webkit-flex;     /* NEW - Chrome */
+    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+    color: black;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.news-image {
+    max-height: 100%;
+    padding: 0;
+}
+
+.img-holder {
+    padding: 0;
+}

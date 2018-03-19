@@ -1,0 +1,40 @@
+/* large desktops and up ----------- */
+@media screen and (min-width: 1200px) {
+    .home-nav { height: 10%; }
+}
+
+/* tablets/desktops and up ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .home-nav { height: 10%; }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .home-nav { height: 15%; }
+}
+
+/* Extra small devices (phones, up to 480px) */
+@media screen and (max-width: 767px) {
+    .home-nav { height: 20%; }
+}
+
+/* menu */
+.home-nav {
+    position: absolute;
+    bottom: 0;
+}
+
+.home-nav > a {
+    text-align: center;
+    color: white;
+    height: 100%;
+    word-wrap: break-word;
+    font-size: 1.4em;
+}
+
+.experimenteerbuurt { background-color: #2fac66; }
+.doeners            { background-color: #82368c; }
+.agenda             { background-color: #e6332a; }
+.nieuws             { background-color: #316b4d; }
+.inspiration        { background-color: #2d2e83; }
+.contact            { background-color: #36a9e1; }

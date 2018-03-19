@@ -1,0 +1,351 @@
+.final-menu-button {
+    background-color: #36a9e1;
+}
+
+/* large desktops and up ----------- */
+@media screen and (min-width: 1200px) {
+
+    .reageerbuis-wrapper {
+        height: 78%;
+        padding-left: 23%;
+    }
+
+    .facebook-reageerbuis {
+        position: relative;
+        top: 18%;
+        height: 65%;
+        width: 10%;
+        margin-right: 4%;
+    }
+
+    .twitter-reageerbuis {
+        position: relative;
+        top: 17%;
+        height: 70%;
+        width: 10%;
+        margin-right: 5%;
+    }
+
+    .linkedin-reageerbuis {
+        position: relative;
+        top: 18%;
+        height: 70%;
+        width: 10%;
+        margin-right: 5%;
+    }
+
+    .instagram-reageerbuis {
+        position: relative;
+        top: 17%;
+        height: 70%;
+        width: 10%;
+        margin-right: 4%;
+    }
+
+    .youtube-reageerbuis {
+        position: relative;
+        top: 19%;
+        height: 65%;
+        width: 10%;
+    }
+
+    .contact-info{
+        font-size: 1.2em;
+        display: flex;
+        align-items: center;
+        height: 10%;
+    }
+
+    .contact-text:nth-last-child(1){
+        border: none;
+    }
+
+}
+
+/* tablets/desktops and up ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .reageerbuis-wrapper {
+        height: 78%;
+        padding-left: 13%;
+    }
+
+    .facebook-reageerbuis {
+        position: relative;
+        top: 18%;
+        height: 65%;
+        width: 13%;
+        margin-right: 5%;
+    }
+
+    .twitter-reageerbuis {
+        position: relative;
+        top: 17%;
+        height: 70%;
+        width: 13%;
+        margin-right: 6%;
+    }
+
+    .linkedin-reageerbuis {
+        position: relative;
+        top: 18%;
+        height: 70%;
+        width: 13%;
+        margin-right: 6%;
+    }
+
+    .instagram-reageerbuis {
+        position: relative;
+        top: 17%;
+        height: 70%;
+        width: 13%;
+        margin-right: 5%;
+    }
+
+    .youtube-reageerbuis {
+        position: relative;
+        top: 19%;
+        height: 65%;
+        width: 13%;
+    }
+
+    .contact-info{
+        font-size: 0.9em;
+        display: flex;
+        align-items: center;
+        height: 10%;
+    }
+
+    .contact-text:nth-last-child(1){
+        border: none;
+    }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .reageerbuis-wrapper {
+        height: 78%;
+        padding-left: 13%;
+    }
+
+    .facebook-reageerbuis {
+        position: relative;
+        top: 18%;
+        height: 65%;
+        width: 13%;
+        margin-right: 5%;
+    }
+
+    .twitter-reageerbuis {
+        position: relative;
+        top: 17%;
+        height: 70%;
+        width: 13%;
+        margin-right: 6%;
+    }
+
+    .linkedin-reageerbuis {
+        position: relative;
+        top: 18%;
+        height: 70%;
+        width: 13%;
+        margin-right: 6%;
+    }
+
+    .instagram-reageerbuis {
+        position: relative;
+        top: 17%;
+        height: 70%;
+        width: 13%;
+        margin-right: 5%;
+    }
+
+    .youtube-reageerbuis {
+        position: relative;
+        top: 19%;
+        height: 65%;
+        width: 13%;
+    }
+
+    .contact-info{
+        font-size: 0.9em;
+        display: flex;
+        align-items: center;
+        height: 10%;
+    }
+
+    .contact-text:nth-last-child(3){
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+    }
+}
+
+/* Extra small devices (phones, up to 480px) */
+@media screen and (max-width: 767px) {
+    .reageerbuis-wrapper {
+        height: 45%;
+        padding-left: 13%;
+    }
+
+    .facebook-reageerbuis {
+        position: relative;
+        top: 18%;
+        height: 65%;
+        width: 13%;
+        margin-right: 5%;
+    }
+
+    .twitter-reageerbuis {
+        position: relative;
+        top: 17%;
+        height: 70%;
+        width: 13%;
+        margin-right: 6%;
+    }
+
+    .linkedin-reageerbuis {
+        position: relative;
+        top: 18%;
+        height: 70%;
+        width: 13%;
+        margin-right: 6%;
+    }
+
+    .instagram-reageerbuis {
+        position: relative;
+        top: 17%;
+        height: 70%;
+        width: 13%;
+        margin-right: 5%;
+    }
+
+    .youtube-reageerbuis {
+        position: relative;
+        top: 19%;
+        height: 65%;
+        width: 13%;
+    }
+
+    .contact-info{
+        font-size: 0.9em;
+        height: 25% !important;
+    }
+
+    .contact-info > div {
+        /*border-top: white solid 1px;*/
+    }
+
+    .contact-text{
+        height: 25%;
+        display: flex;
+        align-items: center;
+    }
+
+    .contact-text > div {
+        width: 100%;
+    }
+
+    .contact-text > span {
+        text-align: center;
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 767px) and (orientation:landscape){
+    .reageerbuis-wrapper {
+        height: 78%;
+        padding-left: 13%;
+    }
+
+    .facebook-reageerbuis {
+        position: relative;
+        top: 18%;
+        height: 65%;
+        width: 13%;
+        margin-right: 5%;
+    }
+
+    .twitter-reageerbuis {
+        position: relative;
+        top: 17%;
+        height: 70%;
+        width: 13%;
+        margin-right: 6%;
+    }
+
+    .linkedin-reageerbuis {
+        position: relative;
+        top: 18%;
+        height: 70%;
+        width: 13%;
+        margin-right: 6%;
+    }
+
+    .instagram-reageerbuis {
+        position: relative;
+        top: 17%;
+        height: 70%;
+        width: 13%;
+        margin-right: 5%;
+    }
+
+    .youtube-reageerbuis {
+        position: relative;
+        top: 19%;
+        height: 65%;
+        width: 13%;
+    }
+}
+
+body {
+    overflow: hidden;
+}
+.contact-background {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.contact-analoog-wrapper {
+    background-color: transparent;
+    height: 100vh;
+}
+
+.content-area {
+    z-index: 10;
+    height: 100%;
+    display: flex;
+    padding: 0;
+    align-items: center;
+}
+
+.rekje {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.contact-info {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-color: #36a9e1;
+    color: #82368c;
+    padding: 0;
+    z-index: 2000 !important;
+}
+
+.contact-text {
+    text-align: center;
+    color: white;
+    border-right: 1px solid white;
+}

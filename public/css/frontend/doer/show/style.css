@@ -1,0 +1,240 @@
+.final-menu-button {
+    background-color: #82368c;
+}
+
+body {
+    overflow: hidden;
+}
+
+/* large desktops and up ----------- */
+@media screen and (min-width: 1200px) {
+
+    .doer-video-button > span, .return-to-overview > span {
+        font-size: 2em;
+    }
+
+    .bedrijfsnaam, .telefoonnummer {
+        font-size: 1.5em;
+    }
+
+    .doer-name > span {
+        font-size: 3.5em;
+    }
+
+    .doer-label {
+        font-size: 1.5em;
+    }
+
+    .doer-info {
+        font-size: 1.15em;
+        word-break: break-word;
+    }
+
+    .wat-doe-ik-label {
+        font-size: 2em !important;
+        /*background-color: red;*/
+    }
+
+    .wat-doe-ik {
+        font-size: 1.5em;
+    }
+
+
+}
+
+/* tablets/desktops and up ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .doer-video-button > span, .return-to-overview > span {
+        font-size: 1.5em;
+    }
+
+    .doer-name > span {
+        font-size: 3em;
+    }
+    .doer-label {
+        font-size: 1em;
+    }
+
+    .doer-info {
+        font-size: 1.25em;
+    }
+
+    .wat-doe-ik-label {
+        font-size: 1.5em !important;
+        /*background-color: red;*/
+    }
+
+    .wat-doe-ik {
+        font-size: 1.25em;
+    }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .doer-video-button > span, .return-to-overview > span {
+        font-size: 1.5em;
+    }
+
+    .doer-name > span {
+        font-size: 2.5em;
+    }
+
+    .wat-doe-ik-label {
+        font-size: 1.5em !important;
+        /*background-color: red;*/
+    }
+
+    .wat-doe-ik {
+        font-size: 1.25em;
+    }
+}
+
+/* Extra small devices (phones, up to 480px) */
+@media screen and (max-width: 767px) {
+    .doer-name > span {
+        font-size: 2em;
+    }
+    .doer-label {
+        font-size: 1.25em;
+    }
+
+    .doer-label > span {
+        text-align: center !important;
+    }
+
+    .doer-info {
+        font-size: 1.5em;
+        font-family: 'fira sans' !important;
+    }
+
+    .doer-info > span {
+        text-align: center !important;
+    }
+    .wat-doe-ik-label {
+        font-size: 1em !important;
+        /*background-color: red;*/
+    }
+    .wat-doe-ik {
+        font-size: 1.2em;
+        word-wrap: break-word;
+        font-family: 'fira sans' !important;
+    }
+}
+
+.doer-name {
+    text-transform: uppercase;
+    height: 100%;
+    color: black;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.doer-name > span {
+    width: 100%;
+    text-align: center;
+    font-family: 'big-john';
+    color: white;
+}
+
+.doer-video-button, .return-to-overview {
+    border-bottom: solid white 1px;
+    justify-content: center;
+    cursor: pointer;
+    background-color: #82368c;
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.doer-video-button > span, .return-to-overview > span {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'big-john';
+}
+
+.return-to-overview:hover {
+    text-decoration: none;
+}
+
+.doer-wrapper {
+    height: 100%;
+    color: white;
+    font-family: 'big-john';
+}
+
+.doer-video-wrapper {
+    height: 90%;
+    color: white;
+    background-color: blue;
+}
+
+.data-row {
+    margin-bottom: 5%;
+    position: relative;
+}
+
+hr {
+    width: 100%;
+    background-color: white;
+    padding: 0; margin: 0;
+    border-top: 1px solid white;
+    position: absolute;
+    bottom: 0;
+}
+
+.doer-label {
+    text-align: left;
+    height: 50px;
+    /*background-color: red;*/
+}
+
+.doer-label > span {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    text-transform: uppercase;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+.doer-info {
+    height: 50%;
+    text-align: right;
+    height: 50px;
+    font-family: 'slim-joe';
+    word-break: break-word;
+}
+
+.doer-info > span {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    text-transform: uppercase;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+}
+
+.wat-doe-ik-label {
+    text-align: center !important;
+    width: 100%;
+    word-wrap: break-word;
+    word-break: break-word;
+}
+
+.wat-doe-ik {
+    text-align: center !important;
+    font-family: 'fira sans' !important;
+    word-wrap: break-word;
+    word-break: break-word;
+}

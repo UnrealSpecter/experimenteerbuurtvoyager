@@ -1,0 +1,379 @@
+
+body {
+    overflow: hidden;
+}
+
+/* large desktops and up ----------- */
+@media screen and (min-width: 1200px) {
+    .eventbrite, .kosten, .countdown {
+        height: 100%;
+        font-size: 2em;
+    }
+    .event-name {
+        font-size: 3em;
+        text-align: center;
+        padding-bottom: 1%;
+        min-height: 100px;
+        line-height: 150%;
+    }
+    .event-description {
+        font-size: 1em;
+        text-align: center;
+    }
+    .event-date, .arrows {
+        font-size: 2em;
+    }
+    .info-block {
+        display: flex;
+        align-items: center;
+    }
+
+    .initial-event-date {
+        font-size: 2em;
+    }
+    .initial-event-name {
+        font-size: 4em;
+    }
+}
+
+/* tablets/desktops and up ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .eventbrite, .kosten, .countdown {
+        height: 100%;
+        font-size: 1.5em;
+    }
+    .event-name {
+        font-size: 2em;
+        text-align: center;
+        min-height: 100px;
+        line-height: 150%;
+    }
+    .event-description {
+        font-size: 1em;
+        text-align: center;
+    }
+    .event-date, .arrows {
+        font-size: 1.5em;
+    }
+    .info-block {
+        display: flex;
+        align-items: center;
+    }
+    .initial-event-date {
+        font-size: 1.75em;
+    }
+    .initial-event-name {
+        font-size: 3em;
+    }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .eventbrite, .kosten, .countdown {
+        height: 100%;
+        font-size: 1.5em;
+    }
+    .event-name {
+        font-size: 2.5em;
+        text-align: center;
+        min-height: 50px;
+        line-height: 50px;
+    }
+    .event-description {
+        font-size: 1.5em;
+        text-align: center;
+    }
+    .event-date, .arrows {
+        font-size: 2em;
+    }
+    .info-block {
+        display: flex;
+        align-items: center;
+    }
+    .initial-event-date {
+        font-size: 1.5em;
+    }
+    .initial-event-name {
+        font-size: 2.5em;
+    }
+}
+
+/* Extra small devices (phones, up to 480px) */
+@media screen and (max-width: 767px) {
+    .eventbrite, .kosten, .countdown {
+        height: 100%;
+        font-size: 1em;
+    }
+
+    .event-name {
+        font-size: 1.5em;
+        min-height: 10%;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        min-height: 40px;
+        line-height: 40px;
+    }
+
+    .event-description {
+        font-size: 1.2em;
+        text-align: center;
+        font-family: 'open sans' !important;
+
+    }
+    .event-date {
+        padding-top: 2%;
+        font-size: 1.2em;
+        top: 1%;
+        text-align: center !important;
+    }
+    .name-desc-wrapper {
+        padding-top: 2%;
+        height: 100%;
+        position: relative;
+        top: 6%;
+    }
+
+    .initial-event-date {
+        font-size: 1.1em;
+        font-family: 'slim-joe' !important;
+        letter-spacing: 2px !important;
+    }
+
+    .initial-event-name {
+        letter-spacing: 2px !important;
+        font-size: 1.5em;
+    }
+
+    .info-block {
+        height: 80%;
+        top: 15% !important;
+    }
+
+    .misc-container {
+        position: fixed !important;
+    }
+    .arrows {
+        font-size: 1.75em !important;
+    }
+}
+
+
+
+/* font for the name*/
+@font-face {
+    font-family: overdose-sunrise;
+    src: url('/fonts/Overdose Sunrise.otf');
+}
+
+.more-info {
+    margin-top: 2%;
+    border: solid 1px white;
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+    color: white;
+    font-family: 'big-john';
+    cursor: pointer;
+    padding: 5px;
+    line-height: 50px;
+}
+
+.more-info:hover {
+    background-color: #e6332a;
+    border: solid 1px #e6332a;
+    -webkit-transition: all 250ms ease;
+    -moz-transition: all 250ms ease;
+    -ms-transition: all 250ms ease;
+    -o-transition: all 250ms ease;
+    transition: all 250ms ease;
+}
+
+/* event wrapper wraps all content*/
+.event-wrapper {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100vh;
+    /*margin-right: -70px;*/
+}
+.event-shadow {
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    opacity: 0.5;
+}
+
+.event-background {
+    z-index: 1;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    padding:0;
+}
+
+.misc-container {
+	height: 15%;
+    top: 0;
+    position: absolute;
+    padding: 0;
+    /*width: 100%;*/
+}
+
+/* eventbrite */
+.eventbrite {
+	display: table;
+	left: 0;
+	position: relative;
+	color: white;
+	text-align: center;
+    background-color: #e6332a;
+    z-index: 3;
+}
+
+.eventbrite > a {
+	text-decoration: none;
+	color: white;
+	/*font-size: 4em;*/
+	font-family: 'Fira Sans';
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+
+}
+
+/* kosten*/
+.kosten {
+	display: table;
+	left: 0;
+	position: relative;
+	color: white;
+	text-align: center;
+	background-color: #e6332a;
+    z-index: 3;
+}
+
+.kosten > span, .kosten > span.kosten-text {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+span.kosten-text {
+	font-family: 'Fira Sans';
+}
+
+/*countdown*/
+.countdown {
+	display: table;
+	left: 0;
+	position: relative;
+	color: white;
+	text-align: center;
+	background-color: #e6332a;
+    z-index: 3;
+
+}
+
+.countdown > .timer {
+	width: 100%;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+    font-family: 'Fira Sans';
+}
+
+/* event info wrapper holds defines the area that all the data is in*/
+.info-container {
+	height: 100%;
+}
+
+.initial-event-date {
+    /*font-style: italic;*/
+    letter-spacing: 10px;
+    text-transform: lowercase;
+    color: white;
+    font-family: 'slim-joe';
+    text-align: center;
+    color: white;
+    word-break: break-all;
+}
+
+.initial-event-name {
+    display: flex;
+    align-items: center;
+	letter-spacing: 10px;
+	text-transform: lowercase;
+    text-align: center;
+	color: white;
+	font-family: big-john;
+    word-wrap: break-word;
+    min-height: 100px;
+}
+
+.initial-info-block {
+     z-index: 10;
+     display: flex;
+     align-items: center;
+	 height: 100%;
+}
+
+.info-block, initial-info-block {
+    position: absolute;
+    height: 100%;
+	background-color: transparent;
+    z-index: 3;
+}
+
+.info-block {
+    top: 0;
+}
+
+.event-name {
+    display: flex;
+    align-items: center;
+	letter-spacing: 1px;
+	text-transform: lowercase;
+    text-align: center;
+	color: white;
+	font-family: big-john;
+    background-color: #e6332a;
+    /*word-wrap: break-word;*/
+    /*word-break: break-all;*/
+
+}
+
+.event-name > span {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.event-date {
+    letter-spacing: 10px;
+    text-transform: lowercase;
+    color: white;
+    font-family: 'slim-joe';
+    text-align: right;
+    word-break: break-all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.event-description {
+	font-family: slim-joe;
+	color: white;
+    word-wrap: break-word;
+    padding: 0;
+}
+
+.event-description > div {
+    min-height: 50px;
+	font-family: Varela+Round;
+	/*font-style: italic;*/
+}

@@ -1,0 +1,553 @@
+.final-menu-button {
+    background-color: #2fac66;
+}
+
+/* large desktops and up ----------- */
+@media screen and (min-width: 1200px) {
+
+    .main-container {
+        height: 90%;
+    }
+
+    .button-container {
+        height: 10%;
+        z-index: 10;
+        cursor: pointer;
+    }
+
+    .button {
+        font-size: 1.2em;
+    }
+
+    .video-toggle-button {
+        font-size: 1.4em;
+    }
+
+    .experimenteerbuurt-info, .organisatie-info-wrapper, .faq-info-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .experimenteerbuurt-description, .organisatie-description {
+        font-size: 1.75em;
+    }
+
+    .experimenteerbuurt-title, .organisatie-title, .faq-title {
+        font-size: 2em;
+    }
+
+    .swap-locatie-view {
+        font-size: 1.25em;
+    }
+    .google-maps-locatie {
+        top: 0;
+    }
+    .faq-question {
+        font-size: 3.5em;
+    }
+
+    .faq-answer {
+        font-size: 1.5em;
+    }
+
+    .sponsors {
+        height: 25%;
+    }
+}
+
+/* tablets/desktops and up ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .main-container {
+        height: 90%;
+    }
+
+    .button-container {
+        height: 10%;
+        z-index: 10;
+        cursor: pointer;
+    }
+
+    .button {
+        font-size: 0.9em;
+    }
+
+    .video-toggle-button {
+        font-size: 0.9em;
+    }
+
+    .experimenteerbuurt-info, .organisatie-info-wrapper, .faq-info-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .experimenteerbuurt-description, .organisatie-description, .faq-summary  {
+        font-size: 1.5em;
+    }
+
+    .experimenteerbuurt-title, .organisatie-title, .faq-title {
+        font-size: 2em;
+    }
+
+    .swap-locatie-view {
+        font-size: 1em;
+    }
+    .google-maps-locatie {
+        top: 0;
+    }
+    .faq-question {
+        font-size: 2em;
+    }
+
+    .faq-answer {
+        font-size: 1.5em;
+    }
+
+    .sponsors {
+        height: 20%;
+    }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .main-container {
+        height: 90%;
+    }
+
+    .button-container {
+        padding: 0 !important;
+        height: 10%;
+        z-index: 10;
+        cursor: pointer;
+    }
+
+    .button {
+        padding: 0 !important;
+        font-size: 0.9em;
+    }
+
+    .video-toggle-button {
+        font-size: 1.1em;
+    }
+
+    .organisatie-info-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column;
+    }
+
+    .experimenteerbuurt-info, .organisatie-info-wrapper, .faq-info-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .experimenteerbuurt-description, .organisatie-description, .faq-summary {
+        font-size: 1.4em;
+    }
+
+    .experimenteerbuurt-title, faq-title {
+        font-size: 1.25em;
+    }
+
+    .organisatie-title {
+        font-size: 1.5em;
+    }
+
+    .swap-locatie-view {
+        font-size: 1.15em;
+    }
+    .google-maps-locatie {
+        top: 0;
+    }
+    .faq-question {
+        font-size: 1.5em;
+    }
+
+    .faq-answer {
+        font-size: 1.4em;
+    }
+
+    .sponsors {
+        height: 15%;
+    }
+}
+
+/* Extra small devices (phones, up to 480px) */
+@media screen and (max-width: 767px) {
+
+    .main-container {
+        height: 85%;
+    }
+
+    .button-container {
+        height: 15%;
+        z-index: 10;
+        cursor: pointer;
+    }
+
+    .button {
+        padding: 0 !important;
+        height: 50% !important;
+        font-family: 'open sans' !important;
+        font-size: 0.8em;
+        letter-spacing: 2px;
+        border: none !important;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+
+    .button > span {
+        /*word-wrap: break-word;
+        overflow-wrap: break-word;*/
+    }
+
+    .selected {
+        border-bottom: 1px solid white !important;
+    }
+
+    .video-toggle-button {
+        font-size: 1em;
+    }
+
+    .experimenteerbuurt-info {
+        top: 10% !important;
+        height: 90%;
+        position: relative;
+    }
+    .experimenteerbuurt-description {
+        font-size: 1em;
+        font-family: 'open sans' !important;
+    }
+
+    .organisatie-description {
+        font-size: 1.1em;
+        font-family: 'open sans' !important;
+    }
+
+    .experimenteerbuurt-title {
+        font-size: 1em;
+    }
+
+    .faq-summary {
+        font-family: 'open sans' !important;
+        font-size: 1em;
+    }
+
+    .organisatie-title, .faq-title {
+        font-size: 1.4em;
+    }
+
+    .google-maps-locatie {
+        height: 90%;
+        bottom: 0 !important;
+    }
+
+    .faq-question {
+        font-size: 1.4em;
+    }
+
+    .faq-answer {
+        font-size: 1.1em;
+    }
+
+    .faq-nav-wrapper {
+        font-size: 2em !important;
+    }
+
+    .sponsors {
+        height: 30%;
+    }
+
+    .sponsor {
+        height: 50% !important;
+    }
+
+    .organisatie-info-container {
+        height: 70% !important;
+    }
+
+    .organisatie-info-wrapper {
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+        justify-content: center;
+    }
+
+}
+
+.carousel-slide {
+    border-top: solid white 1px;
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+    height: 100%;
+}
+
+.button {
+    font-family: 'big-john';
+    height: 100%;
+    display: table;
+    /*background-color: red;*/
+    text-align: center;
+    background-color: #2fac66;
+    color: #2fac66;
+    border-right: 1px white solid;
+    /*border-bottom: 1px white solid;*/
+}
+
+body {
+    overflow: hidden;
+}
+
+.button:hover {
+    /*background-color: #2fac66;*/
+
+}
+
+.selected {
+    border-bottom: 10px solid #97d5b2;
+}
+
+.button > span {
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+}
+
+.selected > span {
+    color: white !important;
+}
+
+
+/* wat is de experimenteerbuurt */
+.wat-is-de-experimenteerbuurt-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.video-toggle-button {
+    height: 10%;
+    background-color: #2fac66;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0%;
+    z-index: 100;
+    cursor: pointer;
+    font-family: 'big-john';
+}
+
+.video-toggle-button > span {
+    width: 100%;
+    text-align: center;
+}
+
+.experimeerbuurt-shadow {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #2fac66;
+    opacity: 0.8;
+}
+
+.experimenteerbuurt-video {
+    padding: 0;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    z-index: 1;
+}
+
+.experimenteerbuurt-info {
+    padding: 0;
+    position: absolute;
+    top: 0 !important;
+    height: 100%;
+    z-index: 0;
+}
+
+.experimenteerbuurt-title {
+    padding: 0 !important;
+    font-family: 'big-john';
+    padding: 1%;
+    margin-left: 1%;
+    color: white;
+    text-align: center;
+}
+
+.experimenteerbuurt-description {
+    font-family: 'fira-sans';
+    padding: 2%;
+    color: white;
+}
+
+/* Organisatie css */
+.prev-next-button-wrapper {
+    position: absolute;
+    bottom: 0;
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.organisatie-info-container {
+    height: 80%;
+}
+
+.organisatie-info-wrapper {
+    height: 80%;
+    position: absolute;
+    top: 0;
+}
+
+.organisatie-title {
+    color: white;
+    text-align: center;;
+    padding: 2%;
+    font-family: 'big-john';
+}
+
+.organisatie-description {
+    color: white;
+    text-align: left;
+    margin-bottom: 10px;
+    font-family: 'fira-sans';
+}
+
+.sponsors {
+    position: absolute;
+    bottom: 0;
+}
+
+.sponsor {
+    display: flex;
+    align-items: center;
+    /*background-color: white;*/
+    height: 100%;
+    padding: 0;
+}
+
+.sponsor > img {
+    width: 100%;
+    height: 100%;
+}
+
+.gemeente-emmen > img {
+    left: 5%;
+    position: relative;
+    width: 90%;
+    height: 50%;
+}
+
+/* locatie css */
+.swap-locatie-view {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: white;
+    z-index: 100;
+    background-color: #2fac66;
+    position: absolute;
+    bottom: 0;
+    height: 10%;
+    font-family: 'big-john';
+}
+
+.swap-locatie-view > span {
+    width: 100%;
+    text-align: center;
+}
+
+.google-maps-locatie {
+    display: none;
+    width: 100px;
+    height: 100px;
+    border: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+/* faq css*/
+.question > span {
+    font-size: 3em;
+    color: white;
+}
+
+.answer > span {
+    font-size: 2em;
+    font: family: Raleway;
+    color: white;
+}
+
+.faq-info-wrapper {
+    height: 50%;
+}
+
+.faq-title {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: 'big-john';
+}
+
+.faq-summary {
+    color: white;
+    text-align: left;
+    font-family: 'fira-sans';
+}
+
+.faq-wrapper {
+    height: 100%;
+    padding: 0;
+}
+
+.faq-nav-wrapper {
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 3em;
+    height: 20%;
+    background-color: transparent;
+}
+
+.faq-question-wrapper {
+    position: absolute;
+    left: 0;
+    background-color:transparent;
+    height: 100%;
+    top: 0%;
+    display: flex;
+    align-items: center;
+}
+
+.faq-question {
+    color: white;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.faq-question > span, .faq-answer > span {
+    width: 100%;
+    text-align: center;
+}
+
+.faq-answer {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+}

@@ -1,0 +1,131 @@
+
+.final-menu-button {
+    background-color: #2d2e83;
+}
+
+/* large desktops and up ----------- */
+@media screen and (min-width: 1200px) {
+
+    .wrapper {
+        top: 20%;
+    }
+    .inspiration-title {
+        font-size: 8em;
+    }
+    .inspiration-description {
+        font-size: 1.5em;
+    }
+
+    .fb-analoog-img {
+        left: 39%;
+        bottom: 2%;
+        height: 25%;
+        width: 20%;
+    }
+}
+
+/* tablets/desktops and up ----------- */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .wrapper {
+        top: 20%;
+    }
+    .inspiration-title {
+        font-size: 5em;
+    }
+    .inspiration-description {
+        font-size: 1.3em;
+    }
+
+    .fb-analoog-img {
+        left: 35%;
+        bottom: 5%;
+        height: 30%;
+    }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .wrapper {
+        top: 20%;
+    }
+    .inspiration-title {
+        font-size: 5em;
+    }
+    .inspiration-description {
+        font-size: 1.2em;
+        padding: 1%;
+    }
+    .fb-analoog-img {
+        left: 35%;
+        bottom: 5%;
+        height: 30%;
+    }
+
+}
+
+/* Extra small devices (phones, up to 480px) */
+@media screen and (max-width: 767px) {
+
+    .wrapper {
+        bottom: 10%;
+    }
+    .inspiration-title {
+        font-size: 2.5em;
+        padding: 3%;
+    }
+    .inspiration-description {
+        font-size: 1em;
+        padding: 0 2.5% 2.5% 2.5%;
+    }
+}
+
+.inspiration-background {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.wrapper {
+    position: absolute;
+}
+
+.inspiration-text-background {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-color: white;
+    opacity: 0.7;
+}
+
+.inspiration-title {
+    letter-spacing: 5px;
+    background-color: transparent;
+    border-radius: 4px;
+
+    color: #2d2e83;
+    text-align: center;
+    font-family: big-john;
+    margin: 0;
+}
+
+
+.inspiration-description {
+    letter-spacing: 2px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    text-align: center;
+    background-color: trasparent;
+    border-radius: 4px;
+    color: #2d2e83;
+    font-family: fira-sans, sans-serif;
+}
+
+.fb-analoog-img {
+    opacity: 0.8;
+    position: absolute;
+    z-index: 10;
+}

@@ -1,0 +1,151 @@
+/*<link href="https://fonts.googleapis.com/css?family=Montserrat"     rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Raleway"        rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Sansita"        rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Varela+Round"   rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Ultra"          rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Modak"          rel="stylesheet">*/
+
+body {
+	background: lightgrey;
+}
+
+.events {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	display: table;
+}
+
+.flip-items {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.agenda {
+	width: 500px;
+	/*background-color: white;*/
+	color: white;
+	text-align: center;
+}
+
+.date-and-time-container {
+	height: 100px;
+}
+
+.date-and-time {
+	line-height: 100px;
+	height: 100%;
+	/*border: 3px solid purple;*/
+	/*background: purple;*/
+	text-align: center;
+	/*margin-bottom: 15px;*/
+	font-size: 2.5em;
+	color: purple;
+}
+
+.event-block {
+	position: relative;
+	min-height: 400px;
+	border: solid 5px purple;
+	color: white;
+	text-align: center;
+	background: black;
+}
+
+.event-block-background-image {
+	height: 100%;
+	width: 100%;
+	z-index: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0.5;
+}
+
+/*.event-block:hover {
+	box-shadow: 12px 12px 20px 0px rgba(0,0,0,.3);
+	transition: box-shadow 0.3s ease-in-out;
+}*/
+
+.titel {
+	/*height: 100px;*/
+	/*line-height: 100px;*/
+	color: white;
+	text-align: center;
+	font-family: Varela+Round;
+	font-size: 2em;
+	font-weight: bold;
+	font-style: italic;
+	/*font-weight: bold;*/
+   /*letter-spacing: 5px;*/
+}
+
+.event-date {
+	color: white;
+	font-size: 3.5em;
+	font-family: Archivo+Black;
+}
+
+.description {
+	min-height: 50px;
+	color white;
+	text-align: center;
+	font-family: Raleway;
+	font-size: 1.25em;
+}
+
+.eventbrite {
+	display: table;
+	position: absolute;
+	height: 50px;
+	top: 0;
+	right: 0;
+	/*border-style: solid;
+	border-width: 0px 0px 5px 5px;*/
+	/*border-color: purple;*/
+	background: purple;
+}
+
+.time-till-event {
+	position: absolute;
+	bottom: 0;
+	/*border-style: solid;
+	border-width: 5px 5px 0px 5px;
+	border-color: purple;*/
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+div > a, div > a:hover {
+	text-decoration: none;
+	color: white;
+	font-size: 2em;
+	font-family: raleway;
+}
+
+.kosten-container {
+	height: 50px;
+}
+.kosten {
+	height: 100%;
+	line-height: 50px;
+	background: purple;
+	/*border-style: solid;
+	border-width: 0px 5px 5px 5px;
+	border-color: purple;*/
+	text-align: center;
+	font-size: 2em;
+	z-index: -2;
+}
+
+.kosten-text {
+	font-family: Raleway;
+}
+
+ .event-content-wrapper {
+	box-sizing: border-box;
+	min-height: 50%;
+}
