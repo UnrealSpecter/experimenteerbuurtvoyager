@@ -1,4 +1,4 @@
-var hidden = 'invisible';
+var invisible = 'invisible';
 var hamburger = $('.hamburger');
 var closebtn = $('.closebtn');
 var menuButtons;
@@ -9,6 +9,7 @@ $(document).ready(function(){
         hamburger.toggleClass('is-active');
         openNav();
         animateMenuItems();
+
     });
 
     closebtn.on('click', function(e){
@@ -32,18 +33,18 @@ function animateMenuItems() {
     //setInterval half a second and loop through categories and removeClass
     if(!animated){
         var interval = setInterval(function() {
-            $(menuButtons[index]).removeClass(hidden).addClass('animated fadeInDown');
+            $(menuButtons[index]).removeClass(invisible).addClass('animated fadeInDown');
             index++;
             if(index == menuButtons.length){
                 clearInterval(interval);
-                $('.experimenteerbuurt-logo').removeClass(hidden).removeClass('animated fadeOut').addClass('animated fadeInUp');
+                $('.experimenteerbuurt-logo').removeClass(invisible).removeClass('animated fadeOut').addClass('animated fadeInUp');
             }
         }, 150);
         animated = true;
     }
     else {
-        $('.experimenteerbuurt-logo').removeClass(hidden).removeClass('animated fadeOut').addClass('animated fadeIn');
-        $('.menu-button').removeClass(hidden).addClass('animated fadeIn');
+        $('.experimenteerbuurt-logo').removeClass(invisible).removeClass('animated fadeOut').addClass('animated fadeIn');
+        $('.menu-button').removeClass(invisible).addClass('animated fadeIn');
     }
 
 }
@@ -56,7 +57,7 @@ function openNav() {
 function closeNav() {
 
     $('.experimenteerbuurt-logo').removeClass('animated fadeInUp').removeClass('animated fadeIn').addClass('animated fadeOut');
-    $('.menu-button').addClass(hidden).removeClass('animated fadeInDown');
+    $('.menu-button').addClass(invisible).removeClass('animated fadeInDown');
 
     setTimeout(function(){
         document.getElementById('myNav').style.width = "0%";

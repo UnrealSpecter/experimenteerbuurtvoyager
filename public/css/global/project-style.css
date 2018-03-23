@@ -32,6 +32,23 @@
 .lato { font-family: lato; }
 .raleway { font-family: raleway; }
 
+/* LOADER  */
+.loader-title {
+    margin-top: 5%;
+    font-size: 4em;
+}
+
+.loader-image { -webkit-animation: rotation 1.75s infinite linear; }
+
+@-webkit-keyframes rotation {
+		from {
+            -webkit-transform: rotate(0deg);
+		}
+		to {
+            -webkit-transform: rotate(359deg);
+		}
+}
+
 /* MENU */
 .overlay {
     height: 100%;
@@ -58,10 +75,10 @@
     position: absolute;
     top: 0;
     left: 0;
-    height: 10%;
+    height: 13%;
     z-index: 10000;
     background-position: center;
-    background-size: 100% 100%;
+    background-size: auto;
     background-repeat: no-repeat;
 }
 

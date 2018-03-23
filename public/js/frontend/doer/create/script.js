@@ -5,3 +5,9 @@ $( document ).ready(function() {
     $('.menu-bg').addClass('doer-menu-bg');
 
 });
+
+function introAnimation(){
+    setTimeout(function(){
+        $('.create-wrapper').removeClass(hidden).addClass('animated slideInRight');
+    }, 250);
+}

@@ -1,3 +1,4 @@
+var hidden = 'd-none';
 $(document).ready(function(){
 
     //menu background update
@@ -12,6 +13,7 @@ $(document).ready(function(){
         }, 1000);
     }
 
+
     /* menu */
     //set correct button classes
     $('.button').on('click', function(){
@@ -20,13 +22,14 @@ $(document).ready(function(){
                  $(obj).removeClass('selected');
              }
         });
-        var number = $(this).data('number');
+        var slideNumber = $(this).data('number');
         $(this).addClass('selected');
         //stop video if a different slide is clicked
         if(!$(this).hasClass('experimenteerbuurt') && player){
             player.stopVideo();
         }
-        $('#carousel-example-generic').carousel(number);
+        $('#about-us-carousel').carousel(slideNumber);
+
     });
 
 
@@ -38,33 +41,33 @@ $(document).ready(function(){
     /* organisatie */
     $('.organisatie').one('click', function(){
         setTimeout(function(){
-            $('.organisatie-title').removeClass('hidden').addClass('animated fadeInLeft');
-            $('.organisatie-description').removeClass('hidden').addClass('animated fadeInDown');
+            $('.organisatie-title').removeClass(hidden).addClass('animated fadeInLeft');
+            $('.organisatie-description').removeClass(hidden).addClass('animated fadeInDown');
             animateSponsors();
         }, 750);
     });
 
     //next clicked
     $('.next-info').click(function(){
-        var current = $('.organisatie-info-wrapper').not('.hidden');
+        var current = $('.organisatie-info-wrapper').not('.' + hidden);
         var next = current.next().hasClass('organisatie-info-wrapper') ? current.next() : $('.organisatie-info-wrapper').first();
         current.removeClass('animated fadeInLeft').fadeOut(500, function(){
-            current.addClass('hidden');
+            current.addClass(hidden);
             current.removeAttr('style');
         });
-        next.removeClass('hidden').addClass('animated fadeInRight');
+        next.removeClass(hidden).addClass('animated fadeInRight');
         $('.organisation-count').html(next.data('id'));
     });
 
     //previous arrow click
     $('.previous-info').click(function(){
-        var current = $('.organisatie-info-wrapper').not('.hidden');
+        var current = $('.organisatie-info-wrapper').not('.' + hidden);
         var previous = current.prev().hasClass("organisatie-info-wrapper") ? current.prev() : $(".organisatie-info-wrapper").last();
         current.removeClass('animated fadeInRight').fadeOut(500, function(){
-            current.addClass('hidden');
+            current.addClass(hidden);
             current.removeAttr('style');
         });
-        previous.removeClass('hidden').addClass('animated fadeInLeft');
+        previous.removeClass(hidden).addClass('animated fadeInLeft');
         $('.organisation-count').html(previous.data('id'));
     });
 
@@ -95,33 +98,33 @@ $(document).ready(function(){
     /* Frequently asked questions */
     $('.faq').one('click', function(){
         setTimeout(function(){
-            $('.faq-title').removeClass('hidden').addClass('animated fadeInLeft');
-            $('.faq-summary').removeClass('hidden').addClass('animated fadeInDown');
-            $('.faq-wrapper').removeClass('hidden').addClass('animated slideInUp');
+            $('.faq-title').removeClass(hidden).addClass('animated fadeInLeft');
+            $('.faq-summary').removeClass(hidden).addClass('animated fadeInDown');
+            $('.faq-wrapper').removeClass(hidden).addClass('animated slideInUp');
         }, 750);
     });
 
     //next clicked
     $('.glyphicon-chevron-right').click(function(){
-        var current = $('.faq-question-wrapper').not('.hidden');
+        var current = $('.faq-question-wrapper').not('.' + hidden);
         var next = current.next().hasClass('faq-question-wrapper') ? current.next() : $('.faq-question-wrapper').first();
         current.removeClass('animated fadeInLeft').fadeOut(500, function(){
-            current.addClass('hidden');
+            current.addClass(hidden);
             current.removeAttr('style');
         });
-        next.removeClass('hidden').addClass('animated fadeInRight');
+        next.removeClass(hidden).addClass('animated fadeInRight');
         $('.faq-count').html(next.data('id'));
     });
 
     //previous arrow click
     $('.glyphicon-chevron-left').click(function(){
-        var current = $('.faq-question-wrapper').not('.hidden');
+        var current = $('.faq-question-wrapper').not('.' + hidden);
         var previous = current.prev().hasClass("faq-question-wrapper") ? current.prev() : $(".faq-question-wrapper").last();
         current.removeClass('animated fadeInLeft').fadeOut(500, function(){
-            current.addClass('hidden');
+            current.addClass(hidden);
             current.removeAttr('style');
         });
-        previous.removeClass('hidden').addClass('animated fadeInLeft');
+        previous.removeClass(hidden).addClass('animated fadeInLeft');
         $('.faq-count').html(previous.data('id'));
     });
 
@@ -132,14 +135,14 @@ function animateSponsors(){
     var sponsors = [];
     $('.sponsor').each(function(index, sponsor) {
         //add hidden to each main element while storing them so they can be uncovered
-        $(sponsor).addClass('hidden');
+        $(sponsor).addClass(hidden);
             sponsors.push(sponsor);
     });
     //set start index
     var index = 0;
     //setInterval half a second and loop through categories and removeClass
     var interval = setInterval(function() {
-      $(sponsors[index]).removeClass('hidden').addClass('animated slideInUp');
+      $(sponsors[index]).removeClass(hidden).addClass('animated slideInUp');
       if(index == sponsors.length - 1){
         clearInterval(interval);
       }
@@ -164,14 +167,14 @@ function toggleExperimenteerbuurtVideo() {
     }
 }
 
-function myMap() {
-    var myCenter = new google.maps.LatLng(52.783063,6.913960);
-    var mapCanvas = document.getElementById("map");
-    var mapOptions = {center: myCenter, zoom: 16};
-    var map = new google.maps.Map(mapCanvas, mapOptions);
-    var marker = new google.maps.Marker({position:myCenter});
-    marker.setMap(map);
-}
+// function myMap() {
+//     var myCenter = new google.maps.LatLng(52.783063,6.913960);
+//     var mapCanvas = document.getElementById("map");
+//     var mapOptions = {center: myCenter, zoom: 16};
+//     var map = new google.maps.Map(mapCanvas, mapOptions);
+//     var marker = new google.maps.Marker({position:myCenter});
+//     marker.setMap(map);
+// }
 
 
 // function toggleFaq(faq){

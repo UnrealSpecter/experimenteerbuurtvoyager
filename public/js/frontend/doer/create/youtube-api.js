@@ -30,12 +30,4 @@ function onPlayerReady(event) {
 //    the player should play for six seconds and then stop.
 function onPlayerStateChange(event) {
 
-    if (event.data == YT.PlayerState.ENDED) {
-        setTimeout(function(){
-            $('.doener-info-video').fadeOut(1500).css('z-index', '-10');
-            $('.doer-encouragement').css('z-index', '10').removeClass('invisible').addClass('animated fadeIn');
-        },500);
-
-    }
-
 }

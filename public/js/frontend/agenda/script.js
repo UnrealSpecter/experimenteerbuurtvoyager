@@ -1,3 +1,4 @@
+var hidden = 'd-none';
 $( document ).ready(function() {
 
     //menu background update
@@ -7,26 +8,26 @@ $( document ).ready(function() {
     //next clicked
     $('.next-event').click(function(){
 
-        var current = $('.event-wrapper').not('.hidden');
+        var current = $('.event-wrapper').not('.' + hidden);
         var next = current.next().hasClass("event-wrapper") ? current.next() : $(".event-wrapper").first();
 
         current.removeClass('animated fadeInRight').fadeOut(500, function(){
-            current.addClass('hidden');
+            current.addClass(hidden);
             current.removeAttr('style');
         });
-        next.removeClass('hidden').addClass('animated fadeInRight');
+        next.removeClass(hidden).addClass('animated fadeInRight');
 
     });
 
     //previous arrow click
     $('.previous-event').click(function(){
-        var current = $('.event-wrapper').not('.hidden');
+        var current = $('.event-wrapper').not('.' + hidden);
         var previous = current.prev().hasClass("event-wrapper") ? current.prev() : $(".event-wrapper").last();
         current.removeClass('animated fadeInRight').fadeOut(500, function(){
-            current.addClass('hidden');
+            current.addClass(hidden);
             current.removeAttr('style');
         });
-        previous.removeClass('hidden').addClass('animated fadeInRight');
+        previous.removeClass(hidden).addClass('animated fadeInRight');
     });
 
     //more info-block
@@ -37,7 +38,7 @@ $( document ).ready(function() {
             var detailedInfo = initial.next();
             initial.addClass('animated fadeOut').css('pointer-events', 'none');
             setTimeout(function(){
-                detailedInfo.removeClass('hidden').removeClass('animated fadeOut').addClass('animated fadeIn').css('pointer-events', 'auto');
+                detailedInfo.removeClass(hidden).removeClass('animated fadeOut').addClass('animated fadeIn').css('pointer-events', 'auto');
             }, 1000);
         }
         if(buttonMode == 'minder info'){
@@ -49,37 +50,6 @@ $( document ).ready(function() {
             }, 1000);
         }
     });
-
-    $('.fancy-list').one('DOMSubtreeModified',function(){});
-    // console.log($('.cd-dropdown').addClass('hallo'));
-    //
-    // $('.cd-dropdown > span > span').children().children().change(function(){
-    //
-    // });
-
-
-    // var events = $(".events").flipster({
-    //     buttons: true,
-    //     // style: 'flat',
-    //     // spacing: -0.25,
-    //     onItemSwitch: function(currentItem, previousItem){
-    //         animateEvent(currentItem);
-    //         // if($(previousItem).hasClass('flipster__item--past')){
-    //         //     resetEventAnimations(previousItem);
-    //         // }
-    //         resetEventAnimations(previousItem);
-    //         // console.log($(currentItem).attr('class'));
-    //     }
-    // });
-
-    //start flipster at next-event
-    //need a way to dynamically add this to the
-    // events.flipster('jump', $('.next-event'));
-
-    //trigger dropdown
-    $( '#cd-dropdown' ).dropdown( {
-		gutter : 1
-	} );
 
 });
 
@@ -102,18 +72,18 @@ function animateEvent(element){
         eventDate.addClass('animated fadeOut');
 
         setTimeout(function(){
-            if(dateAndTime.hasClass('hidden')){
-                dateAndTime.removeClass('hidden');
+            if(dateAndTime.hasClass(hidden)){
+                dateAndTime.removeClass(hidden);
                 // eventbrite.removeClass('hidden');
                 // description.removeClass('hidden');
                 // countdown.removeClass('hidden');
             }
 
-            dateAndTime.removeClass('hidden').removeClass('fadeOutDown').addClass('animated fadeInUp');
-            kosten.removeClass('hidden slideOutUp').addClass('animated slideInDown');;
+            dateAndTime.removeClass(hidden).removeClass('fadeOutDown').addClass('animated fadeInUp');
+            kosten.removeClass(hidden + ' slideOutUp').addClass('animated slideInDown');;
             kosten.find('.kosten-text').animate({opacity: '1'}, 2500);
-            eventbrite.removeClass('hidden slideOutLeft').addClass('animated slideInLeft');
-            countdown.removeClass('hidden fadeOut').addClass('animated fadeIn');
+            eventbrite.removeClass(hidden + ' slideOutLeft').addClass('animated slideInLeft');
+            countdown.removeClass(hidden + ' fadeOut').addClass('animated fadeIn');
 
             // eventDate.addClass('hidden');
             // description.addClass('animated fadeIn');
@@ -142,7 +112,7 @@ function resetEventAnimations(event){
         setTimeout(function(){
             // dateAndTime.addClass('hidden');
             // description.addClass('hidden');
-            eventDate.removeClass('hidden').removeClass('fadeOut').addClass('fadeIn');
+            eventDate.removeClass(hidden).removeClass('fadeOut').addClass('fadeIn');
             // eventBrite.addClass('hidden');
             // countdown.addClass('hidden');
         }, 1500);
