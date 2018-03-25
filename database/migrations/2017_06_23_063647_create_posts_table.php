@@ -20,6 +20,7 @@ class CreatePostsTable extends Migration
             $table->date('post_date');
             $table->string('link')->nullable();
             $table->string('image')->nullable();
+            $table->string('youtube_embed')->nullable();
             $table->timestamps();
         });
     }

@@ -41,13 +41,13 @@ function sethtml(element, days, hours, minutes, seconds, total)
         var eventbrite = element.parent().siblings('.eventbrite');
         var kosten = element.parent().siblings('.kosten');
         if(eventbrite){
-            eventbrite.addClass('hidden');
+            eventbrite.addClass(hidden);
         }
         if(kosten) {
-            kosten.addClass('hidden');
+            kosten.addClass(hidden);
         }
-        element.parent().addClass('hidden');
-        element.parent().parent().addClass('hidden');
+        element.parent().addClass(hidden);
+        element.parent().parent().addClass(hidden);
         element.parent().parent().next().find('.event-background').css('height', '100%');
 
     }

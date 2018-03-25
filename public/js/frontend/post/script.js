@@ -5,3 +5,7 @@ $(document).ready(function(){
     $('.menu-bg').addClass('nieuws-menu-bg');
 
 });
+
+function introAnimation(){
+    $('.posts-wrapper').removeClass(hidden).addClass('animated fadeInRight');
+}

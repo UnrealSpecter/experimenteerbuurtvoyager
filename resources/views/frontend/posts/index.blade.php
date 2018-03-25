@@ -15,17 +15,18 @@
 @section('content')
 <img class="nieuws-background" src="{{ URL::asset('/images/news/news-background.jpg') }}">
 
-<div class="posts-wrapper animated fadeInRight col-lg-10 col-lg-offset-2 col-md-10 col-md-offset-2 col-sm-12 col-xs-12">
+<div class="col-10 news-title big-john flex-r align-v justify-c">Nieuw(s)</div>
 
-    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 news-title-wrapper">
-        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 news-title">Nieuw(s)</div>
-    </div>
-
+<div class="posts-wrapper d-none  flex-c align-v col-lg-10 col-lg-offset-2 col-md-10 col-md-offset-2 col-sm-12 col-xs-12" style="top: 10%; position: absolute; right: 0; margin-top: 3%;">
     @foreach($posts as $post)
         @if($post->image)
         <div class="post col-lg-8 col-md-9 col-sm-12 col-xs-12 row">
             <div class="col-lg-4 col-md-4 col-sm-4 hidden-xs img-holder">
-                <img class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img-responsive news-image" src="/uploads/news/{{ $post->image }}" alt="{{ $post->title }} afbeelding"/>
+                @if($post->youtube_embed)
+                <iframe width="100%" height="100%" src="{{ $post->youtube_embed }}" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                @else
+                <img class="col-lg-12 col-md-12 col-sm-12 col-xs-12 img-responsive news-image" src="/storage/{{ $post->image }}" alt="{{ $post->title }} afbeelding"/>
+                @endif
             </div>
             <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
                 @if($post->link)

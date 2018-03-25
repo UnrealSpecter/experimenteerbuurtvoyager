@@ -105,26 +105,26 @@ $(document).ready(function(){
     });
 
     //next clicked
-    $('.glyphicon-chevron-right').click(function(){
+    $('.next-question').click(function(){
         var current = $('.faq-question-wrapper').not('.' + hidden);
         var next = current.next().hasClass('faq-question-wrapper') ? current.next() : $('.faq-question-wrapper').first();
-        current.removeClass('animated fadeInLeft').fadeOut(500, function(){
+        current.fadeOut(500, function(){
             current.addClass(hidden);
             current.removeAttr('style');
         });
-        next.removeClass(hidden).addClass('animated fadeInRight');
+        next.removeClass(hidden).fadeIn(500);
         $('.faq-count').html(next.data('id'));
     });
 
     //previous arrow click
-    $('.glyphicon-chevron-left').click(function(){
+    $('.prev-question').click(function(){
         var current = $('.faq-question-wrapper').not('.' + hidden);
         var previous = current.prev().hasClass("faq-question-wrapper") ? current.prev() : $(".faq-question-wrapper").last();
-        current.removeClass('animated fadeInLeft').fadeOut(500, function(){
+        current.fadeOut(500, function(){
             current.addClass(hidden);
             current.removeAttr('style');
         });
-        previous.removeClass(hidden).addClass('animated fadeInLeft');
+        previous.removeClass(hidden).fadeIn(500);
         $('.faq-count').html(previous.data('id'));
     });
 

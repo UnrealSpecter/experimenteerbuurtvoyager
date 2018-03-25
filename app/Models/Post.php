@@ -8,5 +8,5 @@ class Post extends Model
 {
     protected $table = 'posts';
 
-    protected $fillable = ['title','content', 'link', 'image', 'post_date'];
+    protected $fillable = ['title','content', 'link', 'image', 'youtube_embed', 'post_date'];
 }

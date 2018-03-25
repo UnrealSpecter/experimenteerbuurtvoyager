@@ -1,4 +1,9 @@
 var hidden = 'd-none';
+
+function introAnimation(){
+    $('.agenda-wrapper').removeClass(hidden).addClass('animated slideInRight');
+}
+
 $( document ).ready(function() {
 
     //menu background update

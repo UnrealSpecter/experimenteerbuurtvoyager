@@ -10,6 +10,7 @@
         <!-- bootstrap css -->
         <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/global/bootstrap.min.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/global/animate.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ URL::asset('plugins/hover/css/hover-min.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/global/style.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/frontend/home/style.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/global/general-style.css') }}">
@@ -26,12 +27,12 @@
             <div class="row">
                 <!-- nav -->
                 <div class="home-nav animated fadeInDown col-lg-12 no-padding-margin">
-                    <a class="col-lg-2 col-md-2 col-sm-4 col-xs-6 no-padding-margin flex-r align-v justify-c big-john experimenteerbuurt" href="/wat-is-de-experimenteerbuurt">Experimenteerbuurt?</a>
-                    <a class="col-lg-2 col-md-2 col-sm-4 col-xs-6 no-padding-margin flex-r align-v justify-c big-john nieuws" href="/nieuws">Nieuw(s)</a>
-                    <a class="col-lg-2 col-md-2 col-sm-4 col-xs-6 no-padding-margin flex-r align-v justify-c big-john agenda" href="/agenda">Wat is er te doen?</a>
-                    <a class="col-lg-2 col-md-2 col-sm-4 col-xs-6 no-padding-margin flex-r align-v justify-c big-john inspiration" href="/inspiratie">Inspiratie</a>
-                    <a class="col-lg-2 col-md-2 col-sm-4 col-xs-6 no-padding-margin flex-r align-v justify-c big-john doeners" href="/doener/create">Doe mee!</a>
-                    <a class="col-lg-2 col-md-2 col-sm-4 col-xs-6 no-padding-margin flex-r align-v justify-c big-john contact" href="/contact">Contact</a>
+                    <a class="hvr-float col-lg-2 col-md-2 col-sm-4 col-xs-6 no-padding-margin flex-r align-v justify-c big-john experimenteerbuurt" href="/wat-is-de-experimenteerbuurt">Experimenteerbuurt?</a>
+                    <a class="hvr-float col-lg-2 col-md-2 col-sm-4 col-xs-6 no-padding-margin flex-r align-v justify-c big-john nieuws" href="/nieuws">Nieuw(s)</a>
+                    <a class="hvr-float col-lg-2 col-md-2 col-sm-4 col-xs-6 no-padding-margin flex-r align-v justify-c big-john agenda" href="/agenda">Wat is er te doen?</a>
+                    <a class="hvr-float col-lg-2 col-md-2 col-sm-4 col-xs-6 no-padding-margin flex-r align-v justify-c big-john inspiration" href="/inspiratie">Inspiratie</a>
+                    <a class="hvr-float col-lg-2 col-md-2 col-sm-4 col-xs-6 no-padding-margin flex-r align-v justify-c big-john doeners" href="/doener/create">Doe mee!</a>
+                    <a class="hvr-float col-lg-2 col-md-2 col-sm-4 col-xs-6 no-padding-margin flex-r align-v justify-c big-john contact" href="/contact">Contact</a>
                 </div>
             </div>
         </div>
