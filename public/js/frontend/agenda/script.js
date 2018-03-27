@@ -12,7 +12,7 @@ $( document ).ready(function() {
 
     //next clicked
     $('.next-event').click(function(){
-
+        
         var current = $('.event-wrapper').not('.' + hidden);
         var next = current.next().hasClass("event-wrapper") ? current.next() : $(".event-wrapper").first();
 

@@ -57,6 +57,6 @@
 @endsection
 
 @section('js')
-    <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us17.list-manage.com","uuid":"307e7898b2f7cee1d865ffd9e","lid":"cb1410e538"}) })</script>
+    <!-- <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us17.list-manage.com","uuid":"307e7898b2f7cee1d865ffd9e","lid":"cb1410e538"}) })</script> -->
     <script src="{{ asset('/js/frontend/post/script.js') }}"></script>
 @endsection

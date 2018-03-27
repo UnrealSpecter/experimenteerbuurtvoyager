@@ -5,6 +5,10 @@
 /* large desktops and up ----------- */
 @media screen and (min-width: 1200px) {
 
+    .locatie-tekst {
+        font-size: 1.5em;
+    }
+
     .main-container {
         height: 90%;
     }
@@ -34,7 +38,7 @@
     }
 
     .experimenteerbuurt-title, .organisatie-title, .faq-title {
-        font-size: 2em;
+        font-size: 1.75em;
     }
 
     .swap-locatie-view {
@@ -58,6 +62,10 @@
 
 /* tablets/desktops and up ----------- */
 @media (min-width: 992px) and (max-width: 1199px) {
+
+    .locatie-tekst {
+        font-size: 1.75em;
+    }
 
     .main-container {
         height: 90%;
@@ -112,6 +120,10 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
+
+    locatie-tekst {
+        font-size: 1.5em;
+    }
 
     .main-container {
         height: 90%;
@@ -351,6 +363,7 @@ body {
 .experimeerbuurt-shadow {
     position: absolute;
     top: 0;
+    right: 0;
     height: 100%;
     width: 100%;
     background-color: #2fac66;

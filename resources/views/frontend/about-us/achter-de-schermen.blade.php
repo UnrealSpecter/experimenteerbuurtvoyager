@@ -5,7 +5,7 @@
             <h1 class="organisatie-title d-none">Stichting experimenteerbuurt</h1>
             <p class="organisatie-description d-none"> Diem Do en Alya Assen zijn initiatiefnemers en aanjagers van de Experimenteerbuurt. Eind 2016 is door hen de Stichting Experimenteerbuurt opgericht. Deze stichting heeft tot doel om ‘gebiedsontwikkeling op een vernieuwende manier aan te jagen’.</p>
         </div>
-        <div class="col-lg-12 organisatie-info-wrapper d-none" data-id="2">
+        <div class="col-lg-12 organisatie-info-wrapper invisible" data-id="2">
             <h1 class="organisatie-title d-none">Hoofdpartners in het proces van gebiedsontwikkeling</h1>
             <p class="organisatie-description d-none">Woningstichting Domesta, gemeente Emmen en Koenen Bouw zijn onmisbare partners. Zij steunen het proces door sparringspartner te zijn en door voor het eerste jaar een bedrag beschikbaar te stellen.</p>
         </div>

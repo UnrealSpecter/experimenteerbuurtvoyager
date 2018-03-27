@@ -1,4 +1,5 @@
 var hidden = 'd-none';
+var invisible = 'invisible';
 
 function introAnimation(){
     $('.about-us-wrapper').addClass('animated fadeInRight');
@@ -53,13 +54,10 @@ $(document).ready(function(){
 
     //next clicked
     $('.next-info').click(function(){
-        var current = $('.organisatie-info-wrapper').not('.' + hidden);
+        var current = $('.organisatie-info-wrapper').not('.' + invisible);
         var next = current.next().hasClass('organisatie-info-wrapper') ? current.next() : $('.organisatie-info-wrapper').first();
-        current.removeClass('animated fadeInLeft').fadeOut(500, function(){
-            current.addClass(hidden);
-            current.removeAttr('style');
-        });
-        next.removeClass(hidden).addClass('animated fadeInRight');
+        current.addClass(invisible).removeClass('animated fadeIn');
+        next.removeClass(invisible).addClass('animated fadeIn');
         $('.organisation-count').html(next.data('id'));
     });
 
@@ -67,11 +65,8 @@ $(document).ready(function(){
     $('.previous-info').click(function(){
         var current = $('.organisatie-info-wrapper').not('.' + hidden);
         var previous = current.prev().hasClass("organisatie-info-wrapper") ? current.prev() : $(".organisatie-info-wrapper").last();
-        current.removeClass('animated fadeInRight').fadeOut(500, function(){
-            current.addClass(hidden);
-            current.removeAttr('style');
-        });
-        previous.removeClass(hidden).addClass('animated fadeInLeft');
+        current.addClass(invisible).removeClass('animated fadeIn');
+        previous.removeClass(invisible).addClass('animated fadeIn');
         $('.organisation-count').html(previous.data('id'));
     });
 
@@ -108,7 +103,7 @@ $(document).ready(function(){
         }, 750);
     });
 
-    var invisible = 'invisible';
+
     //next clicked
     $('.next-question').click(function(){
         var current = $('.faq-question-wrapper').not('.' + invisible);

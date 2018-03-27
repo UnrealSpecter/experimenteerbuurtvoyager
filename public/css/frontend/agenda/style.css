@@ -3,8 +3,8 @@ body {
     overflow: hidden;
 }
 
-/* large desktops and up ----------- */
-@media screen and (min-width: 1200px) {
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
     .eventbrite, .kosten, .countdown {
         height: 100%;
         font-size: 2em;
@@ -36,8 +36,8 @@ body {
     }
 }
 
-/* tablets/desktops and up ----------- */
-@media (min-width: 992px) and (max-width: 1199px) {
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
     .eventbrite, .kosten, .countdown {
         height: 100%;
         font-size: 1.5em;
@@ -67,34 +67,120 @@ body {
     }
 }
 
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991px) {
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
     .eventbrite, .kosten, .countdown {
         height: 100%;
-        font-size: 1.5em;
+        font-size: 1em;
     }
+
     .event-name {
-        font-size: 2.5em;
-        text-align: center;
-        min-height: 50px;
-        line-height: 50px;
+        font-size: 1.5em;
+        min-height: 10%;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        min-height: 40px;
+        line-height: 40px;
     }
+
     .event-description {
-        font-size: 1.5em;
+        font-size: 1.2em;
         text-align: center;
+        font-family: 'open sans' !important;
+
     }
-    .event-date, .arrows {
-        font-size: 2em;
+    .event-date {
+        padding-top: 2%;
+        font-size: 1.2em;
+        top: 1%;
+        text-align: center !important;
     }
-    .info-block {
-        display: flex;
-        align-items: center;
+    .name-desc-wrapper {
+        padding-top: 2%;
+        height: 100%;
+        position: relative;
+        top: 6%;
     }
+
     .initial-event-date {
+        font-size: 1.1em;
+        font-family: 'slim-joe' !important;
+        letter-spacing: 2px !important;
+    }
+
+    .initial-event-name {
+        letter-spacing: 2px !important;
         font-size: 1.5em;
     }
+
+    .info-block {
+        height: 80%;
+        top: 15% !important;
+    }
+
+    .misc-container {
+        position: fixed !important;
+    }
+    .arrows {
+        font-size: 1.75em !important;
+    }
+}
+
+@media (min-width: 576px) {
+    .eventbrite, .kosten, .countdown {
+        height: 100%;
+        font-size: 1em;
+    }
+
+    .event-name {
+        font-size: 1.5em;
+        min-height: 10%;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        min-height: 40px;
+        line-height: 40px;
+    }
+
+    .event-description {
+        font-size: 1.2em;
+        text-align: center;
+        font-family: 'open sans' !important;
+
+    }
+    .event-date {
+        padding-top: 2%;
+        font-size: 1.2em;
+        top: 1%;
+        text-align: center !important;
+    }
+    .name-desc-wrapper {
+        padding-top: 2%;
+        height: 100%;
+        position: relative;
+        top: 6%;
+    }
+
+    .initial-event-date {
+        font-size: 1.1em;
+        font-family: 'slim-joe' !important;
+        letter-spacing: 2px !important;
+    }
+
     .initial-event-name {
-        font-size: 2.5em;
+        letter-spacing: 2px !important;
+        font-size: 1.5em;
+    }
+
+    .info-block {
+        height: 80%;
+        top: 15% !important;
+    }
+
+    .misc-container {
+        position: fixed !important;
+    }
+    .arrows {
+        font-size: 1.75em !important;
     }
 }
 
@@ -155,6 +241,7 @@ body {
     .arrows {
         font-size: 1.75em !important;
     }
+
 }
 
 

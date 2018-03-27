@@ -223,6 +223,17 @@ class PostsTableSeeder extends Seeder
                 'created_at' => '2017-07-25',
                 'updated_at' => '2017-07-25',
             ),
+            array (
+                'id' => 32,
+                'title' => 'Experimenteerbuurt moet op zoek naar een nieuwe locatie',
+                'content' => 'Emmen – Een domper voor de organisatie van de Experimenteerbuurt. De door hun beoogde plek op het voormalige terrein van Camping Emmen langs de Boermarkeweg blijkt geen haalbare kaart te zijn. De initiatiefnemers moeten op zoek naar een nieuwe plek.',
+                'post_date' => '2018-03-27',
+                'link' => 'http://www.emmen.nu/nieuws/emmen/532555/experimenteerbuurt-moet-op-zoek-naar-een-nieuwe-locatie.html',
+                'image' => 'posts/March2018/dvNDU8J1xT7wUeLhAWo0.jpg',
+                'youtube_embed' => '',
+                'created_at' => '2017-07-25',
+                'updated_at' => '2017-07-25',
+            ),
         ));
 
 
