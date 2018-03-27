@@ -1,889 +1,840 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use TCG\Voyager\Models\DataRow;
-use TCG\Voyager\Models\DataType;
 
 class DataRowsTableSeeder extends Seeder
 {
+
     /**
-     * Auto generated seed file.
+     * Auto generated seed file
+     *
+     * @return void
      */
     public function run()
     {
-        $postDataType = DataType::where('slug', 'posts')->firstOrFail();
-        $userDataType = DataType::where('slug', 'users')->firstOrFail();
-        $menuDataType = DataType::where('slug', 'menus')->firstOrFail();
-        $roleDataType = DataType::where('slug', 'roles')->firstOrFail();
-        $contactDataType = DataType::where('slug', 'contacts')->firstOrFail();
-        $eventDataType = DataType::where('slug', 'events')->firstOrFail();
-        $faqDataType = DataType::where('slug', 'faq')->firstOrFail();
+        
 
-        $dataRow = $this->dataRow($faqDataType, 'id');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'number',
+        \DB::table('data_rows')->delete();
+        
+        \DB::table('data_rows')->insert(array (
+            0 => 
+            array (
+                'id' => 1,
+                'data_type_id' => 3,
+                'field' => 'id',
+                'type' => 'number',
                 'display_name' => 'ID',
-                'required'     => 1,
-                'browse'       => 0,
-                'read'         => 0,
-                'edit'         => 0,
-                'add'          => 0,
-                'delete'       => 0,
-                'details'      => '',
-                'order'        => 1,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($faqDataType, 'question');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'text',
+                'required' => 1,
+                'browse' => 0,
+                'read' => 0,
+                'edit' => 0,
+                'add' => 0,
+                'delete' => 0,
+                'details' => '',
+                'order' => 1,
+            ),
+            1 => 
+            array (
+                'id' => 2,
+                'data_type_id' => 3,
+                'field' => 'question',
+                'type' => 'text',
                 'display_name' => 'Question',
-                'required'     => 1,
-                'browse'       => 1,
-                'read'         => 1,
-                'edit'         => 1,
-                'add'          => 1,
-                'delete'       => 1,
-                'details'      => '',
-                'order'        => 2,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($faqDataType, 'question');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'text',
-                'display_name' => 'Question',
-                'required'     => 1,
-                'browse'       => 1,
-                'read'         => 1,
-                'edit'         => 1,
-                'add'          => 1,
-                'delete'       => 1,
-                'details'      => '',
-                'order'        => 3,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($faqDataType, 'answer');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'text',
+                'required' => 1,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '',
+                'order' => 2,
+            ),
+            2 => 
+            array (
+                'id' => 3,
+                'data_type_id' => 3,
+                'field' => 'answer',
+                'type' => 'text',
                 'display_name' => 'Answer',
-                'required'     => 1,
-                'browse'       => 1,
-                'read'         => 1,
-                'edit'         => 1,
-                'add'          => 1,
-                'delete'       => 1,
-                'details'      => '',
-                'order'        => 4,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($faqDataType, 'created_at');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'timestamp',
+                'required' => 1,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '',
+                'order' => 4,
+            ),
+            3 => 
+            array (
+                'id' => 4,
+                'data_type_id' => 3,
+                'field' => 'created_at',
+                'type' => 'timestamp',
                 'display_name' => 'created_at',
-                'required'     => 0,
-                'browse'       => 0,
-                'read'         => 0,
-                'edit'         => 0,
-                'add'          => 0,
-                'delete'       => 0,
-                'details'      => '',
-                'order'        => 5,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($faqDataType, 'updated_at');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'timestamp',
+                'required' => 0,
+                'browse' => 0,
+                'read' => 0,
+                'edit' => 0,
+                'add' => 0,
+                'delete' => 0,
+                'details' => '',
+                'order' => 5,
+            ),
+            4 => 
+            array (
+                'id' => 5,
+                'data_type_id' => 3,
+                'field' => 'updated_at',
+                'type' => 'timestamp',
                 'display_name' => 'updated_at',
-                'required'     => 0,
-                'browse'       => 0,
-                'read'         => 0,
-                'edit'         => 0,
-                'add'          => 0,
-                'delete'       => 0,
-                'details'      => '',
-                'order'        => 6,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($postDataType, 'id');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'number',
+                'required' => 0,
+                'browse' => 0,
+                'read' => 0,
+                'edit' => 0,
+                'add' => 0,
+                'delete' => 0,
+                'details' => '',
+                'order' => 6,
+            ),
+            5 => 
+            array (
+                'id' => 6,
+                'data_type_id' => 1,
+                'field' => 'id',
+                'type' => 'number',
                 'display_name' => 'ID',
-                'required'     => 1,
-                'browse'       => 0,
-                'read'         => 0,
-                'edit'         => 0,
-                'add'          => 0,
-                'delete'       => 0,
-                'details'      => '',
-                'order'        => 1,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($postDataType, 'title');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'text',
+                'required' => 1,
+                'browse' => 0,
+                'read' => 0,
+                'edit' => 0,
+                'add' => 0,
+                'delete' => 0,
+                'details' => NULL,
+                'order' => 1,
+            ),
+            6 => 
+            array (
+                'id' => 7,
+                'data_type_id' => 1,
+                'field' => 'title',
+                'type' => 'text',
                 'display_name' => 'Title',
-                'required'     => 1,
-                'browse'       => 1,
-                'read'         => 1,
-                'edit'         => 1,
-                'add'          => 1,
-                'delete'       => 1,
-                'details'      => '',
-                'order'        => 2,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($postDataType, 'content');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'text',
+                'required' => 1,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => NULL,
+                'order' => 2,
+            ),
+            7 => 
+            array (
+                'id' => 8,
+                'data_type_id' => 1,
+                'field' => 'content',
+                'type' => 'text',
                 'display_name' => 'Content',
-                'required'     => 1,
-                'browse'       => 1,
-                'read'         => 1,
-                'edit'         => 1,
-                'add'          => 1,
-                'delete'       => 1,
-                'details'      => '',
-                'order'        => 3,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($postDataType, 'link');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'text',
+                'required' => 1,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => NULL,
+                'order' => 3,
+            ),
+            8 => 
+            array (
+                'id' => 9,
+                'data_type_id' => 1,
+                'field' => 'link',
+                'type' => 'text',
                 'display_name' => 'Link',
-                'required'     => 1,
-                'browse'       => 1,
-                'read'         => 1,
-                'edit'         => 1,
-                'add'          => 1,
-                'delete'       => 1,
-                'details'      => '',
-                'order'        => 4,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($postDataType, 'image');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'image',
+                'required' => 0,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => NULL,
+                'order' => 4,
+            ),
+            9 => 
+            array (
+                'id' => 10,
+                'data_type_id' => 1,
+                'field' => 'image',
+                'type' => 'image',
                 'display_name' => 'Image',
-                'required'     => 1,
-                'browse'       => 1,
-                'read'         => 1,
-                'edit'         => 1,
-                'add'          => 1,
-                'delete'       => 1,
-                'details'      => '',
-                'order'        => 5,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($postDataType, 'post_date');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'text',
+                'required' => 0,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => NULL,
+                'order' => 5,
+            ),
+            10 => 
+            array (
+                'id' => 11,
+                'data_type_id' => 1,
+                'field' => 'post_date',
+                'type' => 'text',
                 'display_name' => 'Post Date',
-                'required'     => 1,
-                'browse'       => 1,
-                'read'         => 1,
-                'edit'         => 1,
-                'add'          => 1,
-                'delete'       => 1,
-                'details'      => '',
-                'order'        => 6,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($postDataType, 'created_at');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'timestamp',
+                'required' => 1,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => NULL,
+                'order' => 6,
+            ),
+            11 => 
+            array (
+                'id' => 12,
+                'data_type_id' => 1,
+                'field' => 'created_at',
+                'type' => 'timestamp',
                 'display_name' => 'created_at',
-                'required'     => 0,
-                'browse'       => 0,
-                'read'         => 0,
-                'edit'         => 0,
-                'add'          => 0,
-                'delete'       => 0,
-                'details'      => '',
-                'order'        => 7,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($postDataType, 'updated_at');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'timestamp',
+                'required' => 0,
+                'browse' => 0,
+                'read' => 0,
+                'edit' => 0,
+                'add' => 0,
+                'delete' => 0,
+                'details' => NULL,
+                'order' => 7,
+            ),
+            12 => 
+            array (
+                'id' => 13,
+                'data_type_id' => 1,
+                'field' => 'updated_at',
+                'type' => 'timestamp',
                 'display_name' => 'updated_at',
-                'required'     => 0,
-                'browse'       => 0,
-                'read'         => 0,
-                'edit'         => 0,
-                'add'          => 0,
-                'delete'       => 0,
-                'details'      => '',
-                'order'        => 8,
-            ])->save();
-        }
-
-
-        $dataRow = $this->dataRow($userDataType, 'id');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'number',
+                'required' => 0,
+                'browse' => 0,
+                'read' => 0,
+                'edit' => 0,
+                'add' => 0,
+                'delete' => 0,
+                'details' => NULL,
+                'order' => 8,
+            ),
+            13 => 
+            array (
+                'id' => 14,
+                'data_type_id' => 5,
+                'field' => 'id',
+                'type' => 'number',
                 'display_name' => 'id',
-                'required'     => 1,
-                'browse'       => 0,
-                'read'         => 0,
-                'edit'         => 0,
-                'add'          => 0,
-                'delete'       => 0,
-                'details'      => '',
-                'order'        => 1,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($userDataType, 'name');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'text',
+                'required' => 1,
+                'browse' => 0,
+                'read' => 0,
+                'edit' => 0,
+                'add' => 0,
+                'delete' => 0,
+                'details' => '',
+                'order' => 1,
+            ),
+            14 => 
+            array (
+                'id' => 15,
+                'data_type_id' => 5,
+                'field' => 'name',
+                'type' => 'text',
                 'display_name' => 'name',
-                'required'     => 1,
-                'browse'       => 1,
-                'read'         => 1,
-                'edit'         => 1,
-                'add'          => 1,
-                'delete'       => 1,
-                'details'      => '',
-                'order'        => 2,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($userDataType, 'email');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'text',
+                'required' => 1,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '',
+                'order' => 2,
+            ),
+            15 => 
+            array (
+                'id' => 16,
+                'data_type_id' => 5,
+                'field' => 'email',
+                'type' => 'text',
                 'display_name' => 'email',
-                'required'     => 1,
-                'browse'       => 1,
-                'read'         => 1,
-                'edit'         => 1,
-                'add'          => 1,
-                'delete'       => 1,
-                'details'      => '',
-                'order'        => 3,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($userDataType, 'password');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'password',
+                'required' => 1,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '',
+                'order' => 3,
+            ),
+            16 => 
+            array (
+                'id' => 17,
+                'data_type_id' => 5,
+                'field' => 'password',
+                'type' => 'password',
                 'display_name' => 'password',
-                'required'     => 0,
-                'browse'       => 0,
-                'read'         => 0,
-                'edit'         => 1,
-                'add'          => 1,
-                'delete'       => 0,
-                'details'      => '',
-                'order'        => 4,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($userDataType, 'user_belongsto_role_relationship');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'relationship',
+                'required' => 0,
+                'browse' => 0,
+                'read' => 0,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 0,
+                'details' => '',
+                'order' => 4,
+            ),
+            17 => 
+            array (
+                'id' => 18,
+                'data_type_id' => 5,
+                'field' => 'user_belongsto_role_relationship',
+                'type' => 'relationship',
                 'display_name' => 'Role',
-                'required'     => 0,
-                'browse'       => 1,
-                'read'         => 1,
-                'edit'         => 1,
-                'add'          => 1,
-                'delete'       => 0,
-                'details'      => '{"model":"TCG\\\Voyager\\\Models\\\Role","table":"roles","type":"belongsTo","column":"role_id","key":"id","label":"name","pivot_table":"roles","pivot":"0"}',
-                'order'        => 10,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($userDataType, 'remember_token');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'text',
+                'required' => 0,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 0,
+                'details' => '{"model":"TCG\\\\Voyager\\\\Models\\\\Role","table":"roles","type":"belongsTo","column":"role_id","key":"id","label":"name","pivot_table":"roles","pivot":"0"}',
+                'order' => 10,
+            ),
+            18 => 
+            array (
+                'id' => 19,
+                'data_type_id' => 5,
+                'field' => 'remember_token',
+                'type' => 'text',
                 'display_name' => 'remember_token',
-                'required'     => 0,
-                'browse'       => 0,
-                'read'         => 0,
-                'edit'         => 0,
-                'add'          => 0,
-                'delete'       => 0,
-                'details'      => '',
-                'order'        => 5,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($userDataType, 'created_at');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'timestamp',
+                'required' => 0,
+                'browse' => 0,
+                'read' => 0,
+                'edit' => 0,
+                'add' => 0,
+                'delete' => 0,
+                'details' => '',
+                'order' => 5,
+            ),
+            19 => 
+            array (
+                'id' => 20,
+                'data_type_id' => 5,
+                'field' => 'created_at',
+                'type' => 'timestamp',
                 'display_name' => 'created_at',
-                'required'     => 0,
-                'browse'       => 1,
-                'read'         => 1,
-                'edit'         => 0,
-                'add'          => 0,
-                'delete'       => 0,
-                'details'      => '',
-                'order'        => 6,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($userDataType, 'updated_at');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'timestamp',
+                'required' => 0,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 0,
+                'add' => 0,
+                'delete' => 0,
+                'details' => '',
+                'order' => 6,
+            ),
+            20 => 
+            array (
+                'id' => 21,
+                'data_type_id' => 5,
+                'field' => 'updated_at',
+                'type' => 'timestamp',
                 'display_name' => 'updated_at',
-                'required'     => 0,
-                'browse'       => 0,
-                'read'         => 0,
-                'edit'         => 0,
-                'add'          => 0,
-                'delete'       => 0,
-                'details'      => '',
-                'order'        => 7,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($userDataType, 'avatar');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'image',
+                'required' => 0,
+                'browse' => 0,
+                'read' => 0,
+                'edit' => 0,
+                'add' => 0,
+                'delete' => 0,
+                'details' => '',
+                'order' => 7,
+            ),
+            21 => 
+            array (
+                'id' => 22,
+                'data_type_id' => 5,
+                'field' => 'avatar',
+                'type' => 'image',
                 'display_name' => 'avatar',
-                'required'     => 0,
-                'browse'       => 1,
-                'read'         => 1,
-                'edit'         => 1,
-                'add'          => 1,
-                'delete'       => 1,
-                'details'      => '',
-                'order'        => 8,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($menuDataType, 'id');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'number',
+                'required' => 0,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '',
+                'order' => 8,
+            ),
+            22 => 
+            array (
+                'id' => 23,
+                'data_type_id' => 6,
+                'field' => 'id',
+                'type' => 'number',
                 'display_name' => 'id',
-                'required'     => 1,
-                'browse'       => 0,
-                'read'         => 0,
-                'edit'         => 0,
-                'add'          => 0,
-                'delete'       => 0,
-                'details'      => '',
-                'order'        => 1,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($menuDataType, 'name');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'text',
+                'required' => 1,
+                'browse' => 0,
+                'read' => 0,
+                'edit' => 0,
+                'add' => 0,
+                'delete' => 0,
+                'details' => '',
+                'order' => 1,
+            ),
+            23 => 
+            array (
+                'id' => 24,
+                'data_type_id' => 6,
+                'field' => 'name',
+                'type' => 'text',
                 'display_name' => 'name',
-                'required'     => 1,
-                'browse'       => 1,
-                'read'         => 1,
-                'edit'         => 1,
-                'add'          => 1,
-                'delete'       => 1,
-                'details'      => '',
-                'order'        => 2,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($menuDataType, 'created_at');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'timestamp',
+                'required' => 1,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '',
+                'order' => 2,
+            ),
+            24 => 
+            array (
+                'id' => 25,
+                'data_type_id' => 6,
+                'field' => 'created_at',
+                'type' => 'timestamp',
                 'display_name' => 'created_at',
-                'required'     => 0,
-                'browse'       => 0,
-                'read'         => 0,
-                'edit'         => 0,
-                'add'          => 0,
-                'delete'       => 0,
-                'details'      => '',
-                'order'        => 3,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($menuDataType, 'updated_at');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'timestamp',
+                'required' => 0,
+                'browse' => 0,
+                'read' => 0,
+                'edit' => 0,
+                'add' => 0,
+                'delete' => 0,
+                'details' => '',
+                'order' => 3,
+            ),
+            25 => 
+            array (
+                'id' => 26,
+                'data_type_id' => 6,
+                'field' => 'updated_at',
+                'type' => 'timestamp',
                 'display_name' => 'updated_at',
-                'required'     => 0,
-                'browse'       => 0,
-                'read'         => 0,
-                'edit'         => 0,
-                'add'          => 0,
-                'delete'       => 0,
-                'details'      => '',
-                'order'        => 4,
-            ])->save();
-        }
-
-
-        $dataRow = $this->dataRow($roleDataType, 'id');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'number',
+                'required' => 0,
+                'browse' => 0,
+                'read' => 0,
+                'edit' => 0,
+                'add' => 0,
+                'delete' => 0,
+                'details' => '',
+                'order' => 4,
+            ),
+            26 => 
+            array (
+                'id' => 27,
+                'data_type_id' => 7,
+                'field' => 'id',
+                'type' => 'number',
                 'display_name' => 'id',
-                'required'     => 1,
-                'browse'       => 0,
-                'read'         => 0,
-                'edit'         => 0,
-                'add'          => 0,
-                'delete'       => 0,
-                'details'      => '',
-                'order'        => 1,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($roleDataType, 'name');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'text',
+                'required' => 1,
+                'browse' => 0,
+                'read' => 0,
+                'edit' => 0,
+                'add' => 0,
+                'delete' => 0,
+                'details' => '',
+                'order' => 1,
+            ),
+            27 => 
+            array (
+                'id' => 28,
+                'data_type_id' => 7,
+                'field' => 'name',
+                'type' => 'text',
                 'display_name' => 'Name',
-                'required'     => 1,
-                'browse'       => 1,
-                'read'         => 1,
-                'edit'         => 1,
-                'add'          => 1,
-                'delete'       => 1,
-                'details'      => '',
-                'order'        => 2,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($roleDataType, 'created_at');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'timestamp',
+                'required' => 1,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '',
+                'order' => 2,
+            ),
+            28 => 
+            array (
+                'id' => 29,
+                'data_type_id' => 7,
+                'field' => 'created_at',
+                'type' => 'timestamp',
                 'display_name' => 'created_at',
-                'required'     => 0,
-                'browse'       => 0,
-                'read'         => 0,
-                'edit'         => 0,
-                'add'          => 0,
-                'delete'       => 0,
-                'details'      => '',
-                'order'        => 3,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($roleDataType, 'updated_at');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'timestamp',
+                'required' => 0,
+                'browse' => 0,
+                'read' => 0,
+                'edit' => 0,
+                'add' => 0,
+                'delete' => 0,
+                'details' => '',
+                'order' => 3,
+            ),
+            29 => 
+            array (
+                'id' => 30,
+                'data_type_id' => 7,
+                'field' => 'updated_at',
+                'type' => 'timestamp',
                 'display_name' => 'updated_at',
-                'required'     => 0,
-                'browse'       => 0,
-                'read'         => 0,
-                'edit'         => 0,
-                'add'          => 0,
-                'delete'       => 0,
-                'details'      => '',
-                'order'        => 4,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($roleDataType, 'display_name');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'text',
+                'required' => 0,
+                'browse' => 0,
+                'read' => 0,
+                'edit' => 0,
+                'add' => 0,
+                'delete' => 0,
+                'details' => '',
+                'order' => 4,
+            ),
+            30 => 
+            array (
+                'id' => 31,
+                'data_type_id' => 7,
+                'field' => 'display_name',
+                'type' => 'text',
                 'display_name' => 'Display Name',
-                'required'     => 1,
-                'browse'       => 1,
-                'read'         => 1,
-                'edit'         => 1,
-                'add'          => 1,
-                'delete'       => 1,
-                'details'      => '',
-                'order'        => 5,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($userDataType, 'role_id');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'text',
+                'required' => 1,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '',
+                'order' => 5,
+            ),
+            31 => 
+            array (
+                'id' => 32,
+                'data_type_id' => 5,
+                'field' => 'role_id',
+                'type' => 'text',
                 'display_name' => 'role_id',
-                'required'     => 1,
-                'browse'       => 1,
-                'read'         => 1,
-                'edit'         => 1,
-                'add'          => 1,
-                'delete'       => 1,
-                'details'      => '',
-                'order'        => 9,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($contactDataType, 'id');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'number',
+                'required' => 1,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '',
+                'order' => 9,
+            ),
+            32 => 
+            array (
+                'id' => 33,
+                'data_type_id' => 2,
+                'field' => 'id',
+                'type' => 'number',
                 'display_name' => 'id',
-                'required'     => 1,
-                'browse'       => 0,
-                'read'         => 0,
-                'edit'         => 0,
-                'add'          => 0,
-                'delete'       => 0,
-                'details'      => '',
-                'order'        => 1,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($contactDataType, 'organisation');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'text',
+                'required' => 1,
+                'browse' => 0,
+                'read' => 0,
+                'edit' => 0,
+                'add' => 0,
+                'delete' => 0,
+                'details' => '',
+                'order' => 1,
+            ),
+            33 => 
+            array (
+                'id' => 34,
+                'data_type_id' => 2,
+                'field' => 'organisation',
+                'type' => 'text',
                 'display_name' => 'Organisation',
-                'required'     => 1,
-                'browse'       => 1,
-                'read'         => 1,
-                'edit'         => 1,
-                'add'          => 1,
-                'delete'       => 1,
-                'details'      => '',
-                'order'        => 2,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($contactDataType, 'address');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'text',
+                'required' => 1,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '',
+                'order' => 2,
+            ),
+            34 => 
+            array (
+                'id' => 35,
+                'data_type_id' => 2,
+                'field' => 'address',
+                'type' => 'text',
                 'display_name' => 'Address',
-                'required'     => 1,
-                'browse'       => 1,
-                'read'         => 1,
-                'edit'         => 1,
-                'add'          => 1,
-                'delete'       => 1,
-                'details'      => '',
-                'order'        => 3,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($contactDataType, 'zipcodeandcity');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'text',
+                'required' => 1,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '',
+                'order' => 3,
+            ),
+            35 => 
+            array (
+                'id' => 36,
+                'data_type_id' => 2,
+                'field' => 'zipcodeandcity',
+                'type' => 'text',
                 'display_name' => 'Zipcodeandcity',
-                'required'     => 1,
-                'browse'       => 1,
-                'read'         => 1,
-                'edit'         => 1,
-                'add'          => 1,
-                'delete'       => 1,
-                'details'      => '',
-                'order'        => 4,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($contactDataType, 'email');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'text',
+                'required' => 1,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '',
+                'order' => 4,
+            ),
+            36 => 
+            array (
+                'id' => 37,
+                'data_type_id' => 2,
+                'field' => 'email',
+                'type' => 'text',
                 'display_name' => 'Email',
-                'required'     => 1,
-                'browse'       => 1,
-                'read'         => 1,
-                'edit'         => 1,
-                'add'          => 1,
-                'delete'       => 1,
-                'details'      => '',
-                'order'        => 5,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($contactDataType, 'phonenumber');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'text',
+                'required' => 1,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '',
+                'order' => 5,
+            ),
+            37 => 
+            array (
+                'id' => 38,
+                'data_type_id' => 2,
+                'field' => 'phonenumber',
+                'type' => 'text',
                 'display_name' => 'Phonenumber',
-                'required'     => 1,
-                'browse'       => 1,
-                'read'         => 1,
-                'edit'         => 1,
-                'add'          => 1,
-                'delete'       => 1,
-                'details'      => '',
-                'order'        => 6,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($contactDataType, 'created_at');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'timestamp',
+                'required' => 1,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '',
+                'order' => 6,
+            ),
+            38 => 
+            array (
+                'id' => 39,
+                'data_type_id' => 2,
+                'field' => 'created_at',
+                'type' => 'timestamp',
                 'display_name' => 'created_at',
-                'required'     => 0,
-                'browse'       => 0,
-                'read'         => 0,
-                'edit'         => 0,
-                'add'          => 0,
-                'delete'       => 0,
-                'details'      => '',
-                'order'        => 7,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($contactDataType, 'updated_at');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'timestamp',
+                'required' => 0,
+                'browse' => 0,
+                'read' => 0,
+                'edit' => 0,
+                'add' => 0,
+                'delete' => 0,
+                'details' => '',
+                'order' => 7,
+            ),
+            39 => 
+            array (
+                'id' => 40,
+                'data_type_id' => 2,
+                'field' => 'updated_at',
+                'type' => 'timestamp',
                 'display_name' => 'updated_at',
-                'required'     => 0,
-                'browse'       => 0,
-                'read'         => 0,
-                'edit'         => 0,
-                'add'          => 0,
-                'delete'       => 0,
-                'details'      => '',
-                'order'        => 8,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($eventDataType, 'id');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'number',
+                'required' => 0,
+                'browse' => 0,
+                'read' => 0,
+                'edit' => 0,
+                'add' => 0,
+                'delete' => 0,
+                'details' => '',
+                'order' => 8,
+            ),
+            40 => 
+            array (
+                'id' => 41,
+                'data_type_id' => 4,
+                'field' => 'id',
+                'type' => 'number',
                 'display_name' => 'id',
-                'required'     => 1,
-                'browse'       => 0,
-                'read'         => 0,
-                'edit'         => 0,
-                'add'          => 0,
-                'delete'       => 0,
-                'details'      => '',
-                'order'        => 1,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($eventDataType, 'name');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'text',
+                'required' => 1,
+                'browse' => 0,
+                'read' => 0,
+                'edit' => 0,
+                'add' => 0,
+                'delete' => 0,
+                'details' => '',
+                'order' => 1,
+            ),
+            41 => 
+            array (
+                'id' => 42,
+                'data_type_id' => 4,
+                'field' => 'name',
+                'type' => 'text',
                 'display_name' => 'Name',
-                'required'     => 1,
-                'browse'       => 1,
-                'read'         => 1,
-                'edit'         => 1,
-                'add'          => 1,
-                'delete'       => 1,
-                'details'      => '',
-                'order'        => 2,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($eventDataType, 'description');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'text',
+                'required' => 1,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '',
+                'order' => 2,
+            ),
+            42 => 
+            array (
+                'id' => 43,
+                'data_type_id' => 4,
+                'field' => 'description',
+                'type' => 'text',
                 'display_name' => 'Description',
-                'required'     => 1,
-                'browse'       => 1,
-                'read'         => 1,
-                'edit'         => 1,
-                'add'          => 1,
-                'delete'       => 1,
-                'details'      => '',
-                'order'        => 3,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($eventDataType, 'gift');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'checkbox',
+                'required' => 1,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '',
+                'order' => 3,
+            ),
+            43 => 
+            array (
+                'id' => 44,
+                'data_type_id' => 4,
+                'field' => 'gift',
+                'type' => 'checkbox',
                 'display_name' => 'Gift',
-                'required'     => 1,
-                'browse'       => 1,
-                'read'         => 1,
-                'edit'         => 1,
-                'add'          => 1,
-                'delete'       => 1,
-                'details'      => '',
-                'order'        => 4,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($eventDataType, 'active');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'checkbox',
+                'required' => 1,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '',
+                'order' => 4,
+            ),
+            44 => 
+            array (
+                'id' => 45,
+                'data_type_id' => 4,
+                'field' => 'active',
+                'type' => 'checkbox',
                 'display_name' => 'Active',
-                'required'     => 1,
-                'browse'       => 1,
-                'read'         => 1,
-                'edit'         => 1,
-                'add'          => 1,
-                'delete'       => 1,
-                'details'      => '',
-                'order'        => 5,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($eventDataType, 'cost');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'text',
+                'required' => 1,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '',
+                'order' => 5,
+            ),
+            45 => 
+            array (
+                'id' => 46,
+                'data_type_id' => 4,
+                'field' => 'cost',
+                'type' => 'text',
                 'display_name' => 'Cost',
-                'required'     => 1,
-                'browse'       => 1,
-                'read'         => 1,
-                'edit'         => 1,
-                'add'          => 1,
-                'delete'       => 1,
-                'details'      => '',
-                'order'        => 6,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($eventDataType, 'event_date');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'text',
+                'required' => 1,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '',
+                'order' => 6,
+            ),
+            46 => 
+            array (
+                'id' => 47,
+                'data_type_id' => 4,
+                'field' => 'event_date',
+                'type' => 'text',
                 'display_name' => 'Event Date',
-                'required'     => 1,
-                'browse'       => 1,
-                'read'         => 1,
-                'edit'         => 1,
-                'add'          => 1,
-                'delete'       => 1,
-                'details'      => '',
-                'order'        => 7,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($eventDataType, 'event_time');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'text',
+                'required' => 1,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '',
+                'order' => 7,
+            ),
+            47 => 
+            array (
+                'id' => 48,
+                'data_type_id' => 4,
+                'field' => 'event_time',
+                'type' => 'text',
                 'display_name' => 'Event Time',
-                'required'     => 1,
-                'browse'       => 1,
-                'read'         => 1,
-                'edit'         => 1,
-                'add'          => 1,
-                'delete'       => 1,
-                'details'      => '',
-                'order'        => 8,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($eventDataType, 'eventbrite_url');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'text',
+                'required' => 1,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '',
+                'order' => 8,
+            ),
+            48 => 
+            array (
+                'id' => 49,
+                'data_type_id' => 4,
+                'field' => 'eventbrite_url',
+                'type' => 'text',
                 'display_name' => 'Eventbrite Url',
-                'required'     => 1,
-                'browse'       => 1,
-                'read'         => 1,
-                'edit'         => 1,
-                'add'          => 1,
-                'delete'       => 1,
-                'details'      => '',
-                'order'        => 9,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($eventDataType, 'background_image');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'image',
+                'required' => 1,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '',
+                'order' => 9,
+            ),
+            49 => 
+            array (
+                'id' => 50,
+                'data_type_id' => 4,
+                'field' => 'background_image',
+                'type' => 'image',
                 'display_name' => 'Background Image',
-                'required'     => 1,
-                'browse'       => 1,
-                'read'         => 1,
-                'edit'         => 1,
-                'add'          => 1,
-                'delete'       => 1,
-                'details'      => '',
-                'order'        => 10,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($contactDataType, 'created_at');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'timestamp',
-                'display_name' => 'created_at',
-                'required'     => 0,
-                'browse'       => 0,
-                'read'         => 0,
-                'edit'         => 0,
-                'add'          => 0,
-                'delete'       => 0,
-                'details'      => '',
-                'order'        => 11,
-            ])->save();
-        }
-
-        $dataRow = $this->dataRow($contactDataType, 'updated_at');
-        if (!$dataRow->exists) {
-            $dataRow->fill([
-                'type'         => 'timestamp',
-                'display_name' => 'updated_at',
-                'required'     => 0,
-                'browse'       => 0,
-                'read'         => 0,
-                'edit'         => 0,
-                'add'          => 0,
-                'delete'       => 0,
-                'details'      => '',
-                'order'        => 12,
-            ])->save();
-        }
-
-    }
-
-    /**
-     * [dataRow description].
-     *
-     * @param [type] $type  [description]
-     * @param [type] $field [description]
-     *
-     * @return [type] [description]
-     */
-    protected function dataRow($type, $field)
-    {
-        return DataRow::firstOrNew([
-                'data_type_id' => $type->id,
-                'field'        => $field,
-            ]);
+                'required' => 1,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => '',
+                'order' => 10,
+            ),
+            50 => 
+            array (
+                'id' => 51,
+                'data_type_id' => 1,
+                'field' => 'youtube_embed',
+                'type' => 'text',
+                'display_name' => 'Youtube Embed',
+                'required' => 0,
+                'browse' => 1,
+                'read' => 1,
+                'edit' => 1,
+                'add' => 1,
+                'delete' => 1,
+                'details' => NULL,
+                'order' => 7,
+            ),
+        ));
+        
+        
     }
 }
