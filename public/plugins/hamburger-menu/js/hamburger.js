@@ -1,15 +1,15 @@
 var invisible = 'invisible';
+var menuBackground = $('.menu-bg');
 var hamburger = $('.hamburger');
 var closebtn = $('.closebtn');
 var menuButtons;
 
 $(document).ready(function(){
 
-    hamburger.on("click", function(e) {
+    menuBackground.on("click", function(e) {
         hamburger.toggleClass('is-active');
         openNav();
         animateMenuItems();
-
     });
 
     closebtn.on('click', function(e){

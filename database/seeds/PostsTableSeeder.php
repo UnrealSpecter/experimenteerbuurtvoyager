@@ -12,12 +12,12 @@ class PostsTableSeeder extends Seeder
      */
     public function run()
     {
-        
+
 
         \DB::table('posts')->delete();
-        
+
         \DB::table('posts')->insert(array (
-            0 => 
+            0 =>
             array (
                 'id' => 8,
                 'title' => 'Voormalige Emmer camping wordt experimenteerbuurt',
@@ -25,11 +25,11 @@ class PostsTableSeeder extends Seeder
                 'post_date' => '2017-02-18',
                 'link' => 'http://www.rtvdrenthe.nl/nieuws/118757/Voormalige-Emmer-camping-wordt-experimenteerbuurt',
                 'image' => 'posts/March2018/dvNDU8J1xT7wUeLhAWo0.jpg',
-                'youtube_embed' => 'https://www.youtube.com/embed/tdxD6sP32yU',
-                'created_at' => '2017-06-29 09:39:39',
-                'updated_at' => '2018-03-25 14:51:37',
+                'youtube_embed' => '',
+                'created_at' => '2017-02-18',
+                'updated_at' => '2017-02-18',
             ),
-            1 => 
+            1 =>
             array (
                 'id' => 14,
                 'title' => 'De meest vernieuwende buurt van heel Nederland in Emmen',
@@ -37,11 +37,11 @@ class PostsTableSeeder extends Seeder
                 'post_date' => '2017-02-18',
                 'link' => 'https://drive.google.com/open?id=0B1hgdKOfrvXneDE5UkZ4dUdFTVgzMnh6bHdHWldnWENmcGxN',
                 'image' => 'posts/March2018/Q0Xz8eYvou5mjBOddSUm.png',
-                'youtube_embed' => 'https://www.youtube.com/embed/tdxD6sP32yU',
-                'created_at' => '2017-07-18 13:02:52',
-                'updated_at' => '2018-03-25 14:54:09',
+                'youtube_embed' => '',
+                'created_at' => '2017-02-18',
+                'updated_at' => '2017-02-18',
             ),
-            2 => 
+            2 =>
             array (
                 'id' => 16,
                 'title' => 'Vlog De Emmense uitdaging',
@@ -50,10 +50,10 @@ class PostsTableSeeder extends Seeder
                 'link' => 'https://www.facebook.com/Experimenteerbuurt/videos/280506829091078/',
                 'image' => 'posts/March2018/2lMf5SV7s3Gfy26xFVev.png',
                 'youtube_embed' => '',
-                'created_at' => '2017-07-25 09:26:38',
-                'updated_at' => '2018-03-25 14:52:22',
+                'created_at' => '2017-07-25',
+                'updated_at' => '2017-07-25',
             ),
-            3 => 
+            3 =>
             array (
                 'id' => 17,
                 'title' => 'Drenthe in Transitie - De experimenteerbuurt in Emmen',
@@ -62,10 +62,10 @@ class PostsTableSeeder extends Seeder
                 'link' => 'http://www.ditenergie.nl/initiatief/de-experimenteerbuurt-emmen',
                 'image' => 'posts/March2018/eQOk6UbIGSy6aa0UohFK.png',
                 'youtube_embed' => '',
-                'created_at' => '2017-07-25 09:32:08',
-                'updated_at' => '2018-03-25 14:52:38',
+                'created_at' => '2017-07-25',
+                'updated_at' => '2017-07-25',
             ),
-            4 => 
+            4 =>
             array (
                 'id' => 18,
                 'title' => 'Vlog - Hoge nood',
@@ -74,10 +74,10 @@ class PostsTableSeeder extends Seeder
                 'link' => 'https://www.facebook.com/Experimenteerbuurt/videos/271855213289573/',
                 'image' => 'posts/March2018/9VOyd82nnw3ebjxet1Cf.png',
                 'youtube_embed' => '',
-                'created_at' => '2017-07-25 09:36:59',
-                'updated_at' => '2018-03-25 14:52:54',
+                'created_at' => '2017-07-25',
+                'updated_at' => '2017-07-25',
             ),
-            5 => 
+            5 =>
             array (
                 'id' => 19,
                 'title' => 'Onthulling plaatsnaambord',
@@ -86,10 +86,10 @@ class PostsTableSeeder extends Seeder
                 'link' => 'https://www.facebook.com/Experimenteerbuurt/videos/268627280279033/',
                 'image' => 'posts/March2018/GgdasEtAUoiMTqy1yAgp.gif',
                 'youtube_embed' => '',
-                'created_at' => '2017-07-25 09:42:18',
-                'updated_at' => '2018-03-25 14:53:06',
+                'created_at' => '2017-07-25',
+                'updated_at' => '2017-07-25',
             ),
-            6 => 
+            6 =>
             array (
                 'id' => 20,
                 'title' => 'Vlog - Tiny House',
@@ -98,10 +98,10 @@ class PostsTableSeeder extends Seeder
                 'link' => 'https://www.facebook.com/Experimenteerbuurt/videos/283785092096585/',
                 'image' => 'posts/March2018/RypNY77H3b68YUuE6fTC.png',
                 'youtube_embed' => '',
-                'created_at' => '2017-07-25 09:48:08',
-                'updated_at' => '2018-03-25 14:53:16',
+                'created_at' => '2017-07-25',
+                'updated_at' => '2017-07-25',
             ),
-            7 => 
+            7 =>
             array (
                 'id' => 21,
                 'title' => 'Pioniers mogen aankloppen bij de experimenteerbuurt',
@@ -110,11 +110,121 @@ class PostsTableSeeder extends Seeder
                 'link' => 'https://www.emmen.nu/nieuws/emmen/493390/pioniers-mogen-aankloppen-bij-experimenteerbuurt.html',
                 'image' => 'posts/March2018/l4zZcXh56461GXfi2dxV.png',
                 'youtube_embed' => '',
-                'created_at' => '2017-07-25 09:57:36',
-                'updated_at' => '2018-03-25 14:53:50',
+                'created_at' => '2017-07-25',
+                'updated_at' => '2017-07-25',
+            ),
+            array (
+                'id' => 22,
+                'title' => 'Vlog #3 Wie komt met zijn Tiny House tijdelijk in Emmen wonen?',
+                'content' => '',
+                'post_date' => '2017-07-25',
+                'link' => 'https://www.youtube.com/watch?v=E2aE4hPfM8M',
+                'image' => 'posts/March2018/dvNDU8J1xT7wUeLhAWo0.jpg',
+                'youtube_embed' => 'https://www.youtube.com/embed/E2aE4hPfM8M',
+                'created_at' => '2017-07-25',
+                'updated_at' => '2017-07-25',
+            ),
+            array (
+                'id' => 23,
+                'title' => 'Vlog #1 Hogenood',
+                'content' => 'Iemand een wc????',
+                'post_date' => '2017-07-25',
+                'link' => 'https://www.youtube.com/watch?v=tvgg37z9Xt0',
+                'image' => 'posts/March2018/dvNDU8J1xT7wUeLhAWo0.jpg',
+                'youtube_embed' => 'https://www.youtube.com/embed/tvgg37z9Xt0',
+                'created_at' => '2017-07-25',
+                'updated_at' => '2017-07-25',
+            ),
+            array (
+                'id' => 24,
+                'title' => 'Vlog #5 Kom langs 15 september : BYO BBQ',
+                'content' => '',
+                'post_date' => '2017-09-02',
+                'link' => 'https://www.youtube.com/watch?v=ZD0hxFj1C4Q',
+                'image' => 'posts/March2018/dvNDU8J1xT7wUeLhAWo0.jpg',
+                'youtube_embed' => 'https://www.youtube.com/embed/ZD0hxFj1C4Q',
+                'created_at' => '2017-07-25',
+                'updated_at' =>'2017-07-25',
+            ),
+            array (
+                'id' => 25,
+                'title' => 'Meld je aan!',
+                'content' => '',
+                'post_date' => '2017-09-19',
+                'link' => 'https://www.youtube.com/watch?v=0ndHBwyg60M',
+                'image' => 'posts/March2018/dvNDU8J1xT7wUeLhAWo0.jpg',
+                'youtube_embed' => 'https://www.youtube.com/embed/0ndHBwyg60M',
+                'created_at' => '2017-07-25',
+                'updated_at' => '2017-07-25',
+            ),
+            array (
+                'id' => 26,
+                'title' => 'Vlog #4 Nieuws uit de buurt',
+                'content' => '',
+                'post_date' => '2017-09-19',
+                'link' => 'https://www.youtube.com/watch?v=LzFBFC2t2es',
+                'image' => 'posts/March2018/dvNDU8J1xT7wUeLhAWo0.jpg',
+                'youtube_embed' => 'https://www.youtube.com/embed/LzFBFC2t2es',
+                'created_at' => '2017-07-25',
+                'updated_at' => '2017-07-25',
+            ),
+            array (
+                'id' => 27,
+                'title' => 'Vlog #6 Inspiratie excursie Tiny Houses Almere!',
+                'content' => '',
+                'post_date' => '2017-09-27',
+                'link' => 'https://www.youtube.com/watch?v=BNGctYyhWxM',
+                'image' => 'posts/March2018/dvNDU8J1xT7wUeLhAWo0.jpg',
+                'youtube_embed' => 'https://www.youtube.com/embed/BNGctYyhWxM',
+                'created_at' => '2017-07-25',
+                'updated_at' => '2017-07-25',
+            ),
+            array (
+                'id' => 28,
+                'title' => 'Vlog #7 De Stagiaires!',
+                'content' => '',
+                'post_date' => '2017-10-10',
+                'link' => 'https://www.youtube.com/watch?v=40ro9eaB4m4',
+                'image' => 'posts/March2018/dvNDU8J1xT7wUeLhAWo0.jpg',
+                'youtube_embed' => 'https://www.youtube.com/embed/40ro9eaB4m4',
+                'created_at' => '2017-07-25',
+                'updated_at' => '2017-07-25',
+            ),
+            array (
+                'id' => 29,
+                'title' => 'Vlog #8 Hans Over De Tiny house Expo Almere',
+                'content' => '',
+                'post_date' => '2017-10-11',
+                'link' => 'https://www.youtube.com/watch?v=w0x8yjGojh0',
+                'image' => 'posts/March2018/dvNDU8J1xT7wUeLhAWo0.jpg',
+                'youtube_embed' => 'https://www.youtube.com/embed/w0x8yjGojh0',
+                'created_at' => '2017-07-25',
+                'updated_at' => '2017-07-25',
+            ),
+            array (
+                'id' => 30,
+                'title' => 'Vlog #9 Het Net opgehaald en nu?',
+                'content' => '',
+                'post_date' => '2017-10-27',
+                'link' => 'https://www.youtube.com/watch?v=zLrTpi_JJd4',
+                'image' => 'posts/March2018/dvNDU8J1xT7wUeLhAWo0.jpg',
+                'youtube_embed' => 'https://www.youtube.com/embed/zLrTpi_JJd4',
+                'created_at' => '2017-07-25',
+                'updated_at' => '2017-07-25',
+            ),
+            array (
+                'id' => 31,
+                'title' => 'Experimenteerbuurt Emmen: Zie jij het al voor je? En waar?',
+                'content' => '',
+                'post_date' => '2018-03-27',
+                'link' => 'https://www.youtube.com/watch?v=IqT1fVd8148',
+                'image' => 'posts/March2018/dvNDU8J1xT7wUeLhAWo0.jpg',
+                'youtube_embed' => 'https://www.youtube.com/embed/IqT1fVd8148',
+                'created_at' => '2017-07-25',
+                'updated_at' => '2017-07-25',
             ),
         ));
-        
-        
+
+
     }
 }

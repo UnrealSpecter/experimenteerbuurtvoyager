@@ -7,17 +7,13 @@
         </div>
         <div class="col-lg-12 organisatie-info-wrapper d-none" data-id="2">
             <h1 class="organisatie-title d-none">Hoofdpartners in het proces van gebiedsontwikkeling</h1>
-            <p class="organisatie-description d-none">Woningstichting Domesta, gemeente Emmen en Koenen Bouw zijn onmisbare partners. Zij steunen het proces door sparringspartner te zijn en door een bedrag beschikbaar te stellen.</p>
-        </div>
-        <div class="col-12 organisatie-info-wrapper d-none" data-id="3">
-            <h1 class="organisatie-title d-none">Ook belangrijk</h1>
-            <p class="organisatie-description d-none">Onze uitvalsbasis, de Cubestee met veel dank aan Onix Architecten Groningen, Rizoem en Friso Bouwgroep. De mannen Frank en Tomi van Dhevak (analoge websites) en Iris Sijbom fotografie voor hun creativiteit en flexibiliteit. <br /> Wim Velders de eerste vrijwilliger die zich spontaan meldde. En iedereen die op welke manier dan ook iets voor dit experiment van gebiedsontwikkeling hebben gedaan of gaan doen!</p>
+            <p class="organisatie-description d-none">Woningstichting Domesta, gemeente Emmen en Koenen Bouw zijn onmisbare partners. Zij steunen het proces door sparringspartner te zijn en door voor het eerste jaar een bedrag beschikbaar te stellen.</p>
         </div>
         <!-- NAV-->
         <div class="col-12 faq-nav-wrapper flex-r justify-c">
             <img src="{{ asset('/images/icons/chevron-left.svg') }}" class="img-fluid previous-info" style="width: 4%; cursor: pointer;" alt="volgende veel gestelde vraag">
             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 flex-r align-v justify-c">
-                <span style="width: 100%; text-align: center;"> <span class="organisation-count">1</span> / 3</span>
+                <span style="width: 100%; text-align: center;"> <span class="organisation-count">1</span> / 2</span>
             </div>
             <img src="{{ asset('/images/icons/chevron-right.svg') }}" class="img-fluid next-info" style="width: 4%; cursor: pointer;" alt="volgende veel gestelde vraag">
         </div>

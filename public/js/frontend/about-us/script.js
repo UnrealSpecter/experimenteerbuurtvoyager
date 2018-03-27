@@ -1,4 +1,9 @@
 var hidden = 'd-none';
+
+function introAnimation(){
+    $('.about-us-wrapper').addClass('animated fadeInRight');
+}
+
 $(document).ready(function(){
 
     //menu background update
@@ -12,7 +17,6 @@ $(document).ready(function(){
             $('.locatie').click();
         }, 1000);
     }
-
 
     /* menu */
     //set correct button classes
@@ -104,27 +108,22 @@ $(document).ready(function(){
         }, 750);
     });
 
+    var invisible = 'invisible';
     //next clicked
     $('.next-question').click(function(){
-        var current = $('.faq-question-wrapper').not('.' + hidden);
+        var current = $('.faq-question-wrapper').not('.' + invisible);
         var next = current.next().hasClass('faq-question-wrapper') ? current.next() : $('.faq-question-wrapper').first();
-        current.fadeOut(500, function(){
-            current.addClass(hidden);
-            current.removeAttr('style');
-        });
-        next.removeClass(hidden).fadeIn(500);
+        current.addClass(invisible).removeClass('animated fadeIn');
+        next.removeClass(invisible).addClass('animated fadeIn');
         $('.faq-count').html(next.data('id'));
     });
 
     //previous arrow click
     $('.prev-question').click(function(){
-        var current = $('.faq-question-wrapper').not('.' + hidden);
+        var current = $('.faq-question-wrapper').not('.' + invisible);
         var previous = current.prev().hasClass("faq-question-wrapper") ? current.prev() : $(".faq-question-wrapper").last();
-        current.fadeOut(500, function(){
-            current.addClass(hidden);
-            current.removeAttr('style');
-        });
-        previous.removeClass(hidden).fadeIn(500);
+        current.addClass(invisible).removeClass('animated fadeIn');
+        previous.removeClass(invisible).addClass('animated fadeIn');
         $('.faq-count').html(previous.data('id'));
     });
 

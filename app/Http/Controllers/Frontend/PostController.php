@@ -13,7 +13,7 @@ class PostController extends Controller
     public function index()
     {
         // $posts = Post::all();
-        $posts = DB::table('posts')->orderBy('post_date')->get();
+        $posts = DB::table('posts')->orderBy('post_date', 'desc')->get();
 
         return view('frontend.posts.index', compact('posts'));
     }

@@ -12,7 +12,7 @@ function onYouTubeIframeAPIReady() {
 player = new YT.Player('wat-is-de-experimenteerbuurt-video', {
   height: '100%',
   width: '100%',
-  videoId: 'No2Ri-0QN8I',
+  videoId: 'IqT1fVd8148',
   events: {
     'onReady': onPlayerReady,
     'onStateChange': onPlayerStateChange

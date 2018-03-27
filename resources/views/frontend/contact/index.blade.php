@@ -22,7 +22,7 @@
                     <img class="linkedin-reageerbuis" src="{{ asset('images/contact/linkedin-reageerbuis.png') }}">
                 </a>
                 <img class="instagram-reageerbuis" src="{{ asset('images/contact/instagram-reageerbuis.png') }}">
-                <a href="https://twitter.com/experimentbuurt" target="_blank">
+                <a href="https://www.youtube.com/channel/UC03-K7K2lHwVxyN51iJkuDQ" target="_blank">
                     <img class="youtube-reageerbuis" src="{{ asset('images/contact/youtube-reageerbuis.png') }}">
                 </a>
             </div>

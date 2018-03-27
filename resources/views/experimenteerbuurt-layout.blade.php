@@ -3,7 +3,7 @@
     <head data-enhance="false">
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
         <title>Experimenteerbuurt</title>
 
@@ -11,6 +11,7 @@
         <link rel="icon" href="{{ asset('/images/menu-logo.png')}}">
         <link rel="stylesheet" type="text/css" href="{{ asset('css/global/reset.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('plugins/bootstrap/css/bootstrap.min.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('plugins/reboot/css/bootstrap-reboot.min.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('css/global/animate.css') }}">
 
         <!-- sidebar-menu css-->

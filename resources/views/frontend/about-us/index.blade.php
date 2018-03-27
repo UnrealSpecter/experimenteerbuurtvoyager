@@ -5,14 +5,14 @@
 
 @extends('experimenteerbuurt-layout')
 @section('content')
-    <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12" style="background: transparent; height: 100vh; z-index: 10;">
-        <img class="wat-is-de-experimenteerbuurt-background" src="/images/about-us/about-us-background.jpg" alt="background">
+    <img class="wat-is-de-experimenteerbuurt-background" src="/images/about-us/about-us-background.jpg" alt="background">
+    <div class="col-lg-10 col-md-10 col-sm-12 col-xs-12 about-us-wrapper" style="background: transparent; height: 100vh; z-index: 10;">
         <div class="row animated slideInRight" style="height: 100%;">
             <div class="col-12 button-container flex-r no-padding-margin">
-                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 button experimenteerbuurt selected" data-number="0" ><span>Wat is de experimenteerbuurt?</span></div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 button organisatie" data-number="1"><span>Achter de schermen</span></div>
-                <div class="col-lg-3 col-md-3 col-sm-2 col-xs-6 button locatie" data-number="2"><span>Locatie...?</span></div>
-                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 button faq" data-number="3"><span>Veelgestelde vragen</span></div>
+                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-4 button experimenteerbuurt selected" data-number="0" ><span>Experimenteerbuurt?</span></div>
+                <div class="col-lg-4 col-md-4 col-sm-3 col-xs-4 button organisatie" data-number="1"><span>Achter de schermen</span></div>
+                <div class="col-lg-4 col-md-4 col-sm-3 col-xs-4 button locatie" data-number="2"><span>Locatie...?</span></div>
+                <!-- <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 button faq" data-number="3"><span>Veelgestelde vragen</span></div> -->
             </div>
             <div class="col-lg-12 main-container no-padding-margin">
                 <div id="about-us-carousel" style="height: 100%;" class="carousel slide" data-ride="carousel" data-interval="false">
@@ -20,7 +20,7 @@
                         <div class="carousel-item active">@include('frontend.about-us.wat-is-de-experimenteerbuurt')</div>
                         <div class="carousel-item">@include('frontend.about-us.achter-de-schermen')</div>
                         <div class="carousel-item">@include('frontend.about-us.locatie')</div>
-                        <div class="carousel-item">@include('frontend.about-us.veel-gestelde-vragen')</div>
+                        <!-- <div class="carousel-item">@include('frontend.about-us.veel-gestelde-vragen')</div> -->
                     </div>
                 </div>
             </div>

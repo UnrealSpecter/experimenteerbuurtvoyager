@@ -3,7 +3,7 @@
 @if($faq == $faqs->first())
 <div class="faq-question-wrapper flex-r aling-v justify-c col-12" data-id="{{ $index + 1 }}">
 @else
-<div class="faq-question-wrapper flex-c aling-v justify-c col-12 d-none" data-id="{{ $index + 1 }}">
+<div class="faq-question-wrapper flex-c aling-v justify-c col-12 invisible" data-id="{{ $index + 1 }}">
 @endif
     <div class="row">
         <h1 class="col-12 faq-question"><span>{{ $faq->question }}</span></h1>

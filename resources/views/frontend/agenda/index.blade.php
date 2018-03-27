@@ -19,11 +19,13 @@
                 <div class="row info-container">
                     <div class="event-shadow "></div>
                     <div class="col-12 flex-r align-v justify-c agenda-nav-wrapper" style="height: 10%; position: absolute; bottom: 0%; z-index: 3000 !important; color: white; font-size: 1em; display: flex; align-items: center;">
+                        @if(count($events) > 1)
                         <div class="row justify-c">
                             <img src="{{ asset('/images/icons/chevron-left.svg') }}" class="img-fluid previous-event" style="width: 4%; cursor: pointer;" alt="volgende veel gestelde vraag">
                             <div class="col-4 event-date invisible">{{ $event->getDateString(1, 2) }}</div>
                             <img src="{{ asset('/images/icons/chevron-right.svg') }}" class="img-fluid next-event" style="width: 4%; cursor: pointer;" alt="volgende veel gestelde vraag">
                         </div>
+                        @endif
                     </div>
                     <img class="col-12 event-background" src="/storage/{{ $event->background_image }}">
                     <div class="col-12 initial-info-block">
