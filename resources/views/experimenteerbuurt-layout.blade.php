@@ -20,6 +20,7 @@
         <link rel="stylesheet" type="text/css" href="{{ asset('css/global/style.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('css/global/general-style.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('css/global/project-style.css') }}">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/global/loader-style.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('plugins/hamburger-menu/css/hamburger.css') }}">
         @yield('css')
     </head>

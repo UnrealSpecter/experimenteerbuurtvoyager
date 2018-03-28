@@ -1,0 +1,51 @@
+/* LOADER  */
+.loader {
+    z-index: 1000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+}
+
+.loader-title {
+    margin-top: 5%;
+    font-size: 1.2em;
+}
+
+.loader-image {
+    width: 20%;
+    -webkit-animation: rotation 1.75s infinite linear;
+}
+
+@-webkit-keyframes rotation {
+	from {
+        -webkit-transform: rotate(0deg);
+	}
+	to {
+        -webkit-transform: rotate(359deg);
+	}
+}
+
+@media screen (min-width: 576px) {
+    .loader-title {
+        font-size: 1em;
+        color: yellow;
+    }
+}
+
+@media (min-width: 768px) {
+    .loader-title { font-size: 2.5em; }
+    .loader-image { width: 20%; }
+}
+
+@media (min-width: 992px) {
+    .loader-title { font-size: 2.25em; }
+    .loader-image { width: 10%; }
+}
+
+@media (min-width: 1200px) {
+    .loader-title { font-size: 3.5em; }
+    .loader-image { width: 7.5%; }
+}

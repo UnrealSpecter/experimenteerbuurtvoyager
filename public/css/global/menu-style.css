@@ -1,0 +1,126 @@
+/* MENU */
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    background-color: rgb(255,255,255);
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+/* nav bg */
+.overlay-experimenteerbuurt { background-color: rgba(47, 172, 102, 0.9); }
+.overlay-inspiration        { background-color: rgba(45, 46, 131, 0.9); }
+.overlay-doer               { background-color: rgba(130, 54, 140, 0.9); }
+.overlay-agenda             { background-color: rgba(230, 51, 42, 0.9); }
+.overlay-nieuws             { background-color: rgba(49, 107, 77, 0.9); }
+.overlay-contact            { background-color: rgba(54, 169, 225, 0.9); }
+
+/* MENU ITEMS */
+.light-green    { color: rgba(47, 172, 102, 0.9); }
+.dark-blue      { color: rgba(45, 46, 131, 0.9); }
+.purple         { color: rgba(130, 54, 140, 0.9); }
+.red            { color: rgba(230, 51, 42, 0.9); }
+.dark-green     { color: rgba(49, 107, 77, 0.9); }
+.light-blue     { color: rgba(54, 169, 225, 0.9); }
+
+/* menu bg */
+.menu-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 13%;
+    z-index: 10000;
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.experimenteerbuurt-menu-bg { background-image: url('/images/menu/experimenteerbuurt.png'); }
+.inspiration-menu-bg { background-image: url('/images/menu/inspiration.png'); }
+.doer-menu-bg { background-image: url('/images/menu/doer.png'); }
+.agenda-menu-bg { background-image: url('/images/menu/agenda.png'); }
+.nieuws-menu-bg { background-image: url('/images/menu/nieuws.png'); }
+.contact-menu-bg { background-image: url('/images/menu/contact.png'); }
+
+.overlay-content {
+    position: relative;
+    width: 100vw;
+    text-align: center;
+}
+
+.overlay a, .img-reponsive a {
+    padding: 8px;
+    text-decoration: none;
+    /* color: #f1f1f1; */
+    font-size: 1.25em;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: #90cfee;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    /* top: 20px; */
+    right: 45px;
+    font-size: 60px;
+    z-index: 1;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.menu-button {
+    z-index: 2;
+}
+
+.logo-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .menu-button {
+        width: 100%;
+    }
+    .overlay a, .img-reponsive a {
+        font-size: 1em;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .menu-button {
+        width: 100%;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .menu-button {
+        width: 100%;
+    }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .menu-button {
+        height: 33.3%;
+    }
+}
