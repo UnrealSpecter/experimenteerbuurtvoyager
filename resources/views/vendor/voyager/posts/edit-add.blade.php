@@ -91,8 +91,12 @@
                             <label for="content">Content:</label>
                             <input type="text" class="form-control" id="content" name="content" placeholder="content" value="@if(isset($dataTypeContent->content)){{ $dataTypeContent->content }}@endif">
 
-                            <label for="link">Link:</label>
+                            <label for="link">Externe Link:</label>
                             <input type="text" class="form-control" id="link" name="link" placeholder="link" value="@if(isset($dataTypeContent->link)){{ $dataTypeContent->link }}@endif">
+
+                            <label for="youtube_embed">Youtube Embed:</label>
+                            <input type="text" class="form-control" id="youtube_embed" name="youtube_embed" placeholder="via delen en dan insluiten kan je deze link verkrijgen" value="@if(isset($dataTypeContent->youtube_embed)){{ $dataTypeContent->youtube_embed }}@endif">
+
 
                             <label for="post_date">Post date</label>
                             <input type="date" class="form-control" id="post_date" name="post_date" name="post_date" value="@if(isset($dataTypeContent->post_date)){{ $dataTypeContent->post_date }}@endif">
