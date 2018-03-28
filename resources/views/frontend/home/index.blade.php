@@ -57,5 +57,14 @@
         <script src="{{ asset('plugins/bootstrap/js/bootstrap.min.js') }}"></script>
         <script src="{{ asset('js/global/script.js') }}"></script>
         <script src="{{ asset('js/frontend/home/script.js') }}"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90310031-2"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-90310031-2');
+        </script>
     </body>
 </html>
