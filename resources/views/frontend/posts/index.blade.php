@@ -11,13 +11,13 @@
 
 <div class="posts-wrapper d-none  flex-c align-v col-lg-10 col-lg-offset-2 col-md-10 col-md-offset-2 col-sm-12 col-xs-12" style="top: 10%; position: absolute; right: 0; margin-top: 3%;">
     @foreach($posts as $post)
-        @if($post->image)
+        @if($post->image || $post->youtube_embed)
         <div class="post col-lg-11 col-md-10 col-sm-12 col-xs-12 row">
             @if($post->youtube_embed)
             <div class="video-wrapper col-5 flex-r justify-c no-padding-margin" style="min-height: 400px;">
                 <iframe class=" no-padding-margin col-12" src="{{ $post->youtube_embed }}" frameborder="0" allowfullscreen></iframe>
             </div>
-            @else
+            @elseif($post->image)
             <div class="col-lg-5 hidden-xs img-holder">
                 <img class="col-12 img-responsive news-image" src="/storage/{{ $post->image }}" alt="{{ $post->title }} afbeelding"/>
             </div>
