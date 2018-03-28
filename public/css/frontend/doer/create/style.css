@@ -10,7 +10,9 @@
 
     .content-area {
         height: 90%;
+        font-size: 1.75vw;
     }
+
     .button-container {
         height: 10%;
     }
@@ -44,6 +46,7 @@
 
     .content-area {
         height: 90%;
+        font-size: 1.5vw;
     }
     .button-container {
         height: 10%;
@@ -73,9 +76,12 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991px) {
+
     .content-area {
         height: 90%;
+        font-size: 1.5vw;
     }
+
     .button-container {
         height: 10%;
     }
@@ -113,6 +119,7 @@
 
     .content-area {
         height: 70%;
+        font-size: 1.5vw;
     }
     .button-container {
         height: 30%;
@@ -228,6 +235,18 @@ body {
 
 .content-area {
     border-top: solid 1px white;
+    background-color: #82368c;
+    color: white;
+}
+
+.content-area > p > a {
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px white solid;
+}
+
+.content-area > p > a:hover {
+    color: white;
 }
 
 .doer-encouragement {
