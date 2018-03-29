@@ -1,6 +1,6 @@
 <!-- MENU  -->
 <div id="myNav" class="overlay">
-	<a href="javascript:void(0)" class="closebtn">&times;</a>
+	<a href="javascript:void(0)" class="closebtn dark-blue">&times;</a>
 	<div class="overlay-content flex-c align-v justify-c" style="height: 100vh;">
         <a class="menu-button red offset-xl-2 flex-r align-v justify-c big-john invisible" href="/agenda">WAT IS ER TE DOEN?</a>
 		<a class="menu-button light-green big-john flex-r align-v justify-c invisible" href="/wat-is-de-experimenteerbuurt">EXPERIMENTEERBUURT?</a>

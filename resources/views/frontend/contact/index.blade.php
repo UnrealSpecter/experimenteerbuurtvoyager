@@ -9,7 +9,7 @@
 @section('content')
 <img class="contact-background" src="{{ URL::asset('/images/contact/calm-background-blue.jpg') }}">
 <!-- CONTACT REKJE & BUISJES -->
-<div class="col-lg-10 d-none contact-analoog-wrapper">
+<!-- <div class="col-lg-10 d-none contact-analoog-wrapper">
     <div class="row" style="height: 100%;">
         <div class="col-lg-12 content-area">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 reageerbuis-wrapper">
@@ -28,23 +28,24 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 <!-- CONTACT INFO -->
-<div class="contact-info col-lg-12 col-md-12 col-sm-12 col-xs-12 d-none">
-    <div class="contact-text col-lg-2 col-md-2 col-sm-2 col-xs-12">
-        <span>KvK: 67468519<span>
-    </div>@foreach($contact as $contactinfo)
-    <div class="contact-text col-lg-2 col-md-2 col-sm-2 col-xs-12">
-        <span>Bel: {{$contactinfo->phonenumber}} </span>
+<div class="contact-info" style="width: 100%;">
+    <div class="row no-padding-margin" style="height: 100%;">
+        <div class="contact-text col-2 no-padding-margin d-flex align-v justify-c" style="height: 100%; background-color: red;">
+            <img class="img-fluid" style="width: 50%;" src="{{ asset('images/icons/chevron-left.svg') }}">
+        </div>
+        <div class="col-8 no-padding-margin" style="height: 100%;">
+            <div class="contact-text col-12 no-padding-margin d-flex align-v justify-c">KvK: 67468519</div>
+            <div class="contact-text col-12 d-none no-padding-margin d-flex align-v justify-c">KvK: 67468519</div>
+            <div class="contact-text col-12 d-none no-padding-margin d-flex align-v justify-c">KvK: 67468519</div>
+            <div class="contact-text col-12 d-none no-padding-margin d-flex align-v justify-c">KvK: 67468519</div>
+        </div>
+        <div class="contact-text col-2 no-padding-margin d-flex align-v justify-c"  style="height: 100%; background-color: red;">
+            <img class="img-fluid" style="width: 50%;" src="{{ asset('images/icons/chevron-right.svg') }}">
+        </div>
     </div>
-    <div class="contact-text col-lg-3 col-md-3 col-sm-3 col-xs-12">
-        <span>Email: {{$contactinfo->email}}</span>
-    </div>
-    <div class="contact-text col-lg-5 col-md-5 col-sm-5 col-xs-12">
-        <span> Post: {{$contactinfo->organisation}} {{$contactinfo->address}}, {{$contactinfo->zipcodeandcity}}</span>
-    </div>
-    @endforeach
 </div>
 @endsection
 

@@ -40,6 +40,15 @@
     cursor: pointer;
 }
 
+.menu-trigger {
+    left: 0;
+    position: fixed;
+    bottom: 0;
+    background-color: #2fac66;
+    cursor: pointer;
+    height: 12.5%;
+}
+
 .experimenteerbuurt-menu-bg { background-image: url('/images/menu/experimenteerbuurt.png'); }
 .inspiration-menu-bg { background-image: url('/images/menu/inspiration.png'); }
 .doer-menu-bg { background-image: url('/images/menu/doer.png'); }
@@ -94,7 +103,6 @@
     width: 100vw;
 }
 
-// Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
     .menu-button {
         width: 100%;
@@ -102,25 +110,61 @@
     .overlay a, .img-reponsive a {
         font-size: 1em;
     }
+    .menu-trigger {
+        height: 20%;
+    }
 }
 
-// Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
     .menu-button {
         width: 100%;
     }
+    .overlay a, .img-reponsive a {
+        font-size: 2em;
+    }
+    .menu-trigger {
+        height: 10%;
+    }
 }
 
-// Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
     .menu-button {
         width: 100%;
     }
+    .overlay a, .img-reponsive a {
+        font-size: 2em;
+    }
+    .menu-trigger {
+        height: 15%;
+    }
 }
 
-// Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
     .menu-button {
         height: 33.3%;
+    }
+    .overlay a, .img-reponsive a {
+        font-size: 2em;
+    }
+    .menu-trigger {
+        height: 10%;
+    }
+    .home-nav > .row > a {
+        font-size: 0.85em;
+    }
+}
+
+@media (min-width: 1500px) {
+    .menu-button {
+        height: 33.3%;
+    }
+    .overlay a, .img-reponsive a {
+        font-size: 2em;
+    }
+    .menu-trigger {
+        height: 10%;
+    }
+    .home-nav > .row > a {
+        font-size: 1.25em;
     }
 }

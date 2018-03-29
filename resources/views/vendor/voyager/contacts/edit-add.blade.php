@@ -62,7 +62,7 @@
             {{ csrf_field() }}
 
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-12">
                     <!-- ### organisation ### -->
                     <div class="panel  panel-bordered">
                         @if (count($errors) > 0)
@@ -74,7 +74,6 @@
                                 </ul>
                             </div>
                         @endif
-
                         <div class="panel-heading">
                             <h3 class="panel-title">
                               Contact gegevens
@@ -85,48 +84,25 @@
                             </div>
                         </div>
                         <div class="panel-body">
-                            <label for="organisation">Organisation:</label>
-                            <input type="text" class="form-control" id="organisation" name="organisation" placeholder="organisation" value="@if(isset($dataTypeContent->organisation)){{ $dataTypeContent->organisation }}@endif">
+                            <label for="kvk">Kvk Nummer:</label>
+                            <input type="text" class="form-control" id="kvk" name="kvk" placeholder="Vul hier het kvk nummer in" value="@if(isset($dataTypeContent->kvk)){{ $dataTypeContent->kvk }}@endif">
 
                             <label for="email">Email:</label>
                             <input type="text" class="form-control" id="email" name="email" placeholder="email" value="@if(isset($dataTypeContent->email)){{ $dataTypeContent->email }}@endif">
 
-                            <label for="phonenumber">Phonenumber:</label>
-                            <input type="text" class="form-control" id="phonenumber" name="phonenumber" placeholder="phonenumber" value="@if(isset($dataTypeContent->phonenumber)){{ $dataTypeContent->phonenumber }}@endif">
+                            <label for="phonenumber">Telefoonnummer:</label>
+                            <input type="text" class="form-control" id="phonenumber" name="phonenumber" placeholder="0612345678" value="@if(isset($dataTypeContent->phonenumber)){{ $dataTypeContent->phonenumber }}@endif">
+
+                            <label for="postal_code">Postcode:</label>
+                            <input type="text" class="form-control" id="postal_code" name="postal_code" placeholder="Stichtingnaam, 1234 AB Stad" value="@if(isset($dataTypeContent->organisation)){{ $dataTypeContent->organisation }}@endif">
+
                         </div>
                       </div>
+                      <div class="panel-footer">
+                          <button type="submit" class="btn btn-primary save">Sla wijzingen op</button>
+                      </div>
                   </div>
-                    <div class="col-md-4">
-                    <!-- ### adress gegevens ### -->
-                    <div class="panel  panel-bordered ">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Adres gegevens
-                            <span class="panel-desc"> vul hier je adres gegevens in</span>
-                          </h3>
-                            <div class="panel-actions">
-                                <a class="panel-action voyager-angle-down" data-toggle="panel-collapse" aria-hidden="true"></a>
-                            </div>
-                        </div>
-                        <div class="panel-body">
-                            <div class="form-group">
-                                <label for="address">Address:</label>
-                                <input type="text" class="form-control" id="address" name="address"
-                                    placeholder="address"
-                                    value="@if(isset($dataTypeContent->address)){{ $dataTypeContent->address }}@endif">
-                            </div>
-                            <div class="form-group">
-                                <label for="zipcodeandcity">zipcodeandcity:</label>
-                                <input type="text" class="form-control" id="zipcodeandcity" name="zipcodeandcity"
-                                    placeholder="zipcodeandcity"
-                                    value="@if(isset($dataTypeContent->zipcodeandcity)){{ $dataTypeContent->zipcodeandcity }}@endif">
-                            </div>
-                          </div>
-                        </div>
-                    </div>
-                  </div>
-                  <div class="panel-footer">
-                      <button type="submit" class="btn btn-primary save">Sla wijzingen op</button>
-                  </div>
+
         </form>
 
         <iframe id="form_target" name="form_target" style="display:none"></iframe>

@@ -1,27 +1,3 @@
-/* large desktops and up ----------- */
-@media screen and (min-width: 1200px) {
-    .home-nav { height: 10%; }
-    .home-nav > a { font-size: 1em; }
-}
-
-/* tablets/desktops and up ----------- */
-@media (min-width: 992px) and (max-width: 1199px) {
-    .home-nav { height: 10%; }
-    .home-nav > a { font-size: 1.2em; }
-}
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991px) {
-    .home-nav { height: 15%; }
-    .home-nav > a { font-size: 1em; }
-}
-
-/* Extra small devices (phones, up to 480px) */
-@media screen and (max-width: 767px) {
-    .home-nav { height: 20%; }
-    .home-nav > a{ font-size: 1em; }
-}
-
 .experimenteerbuurt-logo {
     top: 25px;
 }
@@ -30,6 +6,7 @@
 .home-nav {
     position: fixed;
     bottom: 0;
+    height: 10%;
 }
 
 /* Float */
@@ -52,7 +29,7 @@
     transform: translateY(-8px);
 }
 
-.home-nav > a, .home-nav > span {
+.home-nav > .row > a, .home-nav > span {
     text-align: center;
     color: white;
     height: 100%;

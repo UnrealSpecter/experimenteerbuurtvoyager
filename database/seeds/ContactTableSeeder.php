@@ -12,12 +12,12 @@ class ContactTableSeeder extends Seeder
    public function run()
     {
         DB::table('contact')->insert([
-        [
-            'organisation' => 'Stichting Experimenteerbuurt',
-            'address' => 'Baander 4',
-            'zipcodeandcity' => '7811 HJ Emmen',
-            'email' => 'info@experimenteerbuurt.nl',
-            'phonenumber' => '0621-680689',
-        ]]);
+            [
+                'postal_code' => 'Stichting Experimenteerbuurt Baander 4, 7811 HJ Emmen',
+                'email' => 'info@experimenteerbuurt.nl',
+                'phonenumber' => '0621-680689',
+                'kvk' => '67468519'
+            ]
+        ]);
     }
 }
