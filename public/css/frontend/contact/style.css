@@ -414,7 +414,7 @@ body {
     margin: 0;
 }
 
-.contact-info {
+.contact-info-wrapper {
     bottom: 0;
     right: 0;
     position: absolute;
@@ -428,8 +428,10 @@ body {
     color: white;
     height: 100%;
     font-size: 1.25em;
-    position:relative;
-    left:0;
-    top:0;
-    /* border-right: 1px solid white; */
+    position:absolute;
+}
+
+.prev-info, .next-info {
+    cursor: pointer;
+    height: 100%;
 }

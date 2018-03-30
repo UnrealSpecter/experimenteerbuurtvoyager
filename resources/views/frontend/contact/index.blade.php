@@ -31,18 +31,20 @@
 </div> -->
 
 <!-- CONTACT INFO -->
-<div class="contact-info" style="width: 100%;">
+<div class="contact-info-wrapper" style="width: 100%;">
     <div class="row no-padding-margin" style="height: 100%;">
-        <div class="contact-text col-2 no-padding-margin d-flex align-v justify-c" style="height: 100%; background-color: red;">
+        <div class="col-2 no-padding-margin d-flex align-v justify-c prev-info no-drag">
             <img class="img-fluid" style="width: 50%;" src="{{ asset('images/icons/chevron-left.svg') }}">
         </div>
         <div class="col-8 no-padding-margin" style="height: 100%;">
-            <div class="contact-text col-12 no-padding-margin d-flex align-v justify-c">KvK: 67468519</div>
-            <div class="contact-text col-12 d-none no-padding-margin d-flex align-v justify-c">KvK: 67468519</div>
-            <div class="contact-text col-12 d-none no-padding-margin d-flex align-v justify-c">KvK: 67468519</div>
-            <div class="contact-text col-12 d-none no-padding-margin d-flex align-v justify-c">KvK: 67468519</div>
+            @foreach($contact as $info)
+            <div class="contact-text contact-info col-12 no-padding-margin d-flex align-v justify-c">KvK: {{ $info->kvk }}</div>
+            <div class="contact-text contact-info col-12 invisible no-padding-margin d-flex align-v justify-c">Bel: {{ $info->phone_number }}</div>
+            <div class="contact-text contact-info col-12 invisible no-padding-margin d-flex align-v justify-c">Email: {{ $info->email }}</div>
+            <div class="contact-text contact-info col-12 invisible no-padding-margin d-flex align-v justify-c">Post: {{ $info->postal_code }}</div>
+            @endforeach
         </div>
-        <div class="contact-text col-2 no-padding-margin d-flex align-v justify-c"  style="height: 100%; background-color: red;">
+        <div class="col-2 no-padding-margin d-flex align-v justify-c next-info no-drag">
             <img class="img-fluid" style="width: 50%;" src="{{ asset('images/icons/chevron-right.svg') }}">
         </div>
     </div>

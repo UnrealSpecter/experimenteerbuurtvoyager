@@ -84,6 +84,7 @@
                             </div>
                         </div>
                         <div class="panel-body">
+                            
                             <label for="kvk">Kvk Nummer:</label>
                             <input type="text" class="form-control" id="kvk" name="kvk" placeholder="Vul hier het kvk nummer in" value="@if(isset($dataTypeContent->kvk)){{ $dataTypeContent->kvk }}@endif">
 
