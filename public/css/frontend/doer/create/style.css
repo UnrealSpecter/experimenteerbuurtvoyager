@@ -2,150 +2,63 @@
     background-color: #82368c;
 }
 
-/* large desktops and up ----------- */
-@media screen and (min-width: 1200px) {
-    .selected {
-        border-bottom: 10px solid #c09ac5;
-    }
-
-    .content-area {
-        height: 90%;
-        font-size: 1.75vw;
-    }
-
-    .button-container {
-        height: 10%;
-    }
-
-    .button {
-        height: 100%;
-    }
-
-    .button > span {
-        font-size: 2em;
-    }
-
-    .doer-encouragement {
-        font-size: 5em;
-    }
-
-    .doer-emphasis {
-        font-size: 3em;
-    }
-
-    .fs-message-error {
-        font-size: 2em;
-    }
+/*  buttons */
+.button-container {
+    z-index: 100 !important;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    height: 10%;
+    background-color: #82368c;
+    font-size: 1.5em;
+    color: white;
 }
 
-/* tablets/desktops and up ----------- */
-@media (min-width: 992px) and (max-width: 1199px) {
-    .selected {
-        border-bottom: 8px solid #c09ac5;
-    }
-
-    .content-area {
-        height: 90%;
-        font-size: 1.5vw;
-    }
-    .button-container {
-        height: 10%;
-    }
-
-    .button {
-        height: 100%;
-    }
-
-    .button > span {
-        font-size: 1.25em;
-    }
-
-    .doer-encouragement {
-        font-size: 4em;
-    }
-
-    .doer-emphasis {
-        font-size: 3em;
-    }
-
-    .fs-message-error {
-        font-size: 2em;
-    }
-
+.content-area {
+    height: 90%;
+    border-top: solid 1px white;
+    color: white;
+    background-color: #82368c;
 }
 
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991px) {
-
-    .content-area {
-        height: 90%;
-        font-size: 1.5vw;
-    }
-
+@media (min-width: 576px) {
     .button-container {
-        height: 10%;
-    }
-
-    .button {
-        height: 100%;
-    }
-
-    .button > span {
+        z-index: 100 !important;
+        cursor: pointer;
+        top: 0;
+        right: 0;
+        height: 15%;
+        background-color: #82368c;
         font-size: 1.5em;
-    }
-
-    .doer-encouragement {
-        font-size: 5em;
-    }
-
-    .doer-emphasis {
-        font-size: 3em;
-    }
-
-    .fs-message-error {
-        font-size: 2em;
-    }
-
-    .selected {
-        border-bottom: 6px solid #c09ac5;
-    }
-}
-
-/* Extra small devices (phones, up to 480px) */
-@media screen and (max-width: 767px) {
-    .selected {
-        border-bottom: 4px solid #c09ac5;
+        color: white;
     }
 
     .content-area {
-        height: 70%;
-        font-size: 1.5vw;
+        height: 85%;
+        border-top: solid 1px white;
+        color: white;
+        background-color: #82368c;
     }
-    .button-container {
-        height: 30%;
-    }
+}
 
-    .button {
-        height: 33.3%;
-        border-right: none !important;
-        border-bottom: 1px solid white;
-    }
+@media (min-width: 768px) {
+    .button-container { font-size: 3.5em; }
+    .content-area { font-size: 1.5em; }
+}
 
-    .button > span {
-        font-size: 1em;
-    }
+@media (min-width: 992px) {
+    .button-container { font-size: 2.5em; }
+    .content-area { font-size: 1.3em; }
+}
 
-    .doer-encouragement {
-        font-size: 3em;
-    }
-    .doer-emphasis {
-        font-size: 1em;
-    }
+@media (min-width: 1200px) {
+    .button-container { font-size: 2.5em; }
+    .content-area { font-size: 1.4em; }
+}
 
-    .fs-message-error {
-        font-size: 3em;
-    }
-
+@media (min-width: 1500px) {
+    .button-container { font-size: 3em; }
+    .content-area { font-size: 2em; }
 }
 
 .fullscreen-form-background {
@@ -188,14 +101,6 @@ body {
 	height: 100vh;
 }
 
-/*  buttons */
-.button-container {
-    z-index: 100 !important;
-    cursor: pointer;
-    top: 0;
-    right: 0;
-}
-
 .button {
     font-family: 'big-john';
     display: table;
@@ -231,12 +136,6 @@ body {
 
 .doener-info-video {
     z-index: 10;
-}
-
-.content-area {
-    border-top: solid 1px white;
-    background-color: #82368c;
-    color: white;
 }
 
 .content-area > p > a {

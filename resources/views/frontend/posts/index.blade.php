@@ -7,22 +7,23 @@
 @section('content')
 <img class="nieuws-background" src="{{ URL::asset('/images/news/news-background.jpg') }}">
 
-<div class="col-10 news-title big-john flex-r align-v justify-c">Nieuw(s)</div>
+<div class="col-12 col-lg-10 col-xl-10 news-title big-john flex-r align-v justify-c">Nieuw(s)</div>
 
-<div class="posts-wrapper d-none  flex-c align-v col-lg-10 col-lg-offset-2 col-md-10 col-md-offset-2 col-sm-12 col-xs-12" style="top: 10%; position: absolute; right: 0; margin-top: 3%;">
+<div class="posts-wrapper d-none  flex-c align-v col-xs-12 col-sm-12 col-lg-10 col-lg-offset-2 col-md-10 col-md-offset-2 no-padding-margin" style="top: 15%; position: absolute; right: 0; margin-top: 15px;">
     @foreach($posts as $post)
         @if($post->image || $post->youtube_embed)
         <div class="post col-lg-11 col-md-10 col-sm-12 col-xs-12 row">
             @if($post->youtube_embed)
-            <div class="video-wrapper col-5 flex-r justify-c no-padding-margin" style="min-height: 400px;">
+            <div class="video-wrapper col-12 col-xs-12 flex-r justify-c no-padding-margin">
                 <iframe class=" no-padding-margin col-12" src="{{ $post->youtube_embed }}" frameborder="0" allowfullscreen></iframe>
             </div>
+            <div class="col-7 d-none d-xs-none">
             @elseif($post->image)
             <div class="col-lg-5 hidden-xs img-holder">
                 <img class="col-12 img-responsive news-image" src="/storage/{{ $post->image }}" alt="{{ $post->title }} afbeelding"/>
             </div>
+            <div class="col-7 d-xs-block">
             @endif
-            <div class="col-7 col-xs-12">
                 @if($post->link)
                 <a href="{{ $post->link }}" target="_blank">
                     <div class="title" style="padding: 0;">{{ $post->title }}<span class="hyperlink-indicator glyphicon glyphicon-link"></span></div>

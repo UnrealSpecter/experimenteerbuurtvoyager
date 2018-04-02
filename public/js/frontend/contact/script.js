@@ -5,16 +5,16 @@ $(document).ready(function(){
 
     //next clicked
     $('.next-info').click(function(){
-        var current = $('.contact-info').not('.' + invisible);
-        var next = current.next().hasClass('contact-info') ? current.next() : $('.contact-info').first();
+        var current = $('.contact-info-mobile').not('.' + invisible);
+        var next = current.next().hasClass('contact-info-mobile') ? current.next() : $('.contact-info-mobile').first();
         current.addClass(invisible).removeClass('animated fadeIn');
         next.removeClass(invisible).addClass('animated fadeIn');
     });
 
     //previous arrow click
     $('.prev-info').click(function(){
-        var current = $('.contact-info').not('.' + invisible);
-        var previous = current.prev().hasClass("contact-info") ? current.prev() : $(".contact-info").last();
+        var current = $('.contact-info-mobile').not('.' + invisible);
+        var previous = current.prev().hasClass("contact-info-mobile") ? current.prev() : $(".contact-info-mobile").last();
         current.addClass(invisible).removeClass('animated fadeIn');
         previous.removeClass(invisible).addClass('animated fadeIn');
     });
@@ -23,8 +23,8 @@ $(document).ready(function(){
 
 function introAnimation(){
     setTimeout(function(){
-        if($(window).width() >= 1200){
-            $('.contact-info-wrapper').removeClass(hidden).addClass('animated fadeInLeft');
+        if($(window).width() >= 992){
+            $('.contact-info-wrapper').removeClass(hidden).addClass('animated fadeIn');
         }
         else {
             $('.contact-info-wrapper').removeClass(hidden).addClass('animated fadeInUp');

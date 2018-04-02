@@ -2,386 +2,161 @@
     background-color: #36a9e1;
 }
 
+.contact-info-wrapper {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-color: #36a9e1;
+    color: #82368c;
+    height: 20%;
+}
+
+.desktop-border:not(:last-child) {
+    border-right: 1px solid white;
+}
+
+/* Portrait */
+@media only screen
+  and (orientation: portrait) {
+      .reageerbuis-wrapper {
+          height: 45%;
+          padding-left: 13%;
+      }
+      .contact-analoog-wrapper > .row {
+          display: flex;
+          align-items: center;
+      }
+      .next-arrow, .prev-arrow {
+          width: 50%;
+      }
+      .contact-text {
+          position: absolute;
+          font-size: 1.25em;
+      }
+}
+
+/* Landscape */
+@media only screen
+  and (orientation: landscape) {
+      .reageerbuis-wrapper {
+          height: 75%;
+          padding-left: 13%;
+      }
+      .next-arrow, .prev-arrow {
+          width: 35%;
+      }
+      .contact-text {
+          position: absolute;
+          font-size: 1.25em;
+      }
+}
+
 @media (min-width: 576px) {
-    /* .reageerbuis-wrapper {
-        height: 45%;
+    .reageerbuis-wrapper {
+        height: 80%;
         padding-left: 13%;
     }
 
-    .facebook-reageerbuis {
-        position: relative;
-        top: 18%;
-        height: 65%;
-        width: 13%;
-        margin-right: 5%;
+    .contact-text {
+        position: absolute;
     }
-
-    .twitter-reageerbuis {
-        position: relative;
-        top: 17%;
-        height: 70%;
-        width: 13%;
-        margin-right: 6%;
-    }
-
-    .linkedin-reageerbuis {
-        position: relative;
-        top: 18.5%;
-        height: 70%;
-        width: 13%;
-        margin-right: 6%;
-    }
-
-    .instagram-reageerbuis {
-        position: relative;
-        top: 17%;
-        height: 70%;
-        width: 13%;
-        margin-right: 5%;
-    }
-
-    .youtube-reageerbuis {
-        position: relative;
-        top: 19%;
-        height: 65%;
-        width: 13%;
-    } */
-
-    .contact-info{
-        font-size: 0.9em;
-        height: 25%;
-    }
-
-    /* .contact-text{
-        height: 25%;
-        display: flex;
-        align-items: center;
-    } */
-
-    /* .contact-text > div {
-        width: 100%;
-    } */
-
-    /* .contact-text > span {
-        text-align: center;
-        width: 100%;
-    } */
 
 }
 
 @media (min-width: 768px) {
+    .reageerbuis-wrapper {
+        height: 42.5%;
+        padding-left: 13%;
+    }
+
+    .contact-info-wrapper {
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        background-color: #36a9e1;
+        color: #82368c;
+        height: 10%;
+    }
+
+    .next-arrow, .prev-arrow {
+        width: 35%;
+    }
+
+    .contact-text {
+        position: absolute;
+    }
 
 }
 
 @media (min-width: 992px) {
+    .reageerbuis-wrapper {
+        height: 79.5%;
+        padding-left: 13%;
+        bottom: 11%;
+        position: absolute;
+    }
+
+    .contact-info-wrapper {
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        background-color: #36a9e1;
+        color: #82368c;
+        height: 10%;
+    }
+
+    .next-arrow, .prev-arrow {
+        width: 25%;
+    }
+
+    .contact-text {
+        position:relative;
+        font-size: 1em;
+    }
 
 }
 
 @media (min-width: 1200px) {
+    .reageerbuis-wrapper {
+        height: 79.5%;
+        padding-left: 13%;
+        bottom: 11%;
+        position: absolute;
+    }
+
+    .contact-info-wrapper {
+        bottom: 0;
+        right: 0;
+        position: absolute;
+        background-color: #36a9e1;
+        color: #82368c;
+        height: 10%;
+    }
+
+    .next-arrow, .prev-arrow {
+        width: 25%;
+    }
+
+    .contact-text {
+        position:relative;
+        font-size: 1em;
+        font-weight: 500;
+    }
 
 }
 
 @media (min-width: 1500px) {
-
+    .contact-text {
+        position:relative;
+        font-size: 1.5em;
+        font-weight: normal;
+    }
 }
-
-
-/* large desktops and up ----------- */
-/* @media screen and (min-width: 1200px) {
-
-    .reageerbuis-wrapper {
-        height: 78%;
-        padding-left: 23%;
-    }
-
-    .facebook-reageerbuis {
-        position: relative;
-        top: 18%;
-        height: 65%;
-        width: 10%;
-        margin-right: 4%;
-    }
-
-    .twitter-reageerbuis {
-        position: relative;
-        top: 17%;
-        height: 70%;
-        width: 10%;
-        margin-right: 5%;
-    }
-
-    .linkedin-reageerbuis {
-        position: relative;
-        top: 18.5%;
-        height: 70%;
-        width: 10%;
-        margin-right: 5%;
-    }
-
-    .instagram-reageerbuis {
-        position: relative;
-        top: 17%;
-        height: 70%;
-        width: 10%;
-        margin-right: 4%;
-    }
-
-    .youtube-reageerbuis {
-        position: relative;
-        top: 19%;
-        height: 65%;
-        width: 10%;
-    }
-
-    .contact-info{
-        font-size: 1.2em;
-        display: flex;
-        align-items: center;
-        height: 10%;
-    }
-
-    .contact-text:nth-last-child(1){
-        border: none;
-    }
-
-} */
-
-/* tablets/desktops and up ----------- */
-/* @media (min-width: 992px) and (max-width: 1199px) {
-
-    .reageerbuis-wrapper {
-        height: 78%;
-        padding-left: 13%;
-    }
-
-    .facebook-reageerbuis {
-        position: relative;
-        top: 18%;
-        height: 65%;
-        width: 13%;
-        margin-right: 5%;
-    }
-
-    .twitter-reageerbuis {
-        position: relative;
-        top: 17%;
-        height: 70%;
-        width: 13%;
-        margin-right: 6%;
-    }
-
-    .linkedin-reageerbuis {
-        position: relative;
-        top: 18.5%;
-        height: 70%;
-        width: 13%;
-        margin-right: 6%;
-    }
-
-    .instagram-reageerbuis {
-        position: relative;
-        top: 17%;
-        height: 70%;
-        width: 13%;
-        margin-right: 5%;
-    }
-
-    .youtube-reageerbuis {
-        position: relative;
-        top: 19%;
-        height: 65%;
-        width: 13%;
-    }
-
-    .contact-info{
-        font-size: 0.9em;
-        display: flex;
-        align-items: center;
-        height: 10%;
-    }
-
-    .contact-text:nth-last-child(1){
-        border: none;
-    }
-} */
-
-/* Small devices (tablets, 768px and up) */
-/* @media (min-width: 768px) and (max-width: 991px) {
-
-    .reageerbuis-wrapper {
-        height: 78%;
-        padding-left: 13%;
-    }
-
-    .facebook-reageerbuis {
-        position: relative;
-        top: 18%;
-        height: 65%;
-        width: 13%;
-        margin-right: 5%;
-    }
-
-    .twitter-reageerbuis {
-        position: relative;
-        top: 17%;
-        height: 70%;
-        width: 13%;
-        margin-right: 6%;
-    }
-
-    .linkedin-reageerbuis {
-        position: relative;
-        top: 18.5%;
-        height: 70%;
-        width: 13%;
-        margin-right: 6%;
-    }
-
-    .instagram-reageerbuis {
-        position: relative;
-        top: 17%;
-        height: 70%;
-        width: 13%;
-        margin-right: 5%;
-    }
-
-    .youtube-reageerbuis {
-        position: relative;
-        top: 19%;
-        height: 65%;
-        width: 13%;
-    }
-
-    .contact-info{
-        font-size: 0.9em;
-        display: flex;
-        align-items: center;
-        height: 10%;
-    }
-
-    .contact-text:nth-last-child(3){
-        border-left: 1px solid white;
-        border-right: 1px solid white;
-    }
-} */
-
-/* Extra small devices (phones, up to 480px) */
-/* @media screen and (max-width: 767px) {
-    .reageerbuis-wrapper {
-        height: 45%;
-        padding-left: 13%;
-    }
-
-    .facebook-reageerbuis {
-        position: relative;
-        top: 18%;
-        height: 65%;
-        width: 13%;
-        margin-right: 5%;
-    }
-
-    .twitter-reageerbuis {
-        position: relative;
-        top: 17%;
-        height: 70%;
-        width: 13%;
-        margin-right: 6%;
-    }
-
-    .linkedin-reageerbuis {
-        position: relative;
-        top: 18.5%;
-        height: 70%;
-        width: 13%;
-        margin-right: 6%;
-    }
-
-    .instagram-reageerbuis {
-        position: relative;
-        top: 17%;
-        height: 70%;
-        width: 13%;
-        margin-right: 5%;
-    }
-
-    .youtube-reageerbuis {
-        position: relative;
-        top: 19%;
-        height: 65%;
-        width: 13%;
-    }
-
-    .contact-info{
-        font-size: 0.9em;
-        height: 25% !important;
-    }
-
-    .contact-text{
-        height: 25%;
-        display: flex;
-        align-items: center;
-    }
-
-    .contact-text > div {
-        width: 100%;
-    }
-
-    .contact-text > span {
-        text-align: center;
-        width: 100%;
-    }
-
-} */
-
-/* @media screen and (max-width: 767px) and (orientation:landscape){
-    .reageerbuis-wrapper {
-        height: 78%;
-        padding-left: 13%;
-    }
-
-    .facebook-reageerbuis {
-        position: relative;
-        top: 18%;
-        height: 65%;
-        width: 13%;
-        margin-right: 5%;
-    }
-
-    .twitter-reageerbuis {
-        position: relative;
-        top: 17%;
-        height: 70%;
-        width: 13%;
-        margin-right: 6%;
-    }
-
-    .linkedin-reageerbuis {
-        position: relative;
-        top: 18.5%;
-        height: 70%;
-        width: 13%;
-        margin-right: 6%;
-    }
-
-    .instagram-reageerbuis {
-        position: relative;
-        top: 17%;
-        height: 70%;
-        width: 13%;
-        margin-right: 5%;
-    }
-
-    .youtube-reageerbuis {
-        position: relative;
-        top: 19%;
-        height: 65%;
-        width: 13%;
-    }
-} */
 
 body {
     overflow: hidden;
 }
+
 .contact-background {
     height: 100%;
     position: absolute;
@@ -406,29 +181,58 @@ body {
 
 .rekje {
     position: absolute;
-    top: 0;
-    left: 0;
     height: 100%;
     width: 100%;
     padding: 0;
     margin: 0;
+    top: 0;
+    left: 0;
 }
 
-.contact-info-wrapper {
-    bottom: 0;
-    right: 0;
-    position: absolute;
-    background-color: #36a9e1;
-    color: #82368c;
-    height: 20%;
+.facebook-reageerbuis {
+    position: relative;
+    top: 18%;
+    height: 65%;
+    width: 13%;
+    margin-right: 5%;
+}
+
+.twitter-reageerbuis {
+    position: relative;
+    top: 17%;
+    height: 70%;
+    width: 13%;
+    margin-right: 6%;
+}
+
+.linkedin-reageerbuis {
+    position: relative;
+    top: 18.5%;
+    height: 70%;
+    width: 13%;
+    margin-right: 6%;
+}
+
+.instagram-reageerbuis {
+    position: relative;
+    top: 17%;
+    height: 70%;
+    width: 13%;
+    margin-right: 5%;
+}
+
+.youtube-reageerbuis {
+    position: relative;
+    top: 18.75%;
+    height: 65%;
+    width: 13%;
 }
 
 .contact-text {
     text-align: center;
     color: white;
     height: 100%;
-    font-size: 1.25em;
-    position:absolute;
+    line-height: 100%;
 }
 
 .prev-info, .next-info {

@@ -6,71 +6,55 @@
     background-color: #2d2e83;
 }
 
-/* large desktops and up ----------- */
-@media screen and (min-width: 1200px) {
-
-    .inspiration-title {
-        font-size: 8em;
-    }
-
-    .inspiration-description {
-        font-size: 1.5em;
-    }
-
-    .fb-analoog-img {
-        bottom: 2%;
-        width: 15%;
-    }
+.mobile-facebook-button {
+    position: absolute;
+    bottom: 0;
+    height: 12.5%;
+    margin: 0;
+    padding: 0;
 }
 
-/* tablets/desktops and up ----------- */
-@media (min-width: 992px) and (max-width: 1199px) {
-
-    .inspiration-title {
-        font-size: 5em;
-    }
-
-    .inspiration-description {
-        font-size: 1.3em;
-    }
-
-    .fb-analoog-img {
-        left: 35%;
-        bottom: 5%;
-        height: 30%;
-    }
+.content-wrapper {
+    padding: 15px;
 }
 
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991px) {
-
-    .inspiration-title {
-        font-size: 5em;
-    }
-
-    .inspiration-description {
-        font-size: 1.2em;
-        padding: 1%;
-    }
-
-    .fb-analoog-img {
-        left: 35%;
-        bottom: 5%;
-        height: 30%;
-    }
-
+.inspiration-description {
+    letter-spacing: 0px;
+    margin: 0px 15px 5px 15px;
+    text-align: center;
+    background-color: trasparent;
+    color: #2d2e83;
+    font-size: 1em;
 }
 
-/* Extra small devices (phones, up to 480px) */
-@media screen and (max-width: 767px) {
+@media (min-width: 576px) {
+    .inspiration-title { margin-bottom: 15px; }
+    .mobile-facebook-button { height: 22.5%; }
+    .inspiration-description { font-size: 1.1em; }
+}
 
-    .inspiration-title {
-        font-size: 2.5em;
-        padding: 3%;
-    }
+@media (min-width: 768px) {
+    .inspiration-title{ font-size: 4.5em; }
+    .mobile-facebook-button { height: 12.5%; }
+    .inspiration-description { font-size: 1.5em; }
+}
+
+@media (min-width: 992px) {
+    .inspiration-title{ font-size: 4em; }
+
+    .inspiration-description { width: 75%; }
+}
+
+@media (min-width: 1200px) {
+    .inspiration-title{ font-size: 4em; }
+    .inspiration-description { width: 65%; }
+}
+
+@media (min-width: 1500px) {
+    .inspiration-title{ font-size: 6em; }
     .inspiration-description {
-        font-size: 1em;
-        padding: 0 2.5% 2.5% 2.5%;
+        width: 65%;
+        font-size: 1.75em;
     }
 }
 
@@ -94,16 +78,6 @@
 .inspiration-title {
     color: #2d2e83;
     text-align: center;
-    margin: 0;
-}
-
-
-.inspiration-description {
-    letter-spacing: 1px;
-    margin: 2%;
-    text-align: center;
-    background-color: trasparent;
-    color: #2d2e83;
 }
 
 .fb-link {
@@ -114,5 +88,4 @@
 .fb-analoog-img {
     width: 100%;
     opacity: 0.8;
-    position: absolute;
 }

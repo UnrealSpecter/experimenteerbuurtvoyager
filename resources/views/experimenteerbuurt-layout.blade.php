@@ -33,7 +33,7 @@
 		<div class="container-fluid" style="width: 100vw;" data-enhance="false" data-role="page">
             <div class="row" style="height: 100vh; width: 100vw;">
                 @include('modal')
-                <div class="col-lg-2 col-md-2 d-none d-sm-none d-xs-none erlenmeyer">
+                <div class="col-xl-2 col-lg-2 col-md-2 d-none d-sm-none d-xs-none d-lg-block d-xl-block erlenmeyer">
                     <img src="/images/analoog-erlenmeyer.png" alt="erlenmeyer-background" style="position: absolute; top: 0; left: 0; height: 100vh; width: 100%; padding-left: 20px;">
                 </div>
                 @yield('content')

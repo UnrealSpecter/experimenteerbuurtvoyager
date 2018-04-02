@@ -5,8 +5,42 @@ body {
     background-color: #316b4d;
 }
 
+.video-wrapper {
+    min-height: 200px;
+}
+
+.news-title {
+    height: 15%;
+    background-color: #316b4d;
+    color: white;
+    text-align: center;
+}
+
+
+@media (min-width: 576px) {
+
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1500px) {
+
+}
+
+
 /* large desktops and up ----------- */
-@media screen and (min-width: 1501px) {
+/* @media screen and (min-width: 1501px) {
     .news-title {
         font-size: 2em;
     }
@@ -37,10 +71,10 @@ body {
         flex-flow: row;
     }
 
-}
+} */
 
 /* large desktops and up ----------- */
-@media (min-width: 1200px) and (max-width: 1500px) {
+/* @media (min-width: 1200px) and (max-width: 1500px) {
     .news-title {
         font-size: 2em;
     }
@@ -71,10 +105,10 @@ body {
         flex-flow: row;
     }
 
-}
+} */
 
 /* tablets/desktops and up ----------- */
-@media (min-width: 992px) and (max-width: 1199px) {
+/* @media (min-width: 992px) and (max-width: 1199px) {
     .news-title {
         font-size: 2em;
     }
@@ -104,10 +138,10 @@ body {
     .post:nth-child(odd) {
         flex-flow: row;
     }
-}
+} */
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991px) {
+/* @media (min-width: 768px) and (max-width: 991px) {
     .news-title {
         font-size: 1.5em;
     }
@@ -135,19 +169,19 @@ body {
     }
 
     .post > div {
-        display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-        display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-        display: -ms-flexbox;      /* TWEENER - IE 10 */
-        display: -webkit-flex;     /* NEW - Chrome */
-        display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
         flex-flow: column;
         align-items: center;
         justify-content: center;
     }
-}
+} */
 
 /* Extra small devices (phones, up to 480px) */
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
     .news-title {
         font-size: 1.25em;
         line-height: normal;
@@ -156,7 +190,6 @@ body {
     .post {
         min-height: 100px;
         flex-flow: column;
-        /*justify-content: flex-start;*/
     }
 
     .hyperlink-indicator {
@@ -172,38 +205,26 @@ body {
     }
 
     .img-holder {
-        display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-        display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-        display: -ms-flexbox;      /* TWEENER - IE 10 */
-        display: -webkit-flex;     /* NEW - Chrome */
-        display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
         padding: 0;
     }
 
-}
+} */
 
 .nieuws-background {
     position: fixed;
     top: 0;
     right: 0;
-    /* height: 100vh; */
+    height: 100vh;
     width: 100vw;
 }
 
-.news-title {
-    height: 10%;
-    margin-bottom: 50px;
-    background-color: #316b4d;
-    color: white;
-    text-align: center;
-}
-
-.posts-wrapper {
-
-}
-
 .post {
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
     display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
     display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
     display: -ms-flexbox;      /* TWEENER - IE 10 */
