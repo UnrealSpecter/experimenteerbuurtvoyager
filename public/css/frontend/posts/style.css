@@ -16,6 +16,11 @@ body {
     text-align: center;
 }
 
+.content-container {
+    padding: 0;
+    margin: 0;
+}
+
 
 @media (min-width: 576px) {
 
@@ -27,7 +32,13 @@ body {
 }
 
 @media (min-width: 992px) {
-
+    .video-wrapper {
+        min-height: 400px;
+    }
+    .content-container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -38,183 +49,6 @@ body {
 
 }
 
-
-/* large desktops and up ----------- */
-/* @media screen and (min-width: 1501px) {
-    .news-title {
-        font-size: 2em;
-    }
-
-    .post {
-        min-height: 200px;
-        justify-content: center;
-        flex-flow: row;
-    }
-
-    .hyperlink-indicator {
-        font-size: 1em;
-    }
-
-    .title {
-        font-size: 1.5em;
-    }
-
-    .content {
-        font-size: 1.3em;
-    }
-
-    .column {
-        flex-flow: column;
-    }
-
-    .post:nth-child(odd) {
-        flex-flow: row;
-    }
-
-} */
-
-/* large desktops and up ----------- */
-/* @media (min-width: 1200px) and (max-width: 1500px) {
-    .news-title {
-        font-size: 2em;
-    }
-
-    .post {
-        min-height: 200px;
-        justify-content: center;
-        flex-flow: row;
-    }
-
-    .hyperlink-indicator {
-        font-size: 1em;
-    }
-
-    .title {
-        font-size: 1.5em;
-    }
-
-    .content {
-        font-size: 1.15em;
-    }
-
-    .column {
-        flex-flow: column;
-    }
-
-    .post:nth-child(odd) {
-        flex-flow: row;
-    }
-
-} */
-
-/* tablets/desktops and up ----------- */
-/* @media (min-width: 992px) and (max-width: 1199px) {
-    .news-title {
-        font-size: 2em;
-    }
-
-    .post {
-        min-height: 200px;
-        justify-content: center;
-        flex-flow: row;
-    }
-
-    .hyperlink-indicator {
-        font-size: 1em;
-    }
-
-    .title {
-        font-size: 1.5em;
-    }
-
-    .content {
-        font-size: 1.25em;
-    }
-
-    .column {
-        flex-flow: column;
-    }
-
-    .post:nth-child(odd) {
-        flex-flow: row;
-    }
-} */
-
-/* Small devices (tablets, 768px and up) */
-/* @media (min-width: 768px) and (max-width: 991px) {
-    .news-title {
-        font-size: 1.5em;
-    }
-
-    .post {
-        min-height: 200px;
-        justify-content: flex-start;
-        flex-flow: row;
-    }
-
-    .hyperlink-indicator {
-        font-size: 1.5em;
-    }
-
-    .title {
-        font-size: 1.5em;
-    }
-
-    .content {
-        font-size: 1em;
-    }
-
-    .column {
-        flex-flow: column !important;
-    }
-
-    .post > div {
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        flex-flow: column;
-        align-items: center;
-        justify-content: center;
-    }
-} */
-
-/* Extra small devices (phones, up to 480px) */
-/* @media screen and (max-width: 767px) {
-    .news-title {
-        font-size: 1.25em;
-        line-height: normal;
-    }
-
-    .post {
-        min-height: 100px;
-        flex-flow: column;
-    }
-
-    .hyperlink-indicator {
-        font-size: 1.25em;
-    }
-
-    .title {
-        font-size: 1.3em;
-    }
-
-    .content {
-        font-size: 1.1em;
-    }
-
-    .img-holder {
-        display: -webkit-box;
-        display: -moz-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        padding: 0;
-    }
-
-} */
-
 .nieuws-background {
     position: fixed;
     top: 0;
@@ -224,28 +58,25 @@ body {
 }
 
 .post {
-    /* margin-bottom: 50px; */
-    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox;      /* TWEENER - IE 10 */
-    display: -webkit-flex;     /* NEW - Chrome */
-    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
-    align-items: center;
-    padding: 0 !important;
+    background-color: #316b4d;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.post > div > a {
-    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox;      /* TWEENER - IE 10 */
-    display: -webkit-flex;     /* NEW - Chrome */
-    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
-    align-items: center;
-    justify-content: center;
+.post:last-child {
+    background-color: #316b4d;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+a {
+    color: white;
     text-decoration: none;
 }
 
-.post > div > a:hover {
+a:hover {
     color: white;
     text-decoration: none;
 }
@@ -253,18 +84,14 @@ body {
 .title {
     text-align: center;
     text-decoration: none;
-    padding: 15px;
-    padding-bottom: 0;
+    padding: 0px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     font-family: big-john;
     min-height: 50px;
-    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox;      /* TWEENER - IE 10 */
-    display: -webkit-flex;     /* NEW - Chrome */
-    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
-    align-items: center;
-    justify-content: center;
-    color: #316b4d;
+    /* text-decoration: underline; */
+    /* color: #316b4d; */
+    color: white;
 }
 
 .hyperlink-indicator {
@@ -274,18 +101,13 @@ body {
 
 .content {
     font-family: 'fira-sans';
-    display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-    display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-    display: -ms-flexbox;      /* TWEENER - IE 10 */
-    display: -webkit-flex;     /* NEW - Chrome */
-    display: flex;             /* NEW, Spec - Opera 12.1, Firefox 20+ */
-    color: black;
+    color: white;
     font-weight: bold;
     align-items: center;
     justify-content: center;
     text-align: left;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    padding: 0;
+    padding-bottom: 15px;
 }
 
 .news-image {
