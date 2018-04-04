@@ -2,8 +2,25 @@
     background-color: #2fac66;
 }
 
+.prev-arrow, .next-arrow {
+    cursor: pointer;
+    height: 100%;
+    width: 60%;
+}
+
+.button-container {
+    height: 15%;
+    z-index: 10;
+    /* cursor: pointer; */
+    background-color: #2fac66;
+}
+
+.mobile-about-button {
+    position:absolute;
+}
+
 /* large desktops and up ----------- */
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
 
     .locatie-tekst {
         font-size: 1.5em;
@@ -58,10 +75,10 @@
     .sponsors {
         height: 25%;
     }
-}
+} */
 
 /* tablets/desktops and up ----------- */
-@media (min-width: 992px) and (max-width: 1199px) {
+/* @media (min-width: 992px) and (max-width: 1199px) {
 
     .locatie-tekst {
         font-size: 1.75em;
@@ -116,10 +133,10 @@
     .sponsors {
         height: 20%;
     }
-}
+} */
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991px) {
+/* @media (min-width: 768px) and (max-width: 991px) {
 
     locatie-tekst {
         font-size: 1.5em;
@@ -187,10 +204,10 @@
     .sponsors {
         height: 15%;
     }
-}
+} */
 
 /* Extra small devices (phones, up to 480px) */
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
 
     .main-container {
         height: 85%;
@@ -214,8 +231,6 @@
     }
 
     .button > span {
-        /*word-wrap: break-word;
-        overflow-wrap: break-word;*/
     }
 
     .selected {
@@ -290,10 +305,10 @@
         justify-content: center;
     }
 
-}
+} */
 
 .carousel-item {
-    border-top: solid white 1px;
+    /* border-top: solid white 1px; */
     position: absolute;
     width: 100%;
     background-color: transparent;
@@ -306,8 +321,8 @@
     display: table;
     text-align: center;
     background-color: #2fac66;
-    color: #2fac66;
-    border-right: 1px white solid;
+    color: white;
+    /* border-right: 1px white solid; */
 }
 
 .button:last-child {
@@ -319,7 +334,7 @@ body {
 }
 
 .selected {
-    border-bottom: 10px solid #97d5b2;
+    /* border-bottom: 5px solid #97d5b2; */
 }
 
 .button > span {
@@ -387,17 +402,20 @@ body {
 }
 
 .experimenteerbuurt-title {
-    padding: 0 !important;
     font-family: 'big-john';
-    padding: 1%;
-    margin-left: 1%;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
     color: white;
     text-align: center;
+    font-size: 1.25em;
 }
 
 .experimenteerbuurt-description {
     font-family: 'fira-sans';
-    padding: 2%;
+    padding-left: 15px;
+    padding-right: 15px;
     color: white;
 }
 

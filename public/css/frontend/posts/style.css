@@ -28,7 +28,13 @@ body {
 }
 
 @media (min-width: 768px) {
-
+    .news-title {
+        font-size: 3em;
+        height: 12.5%;
+    }
+    .video-wrapper {
+        min-height: 300px;
+    }
 }
 
 @media (min-width: 992px) {
@@ -46,7 +52,9 @@ body {
 }
 
 @media (min-width: 1500px) {
-
+    .video-wrapper {
+        min-height: 500px;
+    }
 }
 
 .nieuws-background {

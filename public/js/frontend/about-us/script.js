@@ -20,7 +20,6 @@ $(document).ready(function(){
     }
 
     /* menu */
-    //set correct button classes
     $('.button').on('click', function(){
         $('.button').each(function(i, obj) {
              if($(obj).hasClass('selected')){
@@ -68,6 +67,24 @@ $(document).ready(function(){
         current.addClass(invisible).removeClass('animated fadeIn');
         previous.removeClass(invisible).addClass('animated fadeIn');
         $('.organisation-count').html(previous.data('id'));
+    });
+
+    //next clicked
+    $('.next-arrow').click(function(){
+        var current = $('.mobile-about-button').not('.' + invisible);
+        var next = current.next().hasClass('mobile-about-button') ? current.next() : $('.mobile-about-button').first();
+        current.addClass(invisible).removeClass('animated fadeIn');
+        $('#about-us-carousel').carousel(next.data('number'));
+        next.removeClass(invisible).addClass('animated fadeIn');
+    });
+
+    //previous arrow click
+    $('.prev-arrow').click(function(){
+        var current = $('.mobile-about-button').not('.' + invisible);
+        var previous = current.prev().hasClass("mobile-about-button") ? current.prev() : $(".mobile-about-button").last();
+        current.addClass(invisible).removeClass('animated fadeIn');
+        $('#about-us-carousel').carousel(previous.data('number'));
+        previous.removeClass(invisible).addClass('animated fadeIn');
     });
 
 
