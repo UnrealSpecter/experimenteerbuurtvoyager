@@ -53,10 +53,10 @@ $(document).ready(function(){
 
     //next clicked
     $('.next-info').click(function(){
-        var current = $('.organisatie-info-wrapper').not('.' + invisible);
+        var current = $('.organisatie-info-wrapper').not('.' + hidden);
         var next = current.next().hasClass('organisatie-info-wrapper') ? current.next() : $('.organisatie-info-wrapper').first();
-        current.addClass(invisible).removeClass('animated fadeIn');
-        next.removeClass(invisible).addClass('animated fadeIn');
+        current.addClass(hidden).removeClass('animated fadeIn');
+        next.removeClass(hidden).addClass('animated fadeIn');
         $('.organisation-count').html(next.data('id'));
     });
 
@@ -64,8 +64,8 @@ $(document).ready(function(){
     $('.previous-info').click(function(){
         var current = $('.organisatie-info-wrapper').not('.' + hidden);
         var previous = current.prev().hasClass("organisatie-info-wrapper") ? current.prev() : $(".organisatie-info-wrapper").last();
-        current.addClass(invisible).removeClass('animated fadeIn');
-        previous.removeClass(invisible).addClass('animated fadeIn');
+        current.addClass(hidden).removeClass('animated fadeIn');
+        previous.removeClass(hidden).addClass('animated fadeIn');
         $('.organisation-count').html(previous.data('id'));
     });
 

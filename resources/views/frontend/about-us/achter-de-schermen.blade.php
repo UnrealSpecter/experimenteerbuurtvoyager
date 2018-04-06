@@ -11,11 +11,11 @@
         </div>
         <!-- NAV-->
         <div class="col-12 faq-nav-wrapper flex-r justify-c">
-            <img src="{{ asset('/images/icons/chevron-left.svg') }}" class="img-fluid previous-info" style="width: 4%; cursor: pointer;" alt="volgende veel gestelde vraag">
+            <img src="{{ asset('/images/icons/chevron-left.svg') }}" class="img-fluid previous-info" alt="volgende veel gestelde vraag">
             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-4 flex-r align-v justify-c">
                 <span style="width: 100%; text-align: center;"> <span class="organisation-count">1</span> / 2</span>
             </div>
-            <img src="{{ asset('/images/icons/chevron-right.svg') }}" class="img-fluid next-info" style="width: 4%; cursor: pointer;" alt="volgende veel gestelde vraag">
+            <img src="{{ asset('/images/icons/chevron-right.svg') }}" class="img-fluid next-info" alt="volgende veel gestelde vraag">
         </div>
     </div>
 </div>

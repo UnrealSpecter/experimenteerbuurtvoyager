@@ -8,6 +8,11 @@
     width: 60%;
 }
 
+.previous-info, .next-info {
+    width: 15%;
+    cursor: pointer;
+}
+
 .button-container {
     height: 15%;
     z-index: 10;
@@ -18,6 +23,28 @@
 .mobile-about-button {
     position:absolute;
 }
+
+
+@media (min-width: 576px) {
+
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 1200px) {
+
+}
+
+@media (min-width: 1500px) {
+
+}
+
 
 /* large desktops and up ----------- */
 /* @media screen and (min-width: 1200px) {

@@ -48,12 +48,14 @@ body {
 }
 
 @media (min-width: 1200px) {
-
+    .video-wrapper {
+        min-height: 500px;
+    }
 }
 
 @media (min-width: 1500px) {
     .video-wrapper {
-        min-height: 500px;
+        min-height: 750px;
     }
 }
 
