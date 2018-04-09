@@ -44,28 +44,24 @@ $(document).ready(function(){
 
     /* organisatie */
     $('.organisatie').one('click', function(){
-        setTimeout(function(){
-            $('.organisatie-title').removeClass(hidden).addClass('animated fadeInLeft');
-            $('.organisatie-description').removeClass(hidden).addClass('animated fadeInDown');
-            animateSponsors();
-        }, 750);
+        organisatieIntro();
     });
 
     //next clicked
     $('.next-info').click(function(){
-        var current = $('.organisatie-info-wrapper').not('.' + hidden);
+        var current = $('.organisatie-info-wrapper').not('.' + invisible);
         var next = current.next().hasClass('organisatie-info-wrapper') ? current.next() : $('.organisatie-info-wrapper').first();
-        current.addClass(hidden).removeClass('animated fadeIn');
-        next.removeClass(hidden).addClass('animated fadeIn');
+        current.addClass(invisible).removeClass('animated fadeIn');
+        next.removeClass(invisible).addClass('animated fadeIn');
         $('.organisation-count').html(next.data('id'));
     });
 
     //previous arrow click
     $('.previous-info').click(function(){
-        var current = $('.organisatie-info-wrapper').not('.' + hidden);
+        var current = $('.organisatie-info-wrapper').not('.' + invisible);
         var previous = current.prev().hasClass("organisatie-info-wrapper") ? current.prev() : $(".organisatie-info-wrapper").last();
-        current.addClass(hidden).removeClass('animated fadeIn');
-        previous.removeClass(hidden).addClass('animated fadeIn');
+        current.addClass(invisible).removeClass('animated fadeIn');
+        previous.removeClass(invisible).addClass('animated fadeIn');
         $('.organisation-count').html(previous.data('id'));
     });
 
@@ -141,8 +137,18 @@ $(document).ready(function(){
 
 });
 
+//introduction animation to be run for the first time when the organisation tab is shown.
+function organisatieIntro(){
+    setTimeout(function(){
+        $('.organisatie-title').removeClass(hidden).addClass('animated fadeInLeft');
+        $('.organisatie-description').removeClass(hidden).addClass('animated fadeInDown');
+        animateSponsors();
+    }, 750);
+}
+
 //loop sponsors and store them in the array for use
 function animateSponsors(){
+    console.log('hidden');
     var sponsors = [];
     $('.sponsor').each(function(index, sponsor) {
         //add hidden to each main element while storing them so they can be uncovered
