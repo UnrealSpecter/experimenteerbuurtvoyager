@@ -6,9 +6,9 @@
 @extends('experimenteerbuurt-layout')
 @section('content')
     <img class="wat-is-de-experimenteerbuurt-background" src="/images/about-us/about-us-background.jpg" alt="background">
-    <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12 about-us-wrapper" style="background: transparent; height: 100vh; z-index: 10;">
+    <div class="col-lg-9 offset-lg-3 col-md-12 col-sm-12 col-xs-12 about-us-wrapper" style="background: transparent; height: 100vh; z-index: 10;">
         <div class="row animated slideInRight" style="height: 100%;">
-            <div class="col-12 d-none d-xs-none d-sm-none d-md-none d-lg-block d-xl-block button-container flex-r no-padding-margin">
+            <div class="col-12 d-none d-xs-none d-sm-none d-md-none d-lg-flex d-xl-flex button-container no-padding-margin">
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-4 button experimenteerbuurt selected" data-number="0" ><span>Experimenteerbuurt?</span></div>
                 <div class="col-lg-4 col-md-4 col-sm-3 col-xs-4 button organisatie" data-number="1"><span>Achter de schermen</span></div>
                 <div class="col-lg-4 col-md-4 col-sm-3 col-xs-4 button locatie" data-number="2"><span>Locatie...?</span></div>
