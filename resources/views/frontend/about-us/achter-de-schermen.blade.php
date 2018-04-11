@@ -34,17 +34,17 @@
         <img src="{{ asset('/images/icons/chevron-right.svg') }}" class="img-fluid next-info" alt="volgende veel gestelde vraag">
     </div>
 </div>
-<div class="sponsors col-10 offset-1 flex-c align-v">
-    <a class="sponsor col-12 col-lg-6 col-sm-7 d-xs-block flex-r align-v" target="_blank">
+<div class="sponsors col-xl-12 col-10 offset-1 offset-xl-0 flex-r align-v" style="flex-wrap: wrap;">
+    <a class="sponsor col-12 col-xl-3 col-lg-6 col-sm-7 d-xs-block flex-r align-v" target="_blank">
         <img class="img-fluid" src=" {{ URL::asset('/images/about-us/experimenteerbuurt-logo-2.png') }} ">
     </a>
-    <a class="sponsor col-12 col-lg-6 col-sm-7 d-xs-block flex-r align-v" style="margin-top: 10px;" target="_blank" href="https://gemeente.emmen.nl/">
+    <a class="sponsor col-12 col-xl-3 col-lg-6 col-sm-7 d-xs-block flex-r align-v" style="margin-top: 10px;" target="_blank" href="https://gemeente.emmen.nl/">
         <img class="img-fluid" src=" {{ URL::asset('/images/about-us/gemeente-emmen.png') }} ">
     </a>
-    <a class="sponsor col-12 col-lg-6 col-sm-7 d-xs-block flex-r align-v" target="_blank" href="https://www.domesta.nl/Home.html">
+    <a class="sponsor col-12 col-xl-3 col-lg-6 col-sm-7 d-xs-block flex-r align-v" target="_blank" href="https://www.domesta.nl/Home.html">
         <img class="img-fluid" src=" {{ URL::asset('/images/about-us/domesta.png') }} ">
     </a>
-    <a class="sponsor col-12 col-lg-6 col-sm-7 d-xs-block flex-r align-v" target="_blank" href="http://www.koenenbouwemmen.nl/">
+    <a class="sponsor col-12 col-xl-3 col-lg-6 col-sm-7 d-xs-block flex-r align-v" target="_blank" href="http://www.koenenbouwemmen.nl/">
         <img class="img-fluid" src=" {{ URL::asset('/images/about-us/koenen-bouw.png') }} ">
     </a>
 </div>

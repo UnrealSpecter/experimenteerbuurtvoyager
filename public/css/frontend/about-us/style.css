@@ -58,6 +58,11 @@
     font-size: 1.25em;
 }
 
+.organisatie-title {
+    color: white;
+    font-size: 1.5em;
+}
+
 @media (min-width: 576px) {
     .prev-arrow, .next-arrow {
         width: 30%;
@@ -133,301 +138,43 @@
 }
 
 @media (min-width: 1200px) {
-
+    .sponsors {
+        position: absolute;
+        bottom: 0;
+    }
 }
 
 @media (min-width: 1500px) {
-
-}
-
-
-/* large desktops and up ----------- */
-/* @media screen and (min-width: 1200px) {
-
-    .locatie-tekst {
-        font-size: 1.5em;
-    }
-
-    .main-container {
-        height: 90%;
-    }
-
-    .button-container {
-        height: 10%;
-        z-index: 10;
-        cursor: pointer;
-    }
-
-    .button {
-        font-size: 1.2em;
-    }
-
-    .video-toggle-button {
-        font-size: 1.4em;
-    }
-
-    .experimenteerbuurt-info, .organisatie-info-wrapper, .faq-info-wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .experimenteerbuurt-description, .organisatie-description {
-        font-size: 1.75em;
-    }
-
-    .experimenteerbuurt-title, .organisatie-title, .faq-title {
-        font-size: 1.75em;
-    }
-
-    .swap-locatie-view {
-        font-size: 1.25em;
-    }
-    .google-maps-locatie {
-        top: 0;
-    }
-    .faq-question {
-        font-size: 3.5em;
-    }
-
-    .faq-answer {
-        font-size: 1.5em;
-    }
-
     .sponsors {
-        height: 25%;
+        position: absolute;
+        bottom: 0;
     }
-} */
 
-/* tablets/desktops and up ----------- */
-/* @media (min-width: 992px) and (max-width: 1199px) {
-
+    .locatie-title {
+        font-size: 3em;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
     .locatie-tekst {
         font-size: 1.75em;
-    }
-
-    .main-container {
-        height: 90%;
-    }
-
-    .button-container {
-        height: 10%;
-        z-index: 10;
-        cursor: pointer;
-    }
-
-    .button {
-        font-size: 0.9em;
-    }
-
-    .video-toggle-button {
-        font-size: 0.9em;
-    }
-
-    .experimenteerbuurt-info, .organisatie-info-wrapper, .faq-info-wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .experimenteerbuurt-description, .organisatie-description, .faq-summary  {
-        font-size: 1.5em;
-    }
-
-    .experimenteerbuurt-title, .organisatie-title, .faq-title {
-        font-size: 2em;
-    }
-
-    .swap-locatie-view {
-        font-size: 1em;
-    }
-    .google-maps-locatie {
-        top: 0;
-    }
-    .faq-question {
-        font-size: 2em;
-    }
-
-    .faq-answer {
-        font-size: 1.5em;
-    }
-
-    .sponsors {
-        height: 20%;
-    }
-} */
-
-/* Small devices (tablets, 768px and up) */
-/* @media (min-width: 768px) and (max-width: 991px) {
-
-    locatie-tekst {
-        font-size: 1.5em;
-    }
-
-    .main-container {
-        height: 90%;
-    }
-
-    .button-container {
-        padding: 0 !important;
-        height: 10%;
-        z-index: 10;
-        cursor: pointer;
-    }
-
-    .button {
-        padding: 0 !important;
-        font-size: 0.9em;
-    }
-
-    .video-toggle-button {
-        font-size: 1.1em;
-    }
-
-    .organisatie-info-wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-flow: column;
-    }
-
-    .experimenteerbuurt-info, .organisatie-info-wrapper, .faq-info-wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .experimenteerbuurt-description, .organisatie-description, .faq-summary {
-        font-size: 1.4em;
-    }
-
-    .experimenteerbuurt-title, faq-title {
-        font-size: 1.25em;
     }
 
     .organisatie-title {
-        font-size: 1.5em;
+        font-size: 2.5em;
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
-
-    .swap-locatie-view {
-        font-size: 1.15em;
-    }
-    .google-maps-locatie {
-        top: 0;
-    }
-    .faq-question {
-        font-size: 1.5em;
-    }
-
-    .faq-answer {
-        font-size: 1.4em;
-    }
-
-    .sponsors {
-        height: 15%;
-    }
-} */
-
-/* Extra small devices (phones, up to 480px) */
-/* @media screen and (max-width: 767px) {
-
-    .main-container {
-        height: 85%;
-    }
-
-    .button-container {
-        height: 15%;
-        z-index: 10;
-        cursor: pointer;
-    }
-
-    .button {
-        padding: 0 !important;
-        height: 50% !important;
-        font-family: 'open sans' !important;
-        font-size: 0.8em;
-        letter-spacing: 2px;
-        border: none !important;
-        word-wrap: break-word;
-        overflow-wrap: break-word;
-    }
-
-    .button > span {
-    }
-
-    .selected {
-        border-bottom: 1px solid white !important;
-    }
-
-    .video-toggle-button {
-        font-size: 1em;
-    }
-
-    .experimenteerbuurt-info {
-        top: 10% !important;
-        height: 90%;
-        position: relative;
-    }
-    .experimenteerbuurt-description {
-        font-size: 1em;
-        font-family: 'open sans' !important;
-    }
-
     .organisatie-description {
-        font-size: 1.1em;
-        font-family: 'open sans' !important;
+        font-size: 1.75em;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .button {
+        font-size: 1.5em;
     }
 
-    .experimenteerbuurt-title {
-        font-size: 1em;
-    }
-
-    .faq-summary {
-        font-family: 'open sans' !important;
-        font-size: 1em;
-    }
-
-    .organisatie-title, .faq-title {
-        font-size: 1.4em;
-    }
-
-    .google-maps-locatie {
-        height: 90%;
-        bottom: 0 !important;
-    }
-
-    .faq-question {
-        font-size: 1.4em;
-    }
-
-    .faq-answer {
-        font-size: 1.1em;
-    }
-
-    .faq-nav-wrapper {
-        font-size: 2em !important;
-    }
-
-    .sponsors {
-        height: 30%;
-    }
-
-    .sponsor {
-        height: 50% !important;
-    }
-
-    .organisatie-info-container {
-        height: 70% !important;
-    }
-
-    .organisatie-info-wrapper {
-        display: flex;
-        align-items: center;
-        flex-flow: column;
-        justify-content: center;
-    }
-
-} */
+}
 
 .carousel-item {
     /* border-top: solid white 1px; */
@@ -550,11 +297,6 @@ body {
     top: 0; */
 }
 
-.organisatie-title {
-    color: white;
-    font-size: 1.5em;
-}
-
 .organisatie-description {
     color: white;
     text-align: left;
@@ -562,13 +304,7 @@ body {
     font-family: 'fira-sans';
 }
 
-.sponsors {
-    /* position: absolute;
-    bottom: 0; */
-}
-
 .sponsor {
-
     height: 100%;
     padding: 0;
 }

@@ -5,7 +5,7 @@
 @extends('experimenteerbuurt-layout')
 @section('content')
     <img class="agenda-background" src="{{ asset('/images/agenda/agenda-background.jpg') }}" style="opacity: 0.8; height: 100%; width: 100%; position: absolute; top: 0; left: 0;">
-    <div class="col-lg-3 col-md-3 hidden-sm-down animated fadeInRightBig" style="height: 100vh; z-index: 0;">
+    <div class="col-lg-3 col-md-3 d-none d-xs-none d-sm-none d-md-none animated fadeInRightBig" style="height: 100vh; z-index: 0;">
         <img src="images/analoog-agenda.png" alt="erlenmeyer-background" style="position: absolute; top: 0; left: 0; height: 100vh; width: 100%; z-index: 10;">
     </div>
     @if(count($events) >= 1)
@@ -14,36 +14,30 @@
             @if($event == $events->first())
             <div class="col-12 event-wrapper" style="border-left: solid 2px #e6332a;">
             @else
-            <div class="col-12 event-wrapper d-none">
+            <div class="col-12 event-wrapper invisible">
             @endif
                 <div class="row info-container">
                     <div class="event-shadow "></div>
-                    <div class="col-12 flex-r align-v justify-c agenda-nav-wrapper" style="height: 10%; position: absolute; bottom: 0%; z-index: 3000 !important; color: white; font-size: 1em; display: flex; align-items: center;">
+                    <div class="col-12 flex-r align-v justify-c agenda-nav-wrapper" style="height: 12.5%; position: absolute; bottom: 0%; z-index: 3000 !important; color: white; font-size: 1em; display: flex; align-items: center; background-color:  #e6332a;">
                         @if(count($events) > 1)
                         <div class="row justify-c">
-                            <img src="{{ asset('/images/icons/chevron-left.svg') }}" class="img-fluid previous-event" style="width: 4%; cursor: pointer;" alt="volgende veel gestelde vraag">
-                            <div class="col-4 event-date invisible">{{ $event->getDateString(1, 2) }}</div>
-                            <img src="{{ asset('/images/icons/chevron-right.svg') }}" class="img-fluid next-event" style="width: 4%; cursor: pointer;" alt="volgende veel gestelde vraag">
+                            <img src="{{ asset('/images/icons/chevron-left.svg') }}" class="img-fluid previous-event" style="width: 8%; cursor: pointer;" alt="volgende veel gestelde vraag">
+                            <div class="col-8 event-date big-john d-flex align-v justify-c">{{ $event->getDateString(1, 2) }}</div>
+                            <img src="{{ asset('/images/icons/chevron-right.svg') }}" class="img-fluid next-event" style="width: 8%; cursor: pointer;" alt="volgende veel gestelde vraag">
                         </div>
                         @endif
                     </div>
                     <img class="col-12 event-background" src="/storage/{{ $event->background_image }}">
                     <div class="col-12 initial-info-block">
                         <div style="width: 100%;" class="flex-c align-v">
-                            <div class="col-12 initial-event-name">
-                                <span style="width: 100%; text-align: center;">{{ $event->name }}</span>
-                            </div>
-                            <div class="col-12 initial-event-date">
-                                <span style="text-transform:capitalize;">{{ $event->getDateString(0, 1, 2) }}</span>
-                            </div>
-                            <div class="col-2 more-info" data-mode='meer info'>
-                                <span style="width: 100%; text-align: center;">Meer info</span>
-                            </div>
+                            <div class="col-12 initial-event-name no-padding-margin big-john">{{ $event->name }}</div>
+                            <div class="col-12 initial-event-date slim-joe">{{ $event->getDateString(0, 1, 2) }}</div>
+                            <div class="col-6 col-xs-6 more-info" data-mode='meer info'>Meer info</div>
                         </div>
                     </div>
-                    <div class="col-12 info-block d-none">
+                    <div class="col-12 info-block d-none no-padding-margin">
                         <div class="col-12 misc-container">
-                            <div class="row" style="height: 100%;">
+                            <!-- <div class="row" style="height: 100%;"> -->
                                 @if($event->eventbrite_url)
                                 <div class="col-4 eventbrite">
                                     <a href="{{ $event->eventbrite_url }}" target="_blank">
@@ -63,18 +57,18 @@
                                 </div>
                                 @endif
                                 @if(!$event->eventbrite_url && !$event->cost)
-                                <div class="col-12 countdown">
+                                <div class="col-12 countdown d-flex align-v justify-c">
                                 @elseif(!$event->eventbrite_url || !$event->cost)
-                                <div class="col-8 countdown">
+                                <div class="col-8 countdown d-flex align-v justify-c">
                                 @else
-                                <div class="col-4 countdown">
+                                <div class="col-4 countdown d-flex align-v justify-c">
                                 @endif
                                     <span class="timer" data-date="{{ $event->event_date }}"></span>
                                 </div>
-                            </div>
+                            <!-- </div> -->
                         </div>
 
-                        <div class="flex-c align-v name-desc-wrapper col-12">
+                        <div class="flex-r name-desc-wrapper d-none">
                             <div class="col-12 event-name">
                                     <span>{{ $event->name }}</span>
                             </div>

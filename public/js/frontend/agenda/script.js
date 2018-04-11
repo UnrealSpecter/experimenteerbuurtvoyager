@@ -12,27 +12,21 @@ $( document ).ready(function() {
 
     //next clicked
     $('.next-event').click(function(){
-        
-        var current = $('.event-wrapper').not('.' + hidden);
+
+        var current = $('.event-wrapper').not('.' + invisible);
         var next = current.next().hasClass("event-wrapper") ? current.next() : $(".event-wrapper").first();
 
-        current.removeClass('animated fadeInRight').fadeOut(500, function(){
-            current.addClass(hidden);
-            current.removeAttr('style');
-        });
-        next.removeClass(hidden).addClass('animated fadeInRight');
+        current.addClass(invisible).removeClass('animated fadeInRight');
+        next.removeClass(invisible).addClass('animated fadeInRight');
 
     });
 
     //previous arrow click
     $('.previous-event').click(function(){
-        var current = $('.event-wrapper').not('.' + hidden);
+        var current = $('.event-wrapper').not('.' + invisible);
         var previous = current.prev().hasClass("event-wrapper") ? current.prev() : $(".event-wrapper").last();
-        current.removeClass('animated fadeInRight').fadeOut(500, function(){
-            current.addClass(hidden);
-            current.removeAttr('style');
-        });
-        previous.removeClass(hidden).addClass('animated fadeInRight');
+        current.addClass(invisible).removeClass('animated fadeInRight');
+        previous.removeClass(invisible).addClass('animated fadeInRight');
     });
 
     //more info-block

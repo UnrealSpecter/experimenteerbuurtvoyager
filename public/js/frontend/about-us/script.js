@@ -148,7 +148,6 @@ function organisatieIntro(){
 
 //loop sponsors and store them in the array for use
 function animateSponsors(){
-    console.log('hidden');
     var sponsors = [];
     $('.sponsor').each(function(index, sponsor) {
         //add hidden to each main element while storing them so they can be uncovered
@@ -159,11 +158,13 @@ function animateSponsors(){
     var index = 0;
     //setInterval half a second and loop through categories and removeClass
     var interval = setInterval(function() {
-      $(sponsors[index]).removeClass(hidden).addClass('animated slideInUp');
-      if(index == sponsors.length - 1){
-        clearInterval(interval);
-      }
-      index++;
+        var sponsor = $(sponsors[index]);
+        sponsor.removeClass(hidden);
+        $(window).width() > 1200 ? sponsor.addClass('animated fadeInUp') : index % 2 ? sponsor.addClass('animated slideInRight') : sponsor.addClass('animated slideInLeft');
+        if(index == sponsors.length - 1){
+            clearInterval(interval);
+        }
+        index++;
     }, 500);
 }
 
