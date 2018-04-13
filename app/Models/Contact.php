@@ -7,12 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 class Contact extends Model
 {
 
-      protected $table = 'contact';
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
+    protected $table = 'contact';
+
     protected $fillable = [
         'kvk', 'phonenumber', 'email', 'postal_code'
     ];

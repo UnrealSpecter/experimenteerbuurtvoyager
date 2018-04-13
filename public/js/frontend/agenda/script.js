@@ -31,23 +31,28 @@ $( document ).ready(function() {
 
     //more info-block
     $('.more-info').click(function(){
+
         var buttonMode = $(this).attr('data-mode');
+        var initial = $(this).parent().parent();
+        var dateInsideNav = initial.siblings('.agenda-nav-wrapper').find('.event-date');
+        var detailedInfo = initial.next();
+        var lessDetailed = initial.prev();
+        initial.addClass('animated fadeOut').css('pointer-events', 'none');
+
+        //show more info
         if(buttonMode == 'meer info'){
-            var initial = $(this).parent().parent();
-            var detailedInfo = initial.next();
-            initial.addClass('animated fadeOut').css('pointer-events', 'none');
             setTimeout(function(){
-                detailedInfo.removeClass(hidden).removeClass('animated fadeOut').addClass('animated fadeIn').css('pointer-events', 'auto');
+                dateInsideNav.removeClass(invisible).addClass('animated fadeIn');
+                detailedInfo.removeClass(invisible).removeClass('animated fadeOut').addClass('animated fadeIn').css('pointer-events', 'auto');
             }, 1000);
         }
+        // show less info
         if(buttonMode == 'minder info'){
-            var initial = $(this).parent().parent();
-            var lessDetailed = initial.prev();
-            initial.addClass('animated fadeOut').css('pointer-events', 'none');
             setTimeout(function(){
                 lessDetailed.removeClass('animated fadeOut').addClass('animated fadeIn').css('pointer-events', 'auto');
             }, 1000);
         }
+
     });
 
 });

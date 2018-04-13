@@ -40,7 +40,7 @@ class AgendaController extends Controller
             $formattedDate = $date->formatLocalized('%A %d %B %Y');
             $event->setDateString($formattedDate);
         }
-
+        
         return view('frontend.agenda.index', compact('events', 'closestEventId'));
     }
 }

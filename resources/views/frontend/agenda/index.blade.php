@@ -21,9 +21,9 @@
                     <div class="col-12 flex-r align-v justify-c agenda-nav-wrapper" style="height: 12.5%; position: absolute; bottom: 0%; z-index: 3000 !important; color: white; font-size: 1em; display: flex; align-items: center; background-color:  #e6332a;">
                         @if(count($events) > 1)
                         <div class="row justify-c">
-                            <img src="{{ asset('/images/icons/chevron-left.svg') }}" class="img-fluid previous-event" style="width: 8%; cursor: pointer;" alt="volgende veel gestelde vraag">
-                            <div class="col-8 event-date big-john d-flex align-v justify-c">{{ $event->getDateString(1, 2) }}</div>
-                            <img src="{{ asset('/images/icons/chevron-right.svg') }}" class="img-fluid next-event" style="width: 8%; cursor: pointer;" alt="volgende veel gestelde vraag">
+                            <img src="{{ asset('/images/icons/chevron-left.svg') }}" class="img-fluid previous-event" alt="volgende veel gestelde vraag">
+                            <div class="col-8 event-date big-john d-flex align-v justify-c invisible">{{ $event->getDateString(1, 2) }}</div>
+                            <img src="{{ asset('/images/icons/chevron-right.svg') }}" class="img-fluid next-event" alt="volgende veel gestelde vraag">
                         </div>
                         @endif
                     </div>
@@ -35,40 +35,38 @@
                             <div class="col-6 col-xs-6 more-info" data-mode='meer info'>Meer info</div>
                         </div>
                     </div>
-                    <div class="col-12 info-block d-none no-padding-margin">
-                        <div class="col-12 misc-container">
-                            <!-- <div class="row" style="height: 100%;"> -->
-                                @if($event->eventbrite_url)
-                                <div class="col-4 eventbrite">
-                                    <a href="{{ $event->eventbrite_url }}" target="_blank">
-                                        <span class="glyphicon glyphicon-link"></span> Aanmelden
-                                    </a>
-                                </div>
-                                @endif
-                                @if($event->cost)
-                                <div class="col-4 kosten">
-                                    @if($event->gift)
-                                    <span class="glyphicon glyphicon-gift"> <span class="kosten-text">Vrije Gift</span>
-                                    @elseif($event->cost == 0)
-                                    <span class="kosten-text">Gratis</span>
-                                    @else
-                                    <span class="kosten-text">{{ $event->cost }} &#8364</span>
-                                    @endif
-                                </div>
-                                @endif
-                                @if(!$event->eventbrite_url && !$event->cost)
-                                <div class="col-12 countdown d-flex align-v justify-c">
-                                @elseif(!$event->eventbrite_url || !$event->cost)
-                                <div class="col-8 countdown d-flex align-v justify-c">
+                    <div class="col-12 info-block d-flex align-v invisible no-padding-margin">
+                        <div class="col-12 misc-container d-flex flex-r ">
+                            @if($event->eventbrite_url)
+                            <div class="col-4 eventbrite">
+                                <a href="{{ $event->eventbrite_url }}" target="_blank">
+                                    <span class="glyphicon glyphicon-link"></span> Aanmelden
+                                </a>
+                            </div>
+                            @endif
+                            @if($event->cost)
+                            <div class="col-4 kosten d-flex align-v justify-c">
+                                @if($event->gift)
+                                <span class="glyphicon glyphicon-gift"> <span class="kosten-text">Vrije Gift</span>
+                                @elseif($event->cost == 0)
+                                <span class="kosten-text">Gratis</span>
                                 @else
-                                <div class="col-4 countdown d-flex align-v justify-c">
+                                <span class="kosten-text">{{ $event->cost }} &#8364</span>
                                 @endif
-                                    <span class="timer" data-date="{{ $event->event_date }}"></span>
-                                </div>
-                            <!-- </div> -->
+                            </div>
+                            @endif
+                            @if(!$event->eventbrite_url && !$event->cost)
+                            <div class="col-12 countdown d-flex align-v justify-c no-padding-margin">
+                            @elseif(!$event->eventbrite_url || !$event->cost)
+                            <div class="col-8 countdown d-flex align-v justify-c no-padding-margin">
+                            @else
+                            <div class="col-8 countdown d-flex align-v justify-c no-padding-margin">
+                            @endif
+                                <span class="timer" data-date="{{ $event->event_date }}"></span>
+                            </div>
                         </div>
 
-                        <div class="flex-r name-desc-wrapper d-none">
+                        <div class="flex-c name-desc-wrapper">
                             <div class="col-12 event-name">
                                     <span>{{ $event->name }}</span>
                             </div>
@@ -77,7 +75,7 @@
                                     {{ $event->description }}
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 col-xs-6 col-xs-offset-3 more-info" data-mode="minder info">
+                            <div class="col-6 offset-3 more-info" data-mode="minder info">
                                 <span style="width: 100%; text-align: center;">Terug</span>
                             </div>
                         </div>
