@@ -52,13 +52,12 @@ function sethtml(element, days, hours, minutes, seconds, total)
 
     }
     else {
-        element.html('<span class="icon glyphicon glyphicon-time"></span><span class="date"> ' +
+        element.html('<svg class="icon icon-clock"><use xlink:href="#icon-clock"></use></svg> ' +
             'Nog ' +
-            days + 'd ' +
-            hours + 'u ' +
-            minutes + 'm ' +
-            seconds + 's' +
-            '</span>'
+            days + 'd '
+            // hours + 'u ' +
+            // minutes + 'm ' +
+            // seconds + 's'
         );
     }
 

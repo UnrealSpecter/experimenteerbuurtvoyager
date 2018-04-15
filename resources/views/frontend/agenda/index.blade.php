@@ -12,7 +12,7 @@
     <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 d-none agenda-wrapper" style="background: transparent; height: 100vh;">
             @foreach($events as $event)
             @if($event == $events->first())
-            <div class="col-12 event-wrapper" style="border-left: solid 2px #e6332a;">
+            <div class="col-12 event-wrapper">
             @else
             <div class="col-12 event-wrapper invisible">
             @endif
@@ -35,49 +35,46 @@
                             <div class="col-6 col-xs-6 more-info" data-mode='meer info'>Meer info</div>
                         </div>
                     </div>
-                    <div class="col-12 info-block d-flex align-v invisible no-padding-margin">
-                        <div class="col-12 misc-container d-flex flex-r ">
+                    <div class="col-12 info-block d-flex align-v justify-c invisible no-padding-margin">
+                        @if(Carbon\Carbon::now()->lt(Carbon\Carbon::parse($event->event_date)))
+                        <div class="col-12 misc-container d-flex flex-r justify-c">
                             @if($event->eventbrite_url)
-                            <div class="col-4 eventbrite">
-                                <a href="{{ $event->eventbrite_url }}" target="_blank">
-                                    <span class="glyphicon glyphicon-link"></span> Aanmelden
-                                </a>
+                            <div class="col-4 d-flex flex-c align-v justify-c eventbrite">
+                                <svg class="icon icon-link"><use xlink:href="#icon-link"></use></svg>
+                                <a href="{{ $event->eventbrite_url }}" target="_blank">Aanmelden</a>
                             </div>
                             @endif
                             @if($event->cost)
-                            <div class="col-4 kosten d-flex align-v justify-c">
+                            <div class="col-4 kosten flex-c d-flex align-v justify-c">
                                 @if($event->gift)
-                                <span class="glyphicon glyphicon-gift"> <span class="kosten-text">Vrije Gift</span>
+                                <!-- gift icon -->
+                                <svg class="icon icon-gift"><use xlink:href="#icon-gift"></use></svg>
+                                <span class="kosten-text">Vrije Gift</span>
                                 @elseif($event->cost == 0)
+                                <span class="kosten-text">&#8364</span>
                                 <span class="kosten-text">Gratis</span>
                                 @else
-                                <span class="kosten-text">{{ $event->cost }} &#8364</span>
+                                <span class="kosten-text">&#8364</span>
+                                <span class="kosten-text">{{ $event->cost }}</span>
                                 @endif
                             </div>
                             @endif
                             @if(!$event->eventbrite_url && !$event->cost)
-                            <div class="col-12 countdown d-flex align-v justify-c no-padding-margin">
+                            <div class="col-12 countdown d-flex flex-c align-v justify-c">
                             @elseif(!$event->eventbrite_url || !$event->cost)
-                            <div class="col-8 countdown d-flex align-v justify-c no-padding-margin">
+                            <div class="col-4 countdown d-flex flex-c align-v justify-c">
                             @else
-                            <div class="col-8 countdown d-flex align-v justify-c no-padding-margin">
+                            <div class="col-4 countdown d-flex flex-c align-v justify-c">
                             @endif
-                                <span class="timer" data-date="{{ $event->event_date }}"></span>
+                                <span class="timer d-flex align-v justify-c flex-c" data-date="{{ $event->event_date }}"></span>
                             </div>
                         </div>
+                        @endif
 
-                        <div class="flex-c name-desc-wrapper">
-                            <div class="col-12 event-name">
-                                    <span>{{ $event->name }}</span>
-                            </div>
-                            <div class="col-12 event-description">
-                                <div class="col-12" style="display: flex; align-items: center; justify-content: space-around; margin: 10px;">
-                                    {{ $event->description }}
-                                </div>
-                            </div>
-                            <div class="col-6 offset-3 more-info" data-mode="minder info">
-                                <span style="width: 100%; text-align: center;">Terug</span>
-                            </div>
+                        <div class="flex-c name-desc-wrapper col-11 no-padding-margin">
+                            <div class="col-12 event-name no-padding-margin">{{ $event->name }}</div>
+                            <div class="col-12 event-description fira-sans">{{ $event->description }}</div>
+                            <div class="col-6 offset-3 more-info d-flex justify-c align-v" data-mode="minder info">Terug</div>
                         </div>
                     </div>
                 </div>

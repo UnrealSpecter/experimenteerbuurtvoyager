@@ -27,6 +27,7 @@
 
     </head>
     <body>
+        @include('svg-definition')
         @include('loader')
         @include('sidebar-menu')
         <!-- @include('mobile-notification') -->
