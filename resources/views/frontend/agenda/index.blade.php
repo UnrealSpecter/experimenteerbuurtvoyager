@@ -5,11 +5,11 @@
 @extends('experimenteerbuurt-layout')
 @section('content')
     <img class="agenda-background" src="{{ asset('/images/agenda/agenda-background.jpg') }}" style="opacity: 0.8; height: 100%; width: 100%; position: absolute; top: 0; left: 0;">
-    <div class="col-lg-3 col-md-3 d-none d-xs-none d-sm-none d-md-none animated fadeInRightBig" style="height: 100vh; z-index: 0;">
+    <div class="col-lg-3 col-md-3 d-none d-xs-none d-sm-none d-md-none d-lg-none d-xl-block animated fadeInRightBig" style="height: 100vh; z-index: 0;">
         <img src="images/analoog-agenda.png" alt="erlenmeyer-background" style="position: absolute; top: 0; left: 0; height: 100vh; width: 100%; z-index: 10;">
     </div>
     @if(count($events) >= 1)
-    <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12 d-none agenda-wrapper" style="background: transparent; height: 100vh;">
+    <div class="col-xl-7 col-lg-9 col-md-12 col-sm-12 col-xs-12 d-none agenda-wrapper" style="background: transparent; height: 100vh;">
             @foreach($events as $event)
             @if($event == $events->first())
             <div class="col-12 event-wrapper">
@@ -49,13 +49,13 @@
                                 @if($event->gift)
                                 <!-- gift icon -->
                                 <svg class="icon icon-gift"><use xlink:href="#icon-gift"></use></svg>
-                                <span class="kosten-text">Vrije Gift</span>
+                                <span class="kosten-text fira-sans">Vrije Gift</span>
                                 @elseif($event->cost == 0)
-                                <span class="kosten-text">&#8364</span>
-                                <span class="kosten-text">Gratis</span>
+                                <span class="kosten-text fira-sans">&#8364</span>
+                                <span class="kosten-text fira-sans">Gratis</span>
                                 @else
-                                <span class="kosten-text">&#8364</span>
-                                <span class="kosten-text">{{ $event->cost }}</span>
+                                <span class="kosten-text fira-sans">&#8364</span>
+                                <span class="kosten-text fira-sans">{{ $event->cost }}</span>
                                 @endif
                             </div>
                             @endif

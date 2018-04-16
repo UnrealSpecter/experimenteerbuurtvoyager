@@ -110,10 +110,6 @@ body {
     height: 100%;
 }
 
-span.kosten-text {
-	font-family: 'fira-sans';
-}
-
 /*countdown*/
 .countdown {
 	left: 0;
@@ -213,243 +209,51 @@ span.kosten-text {
 }
 
 
+@media (min-width: 576px) {
+    .previous-event, .next-event {
+        width: 4%;
+        cursor: pointer;
+    }
+}
 
-// Extra large devices (large desktops, 1200px and up)
-/* @media (min-width: 1200px) {
-    .eventbrite, .kosten, .countdown {
-        height: 100%;
-        font-size: 2em;
-    }
-    .event-name {
-        font-size: 3em;
-        text-align: center;
-        padding-bottom: 1%;
-        min-height: 100px;
-        line-height: 150%;
-    }
-    .event-description {
-        font-size: 1em;
-        text-align: center;
-    }
-    .event-date, .arrows {
-        font-size: 2em;
-    }
-    .info-block {
-        display: flex;
-        align-items: center;
-    }
-
-    .initial-event-date {
-        font-size: 2em;
-    }
-    .initial-event-name {
-        font-size: 4em;
-    }
-} */
-
-// Large devices (desktops, 992px and up)
-/* @media (min-width: 992px) {
-    .eventbrite, .kosten, .countdown {
-        height: 100%;
+@media (min-width: 768px) {
+    .kosten, .countdown, .eventbrite, .event-date, .event-description, .initial-event-date {
         font-size: 1.5em;
     }
-    .event-name {
-        font-size: 2em;
-        text-align: center;
-        min-height: 100px;
-        line-height: 150%;
-    }
-    .event-description {
-        font-size: 1em;
-        text-align: center;
-    }
-    .event-date, .arrows {
-        font-size: 1.5em;
-    }
-    .info-block {
-        display: flex;
-        align-items: center;
-    }
-    .initial-event-date {
-        font-size: 1.75em;
-    }
-    .initial-event-name {
-        font-size: 3em;
-    }
-} */
-
-// Medium devices (tablets, 768px and up)
-/* @media (min-width: 768px) {
-    .eventbrite, .kosten, .countdown {
-        height: 100%;
-        font-size: 1em;
+    .event-name, .initial-event-name {
+        font-size: 2.25em;
     }
 
-    .event-name {
-        font-size: 1.5em;
-        min-height: 10%;
-        overflow-wrap: break-word;
-        word-wrap: break-word;
-        min-height: 40px;
-        line-height: 40px;
-    }
-
-    .event-description {
-        font-size: 1.2em;
-        text-align: center;
-        font-family: 'open sans' !important;
-
-    }
-    .event-date {
-        padding-top: 2%;
-        font-size: 1.2em;
-        top: 1%;
-        text-align: center !important;
-    }
-    .name-desc-wrapper {
-        padding-top: 2%;
-        position: relative;
-        top: 6%;
-    }
-
-    .initial-event-date {
-        font-size: 1.1em;
-        font-family: 'slim-joe' !important;
-        letter-spacing: 2px !important;
-    }
-
-    .initial-event-name {
-        letter-spacing: 2px !important;
-        font-size: 1.5em;
-    }
-
-    .info-block {
-        height: 80%;
-        top: 15% !important;
-    }
-
-    .misc-container {
-        position: fixed !important;
-    }
-    .arrows {
-        font-size: 1.75em !important;
-    }
-} */
-
-/* @media (min-width: 576px) {
-    .eventbrite, .kosten, .countdown {
-        height: 100%;
-        font-size: 1em;
-    }
-
-    .event-name {
-        font-size: 1.5em;
-        min-height: 10%;
-        overflow-wrap: break-word;
-        word-wrap: break-word;
-        min-height: 40px;
-        line-height: 40px;
-    }
-
-    .event-description {
-        font-size: 1.2em;
-        text-align: center;
-        font-family: 'open sans' !important;
-
-    }
-    .event-date {
-        padding-top: 2%;
-        font-size: 1.2em;
-        top: 1%;
-        text-align: center !important;
-    }
-    .name-desc-wrapper {
-        padding-top: 2%;
-        height: 100%;
-        position: relative;
-        top: 6%;
-    }
-
-    .initial-event-date {
-        font-size: 1.1em;
-        font-family: 'slim-joe' !important;
-        letter-spacing: 2px !important;
-    }
-
-    .initial-event-name {
-        letter-spacing: 2px !important;
-        font-size: 1.5em;
-    }
-
-    .info-block {
-        height: 80%;
-        top: 15% !important;
-    }
-
-    .misc-container {
-        position: fixed !important;
-    }
-    .arrows {
-        font-size: 1.75em !important;
-    }
-} */
-
-/* Extra small devices (phones, up to 480px) */
-/* @media screen and (max-width: 767px) {
-    .eventbrite, .kosten, .countdown {
-        height: 100%;
-        font-size: 1em;
-    }
-
-    .event-name {
-        font-size: 1.5em;
-        min-height: 10%;
-        overflow-wrap: break-word;
-        word-wrap: break-word;
-        min-height: 40px;
-        line-height: 40px;
-    }
-
-    .event-description {
-        font-size: 1.2em;
-        text-align: center;
-        font-family: 'open sans' !important;
-
-    }
-    .event-date {
-        padding-top: 2%;
-        font-size: 1.2em;
-        top: 1%;
-        text-align: center !important;
-    }
-    .name-desc-wrapper {
-        padding-top: 2%;
-        position: relative;
-        top: 6%;
-    }
-
-    .initial-event-date {
-        font-size: 1.1em;
-        font-family: 'slim-joe' !important;
-        letter-spacing: 2px !important;
-    }
-
-    .initial-event-name {
-        letter-spacing: 2px !important;
-        font-size: 1.5em;
-    }
-
-    .info-block {
-        height: 80%;
-        top: 15% !important;
-    }
-
-    .misc-container {
-        position: fixed !important;
-    }
-    .arrows {
-        font-size: 1.75em !important;
+    .previous-event, .next-event {
+        width: 8%;
+        cursor: pointer;
     }
 
 }
- */
+
+@media (min-width: 992px) {
+    .kosten, .countdown, .eventbrite {
+        font-size: 1.5em;
+    }
+    .previous-event, .next-event {
+        width: 6%;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 1200px) {
+    .kosten, .countdown, .eventbrite, .event-date, .event-description, .initial-event-date {
+        font-size: 1.25em;
+    }
+    .event-name, .initial-event-name {
+        font-size: 2em;
+    }
+    .previous-event, .next-event {
+        width: 6%;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 1500px) {
+
+}
