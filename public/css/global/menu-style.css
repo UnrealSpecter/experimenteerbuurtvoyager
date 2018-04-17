@@ -76,10 +76,17 @@
 
 .overlay .closebtn {
     position: absolute;
-    /* top: 20px; */
     right: 45px;
     font-size: 60px;
     z-index: 1;
+}
+
+/* Landscape */
+@media only screen
+  and (orientation: landscape) {
+      .menu-trigger {
+          height: 15%;
+      }
 }
 
 @media screen and (max-height: 450px) {

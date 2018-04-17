@@ -32,7 +32,7 @@
                         <div style="width: 100%;" class="flex-c align-v">
                             <div class="col-12 initial-event-name no-padding-margin big-john">{{ $event->name }}</div>
                             <div class="col-12 initial-event-date slim-joe">{{ $event->getDateString(0, 1, 2) }}</div>
-                            <div class="col-6 col-xs-6 more-info" data-mode='meer info'>Meer info</div>
+                            <div class="col-6 col-xl-3 col-xs-6 more-info" data-mode='meer info'>Meer info</div>
                         </div>
                     </div>
                     <div class="col-12 info-block d-flex align-v justify-c invisible no-padding-margin">
@@ -71,11 +71,12 @@
                         </div>
                         @endif
 
-                        <div class="flex-c name-desc-wrapper col-11 no-padding-margin">
+                        <div class="flex-c name-desc-wrapper col-11 col-xl-9 no-padding-margin align-v">
                             <div class="col-12 event-name no-padding-margin">{{ $event->name }}</div>
                             <div class="col-12 event-description fira-sans">{{ $event->description }}</div>
-                            <div class="col-6 offset-3 more-info d-flex justify-c align-v" data-mode="minder info">Terug</div>
+                            <div class="col-6 col-xl-3 more-info d-flex justify-c align-v" data-mode="minder info">Terug</div>
                         </div>
+
                     </div>
                 </div>
             </div>

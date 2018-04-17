@@ -209,6 +209,24 @@ body {
 }
 
 
+/* Portrait */
+@media only screen
+  and (orientation: portrait) {
+    .event-background {
+        object-fit: initial;
+    }
+}
+
+/* Landscape */
+@media only screen
+  and (orientation: landscape) {
+      .event-background {
+          object-fit: cover;
+      }
+}
+
+
+
 @media (min-width: 576px) {
     .previous-event, .next-event {
         width: 4%;
@@ -255,5 +273,15 @@ body {
 }
 
 @media (min-width: 1500px) {
+    .kosten, .countdown, .eventbrite, .event-date, .event-description, .initial-event-date {
+        font-size: 1.75em;
+    }
+    .event-name, .initial-event-name {
+        font-size: 3em;
+    }
 
+    .previous-event, .next-event {
+        width: 5%;
+        cursor: pointer;
+    }
 }

@@ -50,12 +50,7 @@
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90310031-2"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-90310031-2');
-        </script>
+        <script src="{{ asset('js/global/analytics.js')}}"></script>
         @yield('js')
     </body>
 </html>
