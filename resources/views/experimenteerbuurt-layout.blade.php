@@ -30,6 +30,7 @@
         @include('svg-definition')
         @include('loader')
         @include('sidebar-menu')
+
         <!-- @include('mobile-notification') -->
 		<div class="container-fluid" style="width: 100vw;" data-enhance="false" data-role="page">
             <div class="row" style="height: 100vh; width: 100vw;">
@@ -43,6 +44,7 @@
 
         <!-- SCRIPTS -->
         <script src="{{ asset('plugins/bootstrap-4.0/js/jquery-slim.min.js') }}"></script>
+        <script src="{{ asset('js/global/hammer.js') }}"></script>
         <script src="{{ asset('plugins/bootstrap-4.0/js/popper.min.js') }}"></script>
         <script src="{{ asset('plugins/bootstrap-4.0/js/bootstrap.min.js') }}"></script>
         <script src="{{ asset('js/global/script.js')}}"></script>
@@ -52,5 +54,6 @@
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90310031-2"></script>
         <script src="{{ asset('js/global/analytics.js')}}"></script>
         @yield('js')
+
     </body>
 </html>

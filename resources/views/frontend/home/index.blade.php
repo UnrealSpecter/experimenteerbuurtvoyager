@@ -7,7 +7,6 @@
 
         <title>Experimenteerbuurt</title>
 
-        <!-- bootstrap css -->
         <link rel="stylesheet" type="text/css" href="{{ asset('plugins/bootstrap-4.0/css/bootstrap.min.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('plugins/bootstrap-4.0/css/bootstrap.min.css.map') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('plugins/bootstrap-4.0/css/bootstrap-reboot.min.css') }}">
@@ -27,8 +26,10 @@
     <body>
         <div class="container container-fluid" style="width: 100vw; height:100vh;">
             <div class="row d-flex justify-c" style="height: 100vh;">
+
                 @include('loader')
                 @include('sidebar-menu')
+
                 <div class="home-background-image col-12 no-padding-margin" style="height: 100vh; position: absolute; top: 0; left: 0; background-image: url('images/home/experimenteerbuurt-kijkdoos-banner.jpg'); background-position: center center; background-size: cover;"></div>
                 <div class="experimenteerbuurt-logo no-drag col-lg-4 col-md-12 col-sm-12 d-none d-sm-none">
                     <img class="img-responsive col-12" src="{{ URL::asset('/images/home/experimenteerbuurt-logo.png') }}">
@@ -46,32 +47,20 @@
                     </div>
                 </div>
 
-                <div class="menu d-xl-none col-12 d-flex align-v justify-c menu-trigger">
-                    <button class="hamburger hamburger--slider d-flex align-v" type="button">
-                        <span class="hamburger-box">
-                            <span class="hamburger-inner"></span>
-                        </span>
-                    </button>
-                </div>
+                @include('menu-trigger')
 
             </div>
         </div>
-        <!-- bootstrap js -->
+
         <script src="{{ asset('plugins/bootstrap-4.0/js/jquery-slim.min.js') }}"></script>
         <script src="{{ asset('plugins/bootstrap-4.0/js/popper.min.js') }}"></script>
         <script src="{{ asset('plugins/bootstrap-4.0/js/bootstrap.min.js') }}"></script>
         <script src="{{ asset('plugins/hammer/js/hammer.js') }}"></script>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90310031-2"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-90310031-2');
-        </script>
+        <script src="{{ asset('js/global/analytics.js')}}"></script>
         <script src="{{ asset('js/global/script.js') }}"></script>
         <script src="{{ asset('plugins/hamburger-menu/js/hamburger.js')}}"></script>
         <script src="{{ asset('js/frontend/home/script.js') }}"></script>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
+
     </body>
 </html>
