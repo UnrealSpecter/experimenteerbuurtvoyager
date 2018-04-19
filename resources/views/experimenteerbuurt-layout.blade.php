@@ -30,6 +30,7 @@
         @include('svg-definition')
         @include('loader')
         @include('sidebar-menu')
+        @include('modal')
 
         <!-- @include('mobile-notification') -->
 		<div class="container-fluid" style="width: 100vw;" data-enhance="false" data-role="page">
@@ -44,7 +45,7 @@
 
         <!-- SCRIPTS -->
         <script src="{{ asset('plugins/bootstrap-4.0/js/jquery-slim.min.js') }}"></script>
-        <script src="{{ asset('js/global/hammer.js') }}"></script>
+        <script src="{{ asset('plugins/hammer/js/hammer.js') }}"></script>
         <script src="{{ asset('plugins/bootstrap-4.0/js/popper.min.js') }}"></script>
         <script src="{{ asset('plugins/bootstrap-4.0/js/bootstrap.min.js') }}"></script>
         <script src="{{ asset('js/global/script.js')}}"></script>

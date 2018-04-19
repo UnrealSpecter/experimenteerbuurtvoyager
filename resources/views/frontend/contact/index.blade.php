@@ -10,7 +10,7 @@
 @include('menu-trigger')
 <img class="contact-background" src="{{ URL::asset('/images/contact/calm-background-blue.jpg') }}">
 <!-- CONTACT REKJE & BUISJES -->
-<div class="col-lg-10 d-none contact-analoog-wrapper">
+<div class="col-xl-10 offset-xl-2 col-lg-9 offset-lg-3 d-none contact-analoog-wrapper">
     <div class="row" style="height: 100%;">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 reageerbuis-wrapper">
             <img class="rekje img-fluid" src="/images/contact/analoog-contact-rekje.png">
