@@ -6,6 +6,7 @@
 @endsection
 @extends('experimenteerbuurt-layout')
 @section('content')
+    @include('menu-trigger')
     <img class="inspiration-background" src=" {{ URL::asset('/images/inspiration/inspiratie-traktatie-background.png') }} "/>
     <div class="col-12 wrapper flex-c align-v justify-c" style="overflow:hidden;">
         <div class="row flex-c align-v justify-c content-wrapper">

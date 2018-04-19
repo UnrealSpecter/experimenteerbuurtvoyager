@@ -2,6 +2,10 @@
     top: 25px;
 }
 
+.closebtn {
+    color: black !important;
+}
+
 /* menu */
 .home-nav {
     position: fixed;

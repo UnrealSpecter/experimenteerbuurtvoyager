@@ -5,6 +5,7 @@
 
 @extends('experimenteerbuurt-layout')
 @section('content')
+    @include('menu-trigger')
     <img class="wat-is-de-experimenteerbuurt-background" src="/images/about-us/about-us-background.jpg" alt="background">
     <div class="col-xl-10 offset-xl-2 col-lg-9 offset-lg-3 col-md-12 col-sm-12 col-xs-12 about-us-wrapper" style="background: transparent; height: 100vh; z-index: 10;">
         <div class="row animated slideInRight" style="height: 100%;">

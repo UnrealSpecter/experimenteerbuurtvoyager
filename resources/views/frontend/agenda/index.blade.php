@@ -4,6 +4,7 @@
 
 @extends('experimenteerbuurt-layout')
 @section('content')
+    @include('menu-trigger')
     <img class="agenda-background" src="{{ asset('/images/agenda/agenda-background.jpg') }}" style="opacity: 0.8; height: 100%; width: 100%; position: absolute; top: 0; left: 0;">
     <div class="col-lg-3 col-md-3 d-none d-xs-none d-sm-none d-md-none d-lg-none d-xl-block animated fadeInRightBig" style="height: 100vh; z-index: 0;">
         <img src="images/analoog-agenda.png" alt="erlenmeyer-background" style="position: absolute; top: 0; left: 0; height: 100vh; width: 100%; z-index: 10;">

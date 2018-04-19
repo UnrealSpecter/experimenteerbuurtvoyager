@@ -7,6 +7,7 @@
 @extends('experimenteerbuurt-layout')
 <!-- content -->
 @section('content')
+@include('menu-trigger')
 <img class="contact-background" src="{{ URL::asset('/images/contact/calm-background-blue.jpg') }}">
 <!-- CONTACT REKJE & BUISJES -->
 <div class="col-lg-10 d-none contact-analoog-wrapper">

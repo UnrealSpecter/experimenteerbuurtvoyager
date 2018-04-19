@@ -5,6 +5,7 @@
 
 @extends('experimenteerbuurt-layout')
 @section('content')
+@include('menu-trigger')
 <img class="nieuws-background" src="{{ URL::asset('/images/news/news-background.jpg') }}">
 
 <div class="col-12 col-lg-9 col-xl-10 news-title big-john flex-r align-v justify-c">Nieuw(s)</div>

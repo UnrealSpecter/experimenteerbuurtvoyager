@@ -9,8 +9,9 @@ $(document).ready(function(){
 
     //menu background update
     $('.overlay').addClass('overlay-experimenteerbuurt');
-    $('.menu-bg').addClass('experimenteerbuurt-menu-bg');
-
+    $('.menu-trigger').addClass('experimenteerbuurt-menu-bg');
+    $('.light-green').addClass('active');
+    
     //kijk of er een get in de url zit en zet de active slide dan op locatie.
     var prmstr = window.location.search.substr(1);
     if(prmstr == "locatie=1") {

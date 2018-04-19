@@ -1,7 +1,8 @@
 $(document).ready(function(){
     //menu background update
     $('.overlay').addClass('overlay-contact');
-    $('.menu-bg').addClass('contact-menu-bg');
+    $('.menu-trigger').addClass('contact-menu-bg');
+    $('.light-blue').addClass('active');
 
     //next clicked
     $('.next-info').click(function(){

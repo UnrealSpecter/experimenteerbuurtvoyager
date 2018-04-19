@@ -27,6 +27,10 @@
 .dark-green     { color: rgba(49, 107, 77, 0.9); }
 .light-blue     { color: rgba(54, 169, 225, 0.9); }
 
+.active {
+    color: white;
+}
+
 /* menu bg */
 .menu-bg {
     position: absolute;
@@ -47,6 +51,7 @@
     background-color: #2fac66;
     cursor: pointer;
     height: 12.5%;
+    z-index: 1000;
 }
 
 .experimenteerbuurt-menu-bg { background-image: url('/images/menu/experimenteerbuurt.png'); }
@@ -63,9 +68,7 @@
 }
 
 .overlay a, .img-reponsive a {
-    padding: 8px;
     text-decoration: none;
-    /* color: #f1f1f1; */
     font-size: 1.25em;
     transition: 0.3s;
 }
@@ -76,9 +79,10 @@
 
 .overlay .closebtn {
     position: absolute;
-    right: 45px;
+    right: 5px;
     font-size: 60px;
-    z-index: 1;
+    z-index: 10000;
+    color: white;
 }
 
 /* Landscape */
@@ -93,7 +97,7 @@
   .overlay a {font-size: 20px}
   .overlay .closebtn {
     font-size: 40px;
-    top: 15px;
+    top: 5px;
     right: 35px;
   }
 }
@@ -111,38 +115,38 @@
 }
 
 @media (min-width: 576px) {
-    .menu-button {
-        width: 100%;
-    }
     .overlay a, .img-reponsive a {
         font-size: 1em;
     }
     .menu-trigger {
         height: 20%;
+        bottom: 0;
+        width: 100vw;
     }
 }
 
 @media (min-width: 768px) {
-    .menu-button {
-        width: 100%;
-    }
     .overlay a, .img-reponsive a {
         font-size: 2em;
     }
     .menu-trigger {
         height: 10%;
+        width: 100vw;
     }
 }
 
 @media (min-width: 992px) {
-    .menu-button {
-        width: 100%;
-    }
     .overlay a, .img-reponsive a {
         font-size: 2em;
     }
     .menu-trigger {
+        width: 125px;
         height: 15%;
+        bottom: 0;
+        width: 100vw;
+    }
+    .overlay .closebtn {
+        right: 30px;
     }
 }
 

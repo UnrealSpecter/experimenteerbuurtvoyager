@@ -5,6 +5,9 @@
 
 @extends('experimenteerbuurt-layout')
 @section('content')
+
+    @include('menu-trigger')
+
     <div class="col-lg-2 col-md-2 d-none d-xs-none d-sm-none d-md-none d-lg-block d-xl-block animated fadeInRightBig no-padding-margin" style="height: 100vh; z-index: 0;">
         <img src="{{ URL::asset('images/analoog-doer.png') }}" alt="erlenmeyer-background" style="position: absolute; top: 0; left: 0; height: 100vh; width: 100%; z-index: 10;">
     </div>
