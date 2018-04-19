@@ -23,6 +23,13 @@ class UsersTableSeeder extends Seeder
                 'remember_token' => str_random(60),
                 'role_id'        => $role->id,
             ]);
+            User::create([
+                'name'           => 'Hoofd Experiment',
+                'email'          => 'info@experimenteerbuurt.nl',
+                'password'       => bcrypt('Experiment0591'),
+                'remember_token' => str_random(60),
+                'role_id'        => $role->id,
+            ]);
         }
     }
 }
