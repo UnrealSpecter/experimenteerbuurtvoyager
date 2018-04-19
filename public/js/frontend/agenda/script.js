@@ -7,9 +7,8 @@ function introAnimation(){
 $( document ).ready(function() {
 
     //menu background update
-    $('.overlay').addClass('overlay-agenda');
+    $('.closebtn').addClass('red');
     $('.menu-trigger').addClass('agenda-menu-bg');
-    $('.red').addClass('active');
 
     //next clicked
     $('.next-event').click(function(){

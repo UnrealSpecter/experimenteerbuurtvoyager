@@ -20,12 +20,12 @@
 .overlay-contact            { background-color: rgba(54, 169, 225, 0.9); }
 
 /* MENU ITEMS */
-.light-green    { color: rgba(47, 172, 102, 0.9); }
-.dark-blue      { color: rgba(45, 46, 131, 0.9); }
-.purple         { color: rgba(130, 54, 140, 0.9); }
-.red            { color: rgba(230, 51, 42, 0.9); }
-.dark-green     { color: rgba(49, 107, 77, 0.9); }
-.light-blue     { color: rgba(54, 169, 225, 0.9); }
+.light-green    { color: rgba(47, 172, 102, 0.9);   }
+.dark-blue      { color: rgba(45, 46, 131, 0.9);    }
+.purple         { color: rgba(130, 54, 140, 0.9);   }
+.red            { color: rgba(230, 51, 42, 0.9);    }
+.dark-green     { color: rgba(49, 107, 77, 0.9);    }
+.light-blue     { color: rgba(54, 169, 225, 0.9);   }
 
 .active {
     color: white;
@@ -79,10 +79,9 @@
 
 .overlay .closebtn {
     position: absolute;
-    right: 5px;
+    right: 30px;
     font-size: 60px;
     z-index: 10000;
-    color: white;
 }
 
 /* Landscape */
@@ -104,6 +103,7 @@
 
 .menu-button {
     z-index: 2;
+    padding: 5px;
 }
 
 .logo-wrapper {
@@ -115,6 +115,9 @@
 }
 
 @media (min-width: 576px) {
+    .overlay {
+        background-color: rgb(255,255,255);
+    }
     .overlay a, .img-reponsive a {
         font-size: 1em;
     }
@@ -126,6 +129,9 @@
 }
 
 @media (min-width: 768px) {
+    .overlay {
+        background-color: rgb(255,255,255);
+    }
     .overlay a, .img-reponsive a {
         font-size: 2em;
     }
@@ -143,9 +149,6 @@
         width: 100px;
         height: 11%;
         top: 0;
-    }
-    .overlay .closebtn {
-        right: 30px;
     }
 }
 

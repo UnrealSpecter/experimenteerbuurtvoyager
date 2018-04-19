@@ -10,7 +10,7 @@
 
 <div class="col-12 col-lg-9 col-xl-10 news-title big-john flex-r align-v justify-c">Nieuw(s)</div>
 
-<div class="posts-wrapper d-none  flex-c align-v col-xs-12 col-sm-12 col-md-10 offset-md-1 col-lg-9 offset-lg-3 col-xl-8 offset-xl-3" style="top: 15%; position:absolute; margin-top:15px; padding: 0;">
+<div class="posts-wrapper d-none flex-c align-v col-xs-12 col-sm-12 col-md-10 offset-md-1 col-lg-9 offset-lg-3 col-xl-8 offset-xl-3" style="top: 15%; position:absolute; margin-top:15px; padding: 0;">
     @foreach($posts as $post)
         @if($post->image || $post->youtube_embed)
         <div class="post col-lg-12 col-md-12 col-sm-12 col-xs-12 row">
@@ -33,7 +33,7 @@
                 <div class="flex-c align-v justify-c no-padding-margin">
                     <div class="content d-flex align-v justify-c">{{ $post->content}}</div>
                     @if($post->link)
-                    <a class="big-john" href="{{ $post->link }}">lees meer</a>
+                    <a class="big-john" target="_blank" href="{{ $post->link }}">lees meer</a>
                     @endif
                 </div>
             </div>
@@ -49,7 +49,7 @@
                 <div class="flex-c align-v justify-c">
                     <div class="content d-flex align-v justify-c">{{ $post->content}}</div>
                     @if($post->link)
-                    <a class="big-john" href="{{ $post->link }}">lees meer</a>
+                    <a class="big-john" target="_blank" href="{{ $post->link }}">lees meer</a>
                     @endif
                 </div>
             </div>

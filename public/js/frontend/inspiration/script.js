@@ -1,8 +1,7 @@
 $( document ).ready(function() {
     //menu background update
-    $('.overlay').addClass('overlay-inspiration');
     $('.menu-trigger').addClass('inspiration-menu-bg');
-    $('.dark-blue').addClass('active');
+    $('.closebtn').addClass('dark-blue');
 });
 
 function introAnimation(){

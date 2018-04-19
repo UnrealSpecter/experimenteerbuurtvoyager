@@ -1,9 +1,8 @@
 $(document).ready(function(){
 
     //menu background update
-    $('.overlay').addClass('overlay-experimenteerbuurt');
     $('.menu-trigger').addClass('nieuws-menu-bg');
-    $('.dark-green').addClass('active');
+    $('.closebtn').addClass('dark-green');
 
 });
 
