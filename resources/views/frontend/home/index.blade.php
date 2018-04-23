@@ -7,6 +7,8 @@
 
         <title>Experimenteerbuurt</title>
 
+        <link rel="icon" href="{{ asset('/images/menu-logo.png')}}">
+        
         <link rel="stylesheet" type="text/css" href="{{ asset('plugins/bootstrap-4.0/css/bootstrap.min.css') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('plugins/bootstrap-4.0/css/bootstrap.min.css.map') }}">
         <link rel="stylesheet" type="text/css" href="{{ asset('plugins/bootstrap-4.0/css/bootstrap-reboot.min.css') }}">

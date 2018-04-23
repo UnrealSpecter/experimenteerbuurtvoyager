@@ -50,7 +50,6 @@
         <script src="{{ asset('plugins/bootstrap-4.0/js/bootstrap.min.js') }}"></script>
         <script src="{{ asset('js/global/script.js')}}"></script>
         <script src="{{ asset('plugins/hamburger-menu/js/hamburger.js') }}"></script>
-
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-90310031-2"></script>
         <script src="{{ asset('js/global/analytics.js')}}"></script>
